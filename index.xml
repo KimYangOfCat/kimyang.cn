@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kim`s Blog on Kim`s Blog</title>
+    <link>https://KimYangOfCat.github.io/</link>
+    <description>Recent content in Kim`s Blog on Kim`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 31 May 2019 23:23:09 +0800</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2019 05 31 First</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-05-31-first/</link>
+      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-05-31-first/</guid>
+      <description>&lt;p&gt;瞎想吧&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://KimYangOfCat.github.io/about/</link>
+      <pubDate>Fri, 31 May 2019 21:22:39 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/about/</guid>
+      <description>
+
+&lt;h3 id=&#34;我是谁&#34;&gt;我是谁&lt;/h3&gt;
+
+&lt;p&gt;我是一个爱仰望星空的人，也是一个入门的程序猿。我从不想留念过去，却又总是被其牵绊。&lt;/p&gt;
+
+&lt;h3 id=&#34;我爱做啥&#34;&gt;我爱做啥&lt;/h3&gt;
+
+&lt;p&gt;写代码不知道算不算，我觉得不算吧！不过爱瞎想是真的。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
