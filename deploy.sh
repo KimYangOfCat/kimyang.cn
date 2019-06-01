@@ -9,7 +9,7 @@ git config --global push.default simple
 
 rm -rf deployment
 git clone -b master https://KimYangOfCat:$GITHUB_TOKEN@github.com/KimYangOfCat/KimYangOfCat.github.io deployment
-rsync -av --delete --exclude ".git" public/ deployment
+rsync -av --exclude ".git" public/ deployment
 cd deployment
 git add -A
 # we need the || true, as sometimes you do not have any content changes
