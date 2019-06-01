@@ -9,12 +9,20 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>2019 05 31 First</title>
-      <link>https://KimYangOfCat.github.io/2019/2019-05-31-first/</link>
+      <title>CPU analysis and Software design summary</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-05-31-cpu/</link>
       <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
       
-      <guid>https://KimYangOfCat.github.io/2019/2019-05-31-first/</guid>
-      <description>&lt;p&gt;瞎想吧&lt;/p&gt;
+      <guid>https://KimYangOfCat.github.io/2019/2019-05-31-cpu/</guid>
+      <description>
+
+&lt;p&gt;Click &lt;a href=&#34;https://cdn.coden.hk/c422/weekly-keynote/2019-5-31-yangjin/5.30工作室分享会.pdf&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; and see details.&lt;/p&gt;
+
+&lt;h2 id=&#34;point-out-an-error&#34;&gt;Point out an error&lt;/h2&gt;
+
+&lt;p&gt;For the question that &lt;strong&gt;&amp;ldquo;Why is Thread instead of Process in ‘4 Core 8 Thread&amp;rsquo; ?”&lt;/strong&gt; in PDF&lt;/p&gt;
+
+&lt;p&gt;Firstly，a point should be clearly，which is that &lt;strong&gt;Thread in &amp;lsquo;4 Core 8 Thread&amp;rsquo; is different with Thread in operating system&lt;/strong&gt;.The former refers to the &lt;strong&gt;physical unit&lt;/strong&gt; in the CPU, the latter refers to the &lt;strong&gt;logical unit&lt;/strong&gt; in the operating system, so the problem does not hold!&lt;/p&gt;
 </description>
     </item>
     
@@ -28,11 +36,38 @@
 
 &lt;h3 id=&#34;我是谁&#34;&gt;我是谁&lt;/h3&gt;
 
-&lt;p&gt;我是一个爱仰望星空的人，也是一个入门的程序猿。我从不想留念过去，却又总是被其牵绊。&lt;/p&gt;
+&lt;p&gt;我是Kim Yang，一个爱仰望星空的人。我从不想留念过去，却又总是被其牵绊。&lt;/p&gt;
 
 &lt;h3 id=&#34;我爱做啥&#34;&gt;我爱做啥&lt;/h3&gt;
 
-&lt;p&gt;写代码不知道算不算，我觉得不算吧！不过爱瞎想是真的。&lt;/p&gt;
+&lt;p&gt;写代码不知道算不算，我觉得不算吧！不过爱瞎想是真的，敢想敢做是我给自己的标签，希望能一直这样下去！&lt;/p&gt;
+
+&lt;h3 id=&#34;我会啥&#34;&gt;我会啥&lt;/h3&gt;
+
+&lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;
+
+&lt;p&gt;用Python写过机器学算法，也了解过一点儿深度学习的内容，但是还没有入门，哪敢说话&lt;/p&gt;
+
+&lt;h4 id=&#34;前端&#34;&gt;前端&lt;/h4&gt;
+
+&lt;p&gt;前端学了一段时间，半只脚入门吧，搞过一个微信小程序，拿了点儿小奖，就不必说了。&lt;/p&gt;
+
+&lt;h4 id=&#34;ios-开发&#34;&gt;iOS 开发&lt;/h4&gt;
+
+&lt;p&gt;目前正在学习iOS开发，处在小白阶段，从Swift语法学起吧。搞出一款APP并且上架到Apple store是最近的目标。&lt;/p&gt;
+
+&lt;h4 id=&#34;科研方向&#34;&gt;科研方向&lt;/h4&gt;
+
+&lt;p&gt;为了考个研究生吧，目前的选择的研究方向是计算机网络，也正在入门阶段吧！&lt;/p&gt;
+
+&lt;p&gt;所以你也看出来了&lt;strong&gt;我就是哪个方向都还没有入门的小白，&lt;/strong&gt;感谢你看到这里！&lt;/p&gt;
+
+&lt;h3 id=&#34;联系我&#34;&gt;联系我&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/KimYangOfCat&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;KimYangOfCat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;E-mail：kim_yang95@163.com&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

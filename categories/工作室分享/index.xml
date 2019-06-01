@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Kim`s Blog</title>
-    <link>https://KimYangOfCat.github.io/posts/</link>
-    <description>Recent content in Posts on Kim`s Blog</description>
+    <title>工作室分享 on Kim`s Blog</title>
+    <link>https://KimYangOfCat.github.io/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%88%86%E4%BA%AB/</link>
+    <description>Recent content in 工作室分享 on Kim`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 31 May 2019 23:23:09 +0800</lastBuildDate>
     
-	<atom:link href="https://KimYangOfCat.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://KimYangOfCat.github.io/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
