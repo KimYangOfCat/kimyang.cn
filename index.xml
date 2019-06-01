@@ -10,10 +10,10 @@
     
     <item>
       <title>CPU analysis and Software design summary</title>
-      <link>https://KimYangOfCat.github.io/2019/2019-05-31-cpu/</link>
+      <link>https://KimYangOfCat.github.io/2019/2019-05-31-cpu-en/</link>
       <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
       
-      <guid>https://KimYangOfCat.github.io/2019/2019-05-31-cpu/</guid>
+      <guid>https://KimYangOfCat.github.io/2019/2019-05-31-cpu-en/</guid>
       <description>
 
 &lt;p&gt;Click &lt;a href=&#34;https://cdn.coden.hk/c422/weekly-keynote/2019-5-31-yangjin/5.30工作室分享会.pdf&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; and see details.&lt;/p&gt;
@@ -23,6 +23,24 @@
 &lt;p&gt;For the question that &lt;strong&gt;&amp;ldquo;Why is Thread instead of Process in ‘4 Core 8 Thread&amp;rsquo; ?”&lt;/strong&gt; in PDF&lt;/p&gt;
 
 &lt;p&gt;Firstly，a point should be clearly，which is that &lt;strong&gt;Thread in &amp;lsquo;4 Core 8 Thread&amp;rsquo; is different with Thread in operating system&lt;/strong&gt;.The former refers to the &lt;strong&gt;physical unit&lt;/strong&gt; in the CPU, the latter refers to the &lt;strong&gt;logical unit&lt;/strong&gt; in the operating system, so the problem does not hold!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CPU 简析以及软件设计总结</title>
+      <link>https://KimYangOfCat.github.io/2019/2020-05-31-cpu/</link>
+      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2020-05-31-cpu/</guid>
+      <description>
+
+&lt;p&gt;点击&lt;a href=&#34;https://cdn.coden.hk/c422/weekly-keynote/2019-5-31-yangjin/5.30工作室分享会.pdf&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt;查看详情&lt;/p&gt;
+
+&lt;h2 id=&#34;指出一个错误&#34;&gt;指出一个错误&lt;/h2&gt;
+
+&lt;p&gt;针对PDF中提出的 &lt;strong&gt;“为什么‘4核8线程’中用的是线程而非进程？”&lt;/strong&gt; 问题&lt;/p&gt;
+
+&lt;p&gt;首先明确一个点，&lt;strong&gt;‘4核8线程’中的线程与我们设计软件时遇到的线程并不是同一个概念！&lt;/strong&gt;前者指的是CPU中的&lt;strong&gt;物理单元&lt;/strong&gt;，后者指的是操作系统中的&lt;strong&gt;逻辑单元&lt;/strong&gt;，所以这个问题本身并不成立！&lt;/p&gt;
 </description>
     </item>
     
