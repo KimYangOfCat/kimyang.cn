@@ -45,6 +45,34 @@
     </item>
     
     <item>
+      <title>Introduction to iOS11, Xcode 9 and Swift 4</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</link>
+      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</guid>
+      <description>
+
+&lt;p&gt;这是学习swift的笔记系列，学习的课程是&lt;a href=&#34;https://www.bilibili.com/medialist/play/ml148451180&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;斯坦福  iOS11 swift语言&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;今天学习的是课程的第一集：&lt;strong&gt;introduction to iOS11, Xcode 9 and Swift 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;what-s-in-ios&#34;&gt;What&amp;rsquo;s in iOS ?&lt;/h4&gt;
+
+&lt;p&gt;我们可以将 iOS 分为 Core OS、Core Services、Media 和 Cocoa Touch 四层，最前面一层最接近硬件，最后面一层最接近用户。下面详细解释每一层的作用：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Core OS：iOS 系统其实是 Unix 系统，它是BSD版本的Unix，在其中运行的程序大多都是C语言写的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/KimYangOfCat/My_PicGo/master/img/SwiftLearning/p1.png&#34; alt=&#34;Core OS&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Core Services：&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://KimYangOfCat.github.io/about/</link>
       <pubDate>Fri, 31 May 2019 21:22:39 +0800</pubDate>

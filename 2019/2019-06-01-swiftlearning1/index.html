@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/" />
-  <link rel="next" href="https://KimYangOfCat.github.io/2019/2019-05-31-cpu-en/" />
-  <link rel="canonical" href="https://KimYangOfCat.github.io/2019/2020-05-31-cpu/" />
+  
+  <link rel="next" href="https://KimYangOfCat.github.io/2019/2020-05-31-cpu/" />
+  <link rel="canonical" href="https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           CPU 简析以及软件设计总结 | Kim`s Blog
+           Introduction to iOS11, Xcode 9 and Swift 4 | Kim`s Blog
        
   </title>
-  <meta name="title" content="CPU 简析以及软件设计总结 | Kim`s Blog">
+  <meta name="title" content="Introduction to iOS11, Xcode 9 and Swift 4 | Kim`s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/KimYangOfCat.github.io"
     },
     "articleSection" : "posts",
-    "name" : "CPU 简析以及软件设计总结",
-    "headline" : "CPU 简析以及软件设计总结",
-    "description" : "点击PDF查看详情 指出一个错误 针对PDF中提出的 “为什么‘4核8线程’中用的是线程而非进程？” 问题 首先明确一个点，‘4核8线程’中的线程与我",
+    "name" : "Introduction to iOS11, Xcode 9 and Swift 4",
+    "headline" : "Introduction to iOS11, Xcode 9 and Swift 4",
+    "description" : "这是学习swift的笔记系列，学习的课程是斯坦福 iOS11 swift语言。 今天学习的是课程的第一集：introduction to iOS11, Xcode 9 and Swift 4 What\x26rsquo;s in iOS ? 我",
     "inLanguage" : "zh-cn",
     "author" : "Kim Yang",
     "creator" : "Kim Yang",
@@ -56,9 +56,9 @@
     "copyrightYear" : "2019",
     "datePublished": "2019-05-31 23:23:09 \x2b0800 \x2b0800",
     "dateModified" : "2019-05-31 23:23:09 \x2b0800 \x2b0800",
-    "url" : "https:\/\/KimYangOfCat.github.io\/2019\/2020-05-31-cpu\/",
-    "wordCount" : "134",
-    "keywords" : [ "硬件","总结", "Kim`s Blog"]
+    "url" : "https:\/\/KimYangOfCat.github.io\/2019\/2019-06-01-swiftlearning1\/",
+    "wordCount" : "197",
+    "keywords" : [ "Swift","iOS", "Kim`s Blog"]
 }
 </script>
 
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">CPU 简析以及软件设计总结</h1>
+        <h1 class="post-title" itemprop="name headline">Introduction to iOS11, Xcode 9 and Swift 4</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://KimYangOfCat.github.io" rel="author">Kim Yang</a> with ♥ 
                 <span class="post-time">
@@ -125,7 +125,6 @@
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://KimYangOfCat.github.io/categories/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%88%86%E4%BA%AB/"> 工作室分享 </a>
                         
                 </span>
         </div>
@@ -133,6 +132,8 @@
     <div class="post-content">
         
 
+        
+            
         
 
         
@@ -148,13 +149,23 @@
 
           
 
-<p>点击<a href="https://cdn.coden.hk/c422/weekly-keynote/2019-5-31-yangjin/5.30工作室分享会.pdf" rel="nofollow noreferrer" target="_blank">PDF</a>查看详情</p>
+<p>这是学习swift的笔记系列，学习的课程是<a href="https://www.bilibili.com/medialist/play/ml148451180" rel="nofollow noreferrer" target="_blank">斯坦福  iOS11 swift语言</a>。</p>
 
-<h2 id="指出一个错误">指出一个错误</h2>
+<p>今天学习的是课程的第一集：<strong>introduction to iOS11, Xcode 9 and Swift 4</strong></p>
 
-<p>针对PDF中提出的 <strong>“为什么‘4核8线程’中用的是线程而非进程？”</strong> 问题</p>
+<h4 id="what-s-in-ios">What&rsquo;s in iOS ?</h4>
 
-<p>首先明确一个点，<strong>‘4核8线程’中的线程与我们设计软件时遇到的线程并不是同一个概念！</strong>前者指的是CPU中的<strong>物理单元</strong>，后者指的是操作系统中的<strong>逻辑单元</strong>，所以这个问题本身并不成立！</p>
+<p>我们可以将 iOS 分为 Core OS、Core Services、Media 和 Cocoa Touch 四层，最前面一层最接近硬件，最后面一层最接近用户。下面详细解释每一层的作用：</p>
+
+<ul>
+<li>Core OS：iOS 系统其实是 Unix 系统，它是BSD版本的Unix，在其中运行的程序大多都是C语言写的。</li>
+</ul>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://raw.githubusercontent.com/KimYangOfCat/My_PicGo/master/img/SwiftLearning/p1.png" alt="Core OS" class="lazyload"><figcaption class="image-caption">Core OS</figcaption></figure></p>
+
+<ul>
+<li>Core Services：</li>
+</ul>
 
     </div>
 
@@ -169,7 +180,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://KimYangOfCat.github.io/2019/2020-05-31-cpu/>https://KimYangOfCat.github.io/2019/2020-05-31-cpu/</span>
+                    <a href=https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</span>
             </p>
             
              
@@ -185,11 +196,11 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E7%A1%AC%E4%BB%B6/">
-                    #硬件</a></span>
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/swift/">
+                    #Swift</a></span>
             
-            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E6%80%BB%E7%BB%93/">
-                    #总结</a></span>
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/ios/">
+                    #iOS</a></span>
             
             </section>
         
@@ -200,11 +211,9 @@
     </div>
 
     <div class="post-nav">
-        
-        <a href="https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/" class="prev" rel="prev" title="Introduction to iOS11, Xcode 9 and Swift 4"><i class="iconfont icon-left"></i>&nbsp;Introduction to iOS11, Xcode 9 and Swift 4</a>
          
         
-        <a href="https://KimYangOfCat.github.io/2019/2019-05-31-cpu-en/" class="next" rel="next" title="CPU analysis and Software design summary">CPU analysis and Software design summary&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://KimYangOfCat.github.io/2019/2020-05-31-cpu/" class="next" rel="next" title="CPU 简析以及软件设计总结">CPU 简析以及软件设计总结&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -246,8 +255,9 @@
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 

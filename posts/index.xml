@@ -29,5 +29,14 @@
       <description>点击PDF查看详情 指出一个错误 针对PDF中提出的 “为什么‘4核8线程’中用的是线程而非进程？” 问题 首先明确一个点，‘4核8线程’中的线程与我</description>
     </item>
     
+    <item>
+      <title>Introduction to iOS11, Xcode 9 and Swift 4</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</link>
+      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</guid>
+      <description>这是学习swift的笔记系列，学习的课程是斯坦福 iOS11 swift语言。 今天学习的是课程的第一集：introduction to iOS11, Xcode 9 and Swift 4 What&amp;rsquo;s in iOS ? 我</description>
+    </item>
+    
   </channel>
 </rss>

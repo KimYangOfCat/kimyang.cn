@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iOS on Kim`s Blog</title>
+    <link>https://KimYangOfCat.github.io/tags/ios/</link>
+    <description>Recent content in iOS on Kim`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 31 May 2019 23:23:09 +0800</lastBuildDate>
+    
+	<atom:link href="https://KimYangOfCat.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to iOS11, Xcode 9 and Swift 4</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</link>
+      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-06-01-swiftlearning1/</guid>
+      <description>这是学习swift的笔记系列，学习的课程是斯坦福 iOS11 swift语言。 今天学习的是课程的第一集：introduction to iOS11, Xcode 9 and Swift 4 What&amp;rsquo;s in iOS ? 我</description>
+    </item>
+    
+  </channel>
+</rss>
