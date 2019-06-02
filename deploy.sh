@@ -10,6 +10,7 @@ git config --global push.default simple
 rm -rf deployment
 git clone -b master https://KimYangOfCat:$GITHUB_TOKEN@github.com/KimYangOfCat/KimYangOfCat.github.io deployment
 rsync -av --delete --exclude ".git" --exclude "CNAME" --exclude "README.md" public/ deployment
+# 在构建新的页面之前会将之前的界面全部删除（delete），exclude是排除一些不删除的选项！
 cd deployment
 git add -A
 # we need the || true, as sometimes you do not have any content changes
