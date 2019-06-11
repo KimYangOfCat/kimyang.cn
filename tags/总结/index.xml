@@ -22,10 +22,10 @@
     
     <item>
       <title>CPU 简析以及软件设计总结</title>
-      <link>https://KimYangOfCat.github.io/2019/2020-05-31-cpu/</link>
+      <link>https://KimYangOfCat.github.io/2019/2019-05-31-cpu/</link>
       <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
       
-      <guid>https://KimYangOfCat.github.io/2019/2020-05-31-cpu/</guid>
+      <guid>https://KimYangOfCat.github.io/2019/2019-05-31-cpu/</guid>
       <description>点击PDF查看详情 指出一个错误 针对PDF中提出的 “为什么‘4核8线程’中用的是线程而非进程？” 问题 首先明确一个点，‘4核8线程’中的线程与我</description>
     </item>
     
