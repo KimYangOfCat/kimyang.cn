@@ -8,6 +8,8 @@ categories: ["iOS 开发"]
 
 这是学习swift的笔记系列，学习的课程是[斯坦福  iOS11 swift语言](https://www.bilibili.com/medialist/play/ml148451180)。
 
+第一集：[**introduction to iOS11, Xcode 9 and Swift 4**](https://kimyang.cn/2019/2020-06-01-swiftlearning1/)
+
 今天学习的是课程的第二集：**MVC**
 
 这一节主要讲的就是MVC(Model View Controller)开发模式,这种开发模式主要包含以下三部分：
