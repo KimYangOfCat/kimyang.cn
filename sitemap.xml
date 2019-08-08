@@ -2,9 +2,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
+      <loc>https://KimYangOfCat.github.io/categories/apple/</loc>
+      
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
       <loc>https://KimYangOfCat.github.io/categories/</loc>
       
-      <lastmod>2019-06-07T23:23:09+08:00</lastmod>
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
       
       
       
@@ -16,11 +28,57 @@
     <url>
       <loc>https://KimYangOfCat.github.io/</loc>
       
-      <lastmod>2019-06-07T23:23:09+08:00</lastmod>
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
       
       
       
       <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://KimYangOfCat.github.io/tags/macos/</loc>
+      
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://KimYangOfCat.github.io/posts/</loc>
+      
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://KimYangOfCat.github.io/tags/</loc>
+      
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
+      
+      
+      
+      <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://KimYangOfCat.github.io/2019/2019-08-01-macbookpro/</loc>
+      
+      <lastmod>2019-08-01T23:23:09+08:00</lastmod>
+      
+      
       
       
     </url>
@@ -36,31 +94,7 @@
     </url>
   
     <url>
-      <loc>https://KimYangOfCat.github.io/posts/</loc>
-      
-      <lastmod>2019-06-07T23:23:09+08:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
       <loc>https://KimYangOfCat.github.io/tags/swift/</loc>
-      
-      <lastmod>2019-06-07T23:23:09+08:00</lastmod>
-      
-      
-      
-      <priority>0</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://KimYangOfCat.github.io/tags/</loc>
       
       <lastmod>2019-06-07T23:23:09+08:00</lastmod>
       

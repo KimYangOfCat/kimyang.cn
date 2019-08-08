@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacOS on Kim`s Blog</title>
+    <link>https://KimYangOfCat.github.io/tags/macos/</link>
+    <description>Recent content in MacOS on Kim`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 01 Aug 2019 23:23:09 +0800</lastBuildDate>
+    
+	<atom:link href="https://KimYangOfCat.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为什么你值得入手一个 Macbook？</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-08-01-macbookpro/</link>
+      <pubDate>Thu, 01 Aug 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-08-01-macbookpro/</guid>
+      <description>在开始看正文之前，首先明确 Macbook 适合的人群：学生、白领、文字工作者等需要高生产力工具的人群。如果你本身是一个游戏爱好者，PC 对你来说最大的应用场</description>
+    </item>
+    
+  </channel>
+</rss>
