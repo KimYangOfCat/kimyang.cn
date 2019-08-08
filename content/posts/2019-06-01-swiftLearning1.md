@@ -8,7 +8,7 @@ categories: ["iOS 开发"]
 
 这是学习swift的笔记系列，学习的课程是[斯坦福  iOS11 swift语言](https://www.bilibili.com/medialist/play/ml148451180)。
 
-今天学习的是课程的第一集：**introduction to iOS11, Xcode 9 and Swift 4**
+今天学习的是课程的第一集：[**introduction to iOS11, Xcode 9 and Swift 4**](https://www.bilibili.com/video/av16339375/?p=1)
 
 #### What's in iOS ?
 
