@@ -56,14 +56,5 @@
       <description>点击PDF查看详情 指出一个错误 针对PDF中提出的 “为什么‘4核8线程’中用的是线程而非进程？” 问题 首先明确一个点，‘4核8线程’中的线程与我</description>
     </item>
     
-    <item>
-      <title>Mac上 MongoDB 配置与使用</title>
-      <link>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
-      
-      <guid>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/</guid>
-      <description>MongoDB 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。 下载 官网下载 官网下载地址，如下图，选择你所需要的 MongoDB 版本就好 下</description>
-    </item>
-    
   </channel>
 </rss>
