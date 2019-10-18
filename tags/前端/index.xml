@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>前端 on Kim`s Blog</title>
+    <link>https://KimYangOfCat.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
+    <description>Recent content in 前端 on Kim`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 31 May 2019 23:23:09 +0800</lastBuildDate>
+    
+	<atom:link href="https://KimYangOfCat.github.io/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac上 MongoDB 配置与使用</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 31 May 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/</guid>
+      <description>MongoDB 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。 下载 官网下载 官网下载地址，如下图，选择你所需要的 MongoDB 版本就好 下</description>
+    </item>
+    
+  </channel>
+</rss>

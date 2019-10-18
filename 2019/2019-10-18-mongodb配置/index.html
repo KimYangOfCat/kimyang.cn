@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Kim Yang">
+  
+  
+  
+  
+  <link rel="next" href="https://KimYangOfCat.github.io/2019/2019-05-31-cpu/" />
+  <link rel="canonical" href="https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Mac上 MongoDB 配置与使用 | Kim`s Blog
+       
+  </title>
+  <meta name="title" content="Mac上 MongoDB 配置与使用 | Kim`s Blog">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/KimYangOfCat.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "Mac上 MongoDB 配置与使用",
+    "headline" : "Mac上 MongoDB 配置与使用",
+    "description" : "MongoDB 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。 下载 官网下载 官网下载地址，如下图，选择你所需要的 MongoDB 版本就好 下",
+    "inLanguage" : "zh-cn",
+    "author" : "Kim Yang",
+    "creator" : "Kim Yang",
+    "publisher": "Kim Yang",
+    "accountablePerson" : "Kim Yang",
+    "copyrightHolder" : "Kim Yang",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-05-31 23:23:09 \x2b0800 \x2b0800",
+    "dateModified" : "2019-05-31 23:23:09 \x2b0800 \x2b0800",
+    "url" : "https:\/\/KimYangOfCat.github.io\/2019\/2019-10-18-mongodb%E9%85%8D%E7%BD%AE\/",
+    "wordCount" : "752",
+    "keywords" : [ "环境配置","前端","数据库", "Kim`s Blog"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://KimYangOfCat.github.io">Kim`s Blog</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://KimYangOfCat.github.io">Kim`s Blog</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Mac上 MongoDB 配置与使用</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://KimYangOfCat.github.io" rel="author">Kim Yang</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2019-05-31 itemprop="datePublished">May 31, 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://KimYangOfCat.github.io/categories/%E5%89%8D%E7%AB%AF%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"> 前端那些事儿 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p><a href="https://www.mongodb.com/" rel="nofollow noreferrer" target="_blank">MongoDB</a> 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。</p>
+
+<h2 id="下载">下载</h2>
+
+<h3 id="官网下载">官网下载</h3>
+
+<p><a href="https://www.mongodb.com/download-center/enterprise" rel="nofollow noreferrer" target="_blank">官网下载地址</a>，如下图，选择你所需要的 MongoDB 版本就好</p>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018083957.png" alt="官网下载选择界面" class="lazyload"><figcaption class="image-caption">官网下载选择界面</figcaption></figure></p>
+
+<p>下载完成以后，打开下载的压缩包，解压后的文件目录大致如下：</p>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018085755.png" alt="文件结构" class="lazyload"><figcaption class="image-caption">文件结构</figcaption></figure></p>
+
+<p>其中 bin 文件夹下存放的都是 mongoDB 的命令，接下来我们三步配置</p>
+
+<ul>
+<li>构建目录结构：在 mongoDB 文件夹下新建 <code>data</code> 文件夹；然后在 <code>data</code> 文件夹下新建 <code>db</code>、<code>logs</code> 和 <code>etc</code> 三个文件夹分别用于存放数据、输出日志和环境配置；然后在 <code>logs</code> 文件夹下建立 <code>mongodb.log</code> 文件，在 <code>etc</code> 下新建 <code>mongo.conf</code></li>
+</ul>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018093858.png" alt="修改后的文件结构" class="lazyload"><figcaption class="image-caption">修改后的文件结构</figcaption></figure></p>
+
+<ul>
+<li>编辑 <code>mongo.conf</code> ：
+```
+#数据库路径(找到你自己刚才新建的 db 文件夹的绝对路径)
+dbpath=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/db</li>
+</ul>
+
+<p>#日志输出文件路径（找到你自己刚才新建的 mongodb.log 文件夹的绝对路径）
+logpath=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/logs/mongodb.log</p>
+
+<p>#错误日志采用追加模式，配置这个选项后mongodb的日志会追加到现有的日志文件，而不是从新创建一个新文件
+logappend=true</p>
+
+<p>#启用日志文件，默认启用
+journal=true</p>
+
+<p>#这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false
+quiet=false</p>
+
+<p>#是否后台启动，有这个参数，就可以实现后台运行
+fork=false</p>
+
+<p>#端口号 默认为27017
+port=27017</p>
+
+<pre><code>
+* 配置环境变量：在这里我使用的 `zsh` 终端，所以仅言明 `zsh` 的配置方法
+    * 打开并编辑 `.zshrc` 文件：`vim ~/.zshrc`, 添加内容如下：
+    ```
+    # mongodb
+    export PATH=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/bin:${PATH}
+
+    #记得把上边路径换成你自己的 bin 文件夹的绝对路径
+    ```
+    * 重启 `zsh` 服务 `source ~/.zshrc`
+
+至此 mongodb 配置完毕，来尝试启动一下吧！
+</code></pre>
+
+<h1 id="启动命令">启动命令：</h1>
+
+<p>mongod -f /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/mongo.conf</p>
+
+<h1 id="或者">或者</h1>
+
+<p>mongod &ndash;config  /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/mongo.conf</p>
+
+<p>```
+启动之后，可以尝试使用一些可视化工具连接一下，此处推荐 <a href="https://robomongo.org/download" rel="nofollow noreferrer" target="_blank">Robo 3T</a></p>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018094401.png" alt="Robo 3T" class="lazyload"><figcaption class="image-caption">Robo 3T</figcaption></figure></p>
+
+<p><strong>一定要记得 添加 -f 或者 &ndash;config 参数并指明 mongo.config 文件的绝对路径</strong> 不然，你之前配置的 mongo.conf 文件就没有作用了</p>
+
+<p><del></p>
+
+<h3 id="homebrew-下载">Homebrew 下载</h3>
+
+<p>使用 macOS 上最好用的包管理工具 <a href="https://brew.sh/" rel="nofollow noreferrer" target="_blank">Homebrew</a> 下载。</p>
+
+<p><strong>一行命令下载 Homebrew：</strong>
+<code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
+
+<p><strong>在 Homebrew 中搜索可下载版本：</strong><code>brew search mongodb</code>
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018084723.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
+
+<p><strong>在 Homebrew 中下载你需要的版本：</strong>例如：<code>brew install mongodb</code></p>
+
+<p>等待安装完成就好。使用 Homebrew 安装的好处就在于不用关心环境配置
+</del></p>
+
+<p><strong>经过实际验证，现在 Homebrew 似乎已经不支持 mongodb 的下载了，不知道具体原因，也许是我个人环境造成的。</strong></p>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018093512.png" alt="不能下载了" class="lazyload"><figcaption class="image-caption">不能下载了</figcaption></figure></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Kim Yang </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb%E9%85%8D%E7%BD%AE/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                    #环境配置</a></span>
+            
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E5%89%8D%E7%AB%AF/">
+                    #前端</a></span>
+            
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                    #数据库</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://KimYangOfCat.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+         
+        
+        <a href="https://KimYangOfCat.github.io/2019/2019-05-31-cpu/" class="next" rel="next" title="CPU 简析以及软件设计总结">CPU 简析以及软件设计总结&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://KimYangOfCat.github.io">Kim Yang</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
