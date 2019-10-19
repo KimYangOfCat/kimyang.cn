@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Kim Yang">
+  
+  
+  
+  <link rel="prev" href="https://KimYangOfCat.github.io/2019/2019-10-18-mongodb/" />
+  
+  <link rel="canonical" href="https://KimYangOfCat.github.io/2019/2019-10-19-zsh/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Ubuntu 安装配置 oh-my-zsh  | Kim`s Blog
+       
+  </title>
+  <meta name="title" content="Ubuntu 安装配置 oh-my-zsh  | Kim`s Blog">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/KimYangOfCat.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "Ubuntu 安装配置 oh-my-zsh ",
+    "headline" : "Ubuntu 安装配置 oh-my-zsh ",
+    "description" : "本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～ * 更新系统资源列表：sudo apt-get update * 更新系统软件：sudo apt-get upgrade * 安装 zsh：sudo",
+    "inLanguage" : "zh-cn",
+    "author" : "Kim Yang",
+    "creator" : "Kim Yang",
+    "publisher": "Kim Yang",
+    "accountablePerson" : "Kim Yang",
+    "copyrightHolder" : "Kim Yang",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-10-19 23:23:09 \x2b0800 \x2b0800",
+    "dateModified" : "2019-10-19 23:23:09 \x2b0800 \x2b0800",
+    "url" : "https:\/\/KimYangOfCat.github.io\/2019\/2019-10-19-zsh\/",
+    "wordCount" : "217",
+    "keywords" : [ "环境配置","工具", "Kim`s Blog"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://KimYangOfCat.github.io">Kim`s Blog</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://KimYangOfCat.github.io">Kim`s Blog</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Ubuntu 安装配置 oh-my-zsh </h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://KimYangOfCat.github.io" rel="author">Kim Yang</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2019-10-19 itemprop="datePublished">October 19, 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://KimYangOfCat.github.io/categories/%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83/"> 系统环境 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～
+* 更新系统资源列表：<code>sudo apt-get update</code>
+* 更新系统软件：<code>sudo apt-get upgrade</code>
+* 安装 zsh：<code>sudo apt-get install zsh</code>
+* 安装 git：<code>sudo apt-get install git</code>
+* 把 zsh 设定为默认命令行工具：<code>chsh -s /bin/zsh</code>
+* 重启：<code>reboot</code>
+* 安装 oh-my-zsh:<code>sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></p>
+
+<pre><code>或者
+`sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;`
+</code></pre>
+
+<ul>
+<li><p>安装 my-zsh 插件：</p>
+
+<ul>
+<li><p>语法高亮插件
+<code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting</code></p></li>
+
+<li><p>自动提示插件
+<code>git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions</code></p></li>
+</ul>
+
+<p>这里发现了一些有意思的事情,my-zsh 的插件都在这里：</p>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018192633.png" alt="插件位置" class="lazyload"><figcaption class="image-caption">插件位置</figcaption></figure></p>
+
+<p>所以你只要把 github 上的插件，克隆到这里就行了</p></li>
+
+<li><p>最后配置  .zshrc 文件就行了</p></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Kim Yang </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://KimYangOfCat.github.io/2019/2019-10-19-zsh/>https://KimYangOfCat.github.io/2019/2019-10-19-zsh/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                    #环境配置</a></span>
+            
+            <span class="tag"><a href="https://KimYangOfCat.github.io/tags/%E5%B7%A5%E5%85%B7/">
+                    #工具</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://KimYangOfCat.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://KimYangOfCat.github.io/2019/2019-10-18-mongodb/" class="prev" rel="prev" title="macOS 下 MongoDB 配置与使用"><i class="iconfont icon-left"></i>&nbsp;macOS 下 MongoDB 配置与使用</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://KimYangOfCat.github.io">Kim Yang</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

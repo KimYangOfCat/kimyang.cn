@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Kim`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Aug 2019 23:23:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 23:23:09 +0800</lastBuildDate>
     
 	<atom:link href="https://KimYangOfCat.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>工具</title>
+      <link>https://KimYangOfCat.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 19 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>环境配置</title>
+      <link>https://KimYangOfCat.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 19 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端</title>
+      <link>https://KimYangOfCat.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Fri, 18 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/tags/%E5%89%8D%E7%AB%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据库</title>
+      <link>https://KimYangOfCat.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Fri, 18 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>MacOS</title>

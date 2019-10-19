@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Kim`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Aug 2019 23:23:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 23:23:09 +0800</lastBuildDate>
     
 	<atom:link href="https://KimYangOfCat.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu 安装配置 oh-my-zsh </title>
+      <link>https://KimYangOfCat.github.io/2019/2019-10-19-zsh/</link>
+      <pubDate>Sat, 19 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-10-19-zsh/</guid>
+      <description>本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～ * 更新系统资源列表：sudo apt-get update * 更新系统软件：sudo apt-get upgrade * 安装 zsh：sudo</description>
+    </item>
+    
+    <item>
+      <title>macOS 下 MongoDB 配置与使用</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb/</link>
+      <pubDate>Fri, 18 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb/</guid>
+      <description>MongoDB 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。 下载 官网下载 官网下载地址，如下图，选择你所需要的 MongoDB 版本就好 下</description>
+    </item>
     
     <item>
       <title>为什么你值得入手一个 Macbook？</title>

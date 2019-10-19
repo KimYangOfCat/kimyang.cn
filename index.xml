@@ -5,8 +5,161 @@
     <description>Recent content in Kim`s Blog on Kim`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Aug 2019 23:23:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 23:23:09 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ubuntu 安装配置 oh-my-zsh </title>
+      <link>https://KimYangOfCat.github.io/2019/2019-10-19-zsh/</link>
+      <pubDate>Sat, 19 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-10-19-zsh/</guid>
+      <description>&lt;p&gt;本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～
+* 更新系统资源列表：&lt;code&gt;sudo apt-get update&lt;/code&gt;
+* 更新系统软件：&lt;code&gt;sudo apt-get upgrade&lt;/code&gt;
+* 安装 zsh：&lt;code&gt;sudo apt-get install zsh&lt;/code&gt;
+* 安装 git：&lt;code&gt;sudo apt-get install git&lt;/code&gt;
+* 把 zsh 设定为默认命令行工具：&lt;code&gt;chsh -s /bin/zsh&lt;/code&gt;
+* 重启：&lt;code&gt;reboot&lt;/code&gt;
+* 安装 oh-my-zsh:&lt;code&gt;sh -c &amp;quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;或者
+`sh -c &amp;quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&amp;quot;`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;安装 my-zsh 插件：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;语法高亮插件
+&lt;code&gt;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;自动提示插件
+&lt;code&gt;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这里发现了一些有意思的事情,my-zsh 的插件都在这里：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018192633.png&#34; alt=&#34;插件位置&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;所以你只要把 github 上的插件，克隆到这里就行了&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;最后配置  .zshrc 文件就行了&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>macOS 下 MongoDB 配置与使用</title>
+      <link>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb/</link>
+      <pubDate>Fri, 18 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/2019/2019-10-18-mongodb/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.mongodb.com/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;MongoDB&lt;/a&gt; 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。&lt;/p&gt;
+
+&lt;h2 id=&#34;下载&#34;&gt;下载&lt;/h2&gt;
+
+&lt;h3 id=&#34;官网下载&#34;&gt;官网下载&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.mongodb.com/download-center/enterprise&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;官网下载地址&lt;/a&gt;，如下图，选择你所需要的 MongoDB 版本就好&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018083957.png&#34; alt=&#34;官网下载选择界面&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下载完成以后，打开下载的压缩包，解压后的文件目录大致如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018085755.png&#34; alt=&#34;文件结构&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其中 bin 文件夹下存放的都是 mongoDB 的命令，接下来我们三步配置&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;构建目录结构：在 mongoDB 文件夹下新建 &lt;code&gt;data&lt;/code&gt; 文件夹；然后在 &lt;code&gt;data&lt;/code&gt; 文件夹下新建 &lt;code&gt;db&lt;/code&gt;、&lt;code&gt;logs&lt;/code&gt; 和 &lt;code&gt;etc&lt;/code&gt; 三个文件夹分别用于存放数据、输出日志和环境配置；然后在 &lt;code&gt;logs&lt;/code&gt; 文件夹下建立 &lt;code&gt;mongodb.log&lt;/code&gt; 文件，在 &lt;code&gt;etc&lt;/code&gt; 下新建 &lt;code&gt;mongo.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018093858.png&#34; alt=&#34;修改后的文件结构&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;编辑 &lt;code&gt;mongo.conf&lt;/code&gt; ：
+```
+#数据库路径(找到你自己刚才新建的 db 文件夹的绝对路径)
+dbpath=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/db&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;#日志输出文件路径（找到你自己刚才新建的 mongodb.log 文件夹的绝对路径）
+logpath=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/logs/mongodb.log&lt;/p&gt;
+
+&lt;p&gt;#错误日志采用追加模式，配置这个选项后mongodb的日志会追加到现有的日志文件，而不是从新创建一个新文件
+logappend=true&lt;/p&gt;
+
+&lt;p&gt;#启用日志文件，默认启用
+journal=true&lt;/p&gt;
+
+&lt;p&gt;#这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false
+quiet=false&lt;/p&gt;
+
+&lt;p&gt;#是否后台启动，有这个参数，就可以实现后台运行
+fork=false&lt;/p&gt;
+
+&lt;p&gt;#端口号 默认为27017
+port=27017&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+* 配置环境变量：在这里我使用的 `zsh` 终端，所以仅言明 `zsh` 的配置方法
+    * 打开并编辑 `.zshrc` 文件：`vim ~/.zshrc`, 添加内容如下：
+    ```
+    # mongodb
+    export PATH=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/bin:${PATH}
+
+    #记得把上边路径换成你自己的 bin 文件夹的绝对路径
+    ```
+    * 重启 `zsh` 服务 `source ~/.zshrc`
+
+至此 mongodb 配置完毕，来尝试启动一下吧！
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;启动命令&#34;&gt;启动命令：&lt;/h1&gt;
+
+&lt;p&gt;mongod -f /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/mongo.conf&lt;/p&gt;
+
+&lt;h1 id=&#34;或者&#34;&gt;或者&lt;/h1&gt;
+
+&lt;p&gt;mongod &amp;ndash;config  /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/mongo.conf&lt;/p&gt;
+
+&lt;p&gt;```
+启动之后，可以尝试使用一些可视化工具连接一下，此处推荐 &lt;a href=&#34;https://robomongo.org/download&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Robo 3T&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018094401.png&#34; alt=&#34;Robo 3T&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;一定要记得 添加 -f 或者 &amp;ndash;config 参数并指明 mongo.config 文件的绝对路径&lt;/strong&gt; 不然，你之前配置的 mongo.conf 文件就没有作用了&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;注意下面的方法已经失效&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;homebrew-下载&#34;&gt;Homebrew 下载&lt;/h3&gt;
+
+&lt;p&gt;使用 macOS 上最好用的包管理工具 &lt;a href=&#34;https://brew.sh/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Homebrew&lt;/a&gt; 下载。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;一行命令下载 Homebrew：&lt;/strong&gt;
+&lt;code&gt;/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;在 Homebrew 中搜索可下载版本：&lt;/strong&gt;&lt;code&gt;brew search mongodb&lt;/code&gt;
+&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018084723.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;在 Homebrew 中下载你需要的版本：&lt;/strong&gt;例如：&lt;code&gt;brew install mongodb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;等待安装完成就好。使用 Homebrew 安装的好处就在于不用关心环境配置&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;经过实际验证，现在 Homebrew 似乎已经不支持 mongodb 的下载了，不知道具体原因，也许是我个人环境造成的。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MongoDB/20191018093512.png&#34; alt=&#34;不能下载了&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>为什么你值得入手一个 Macbook？</title>

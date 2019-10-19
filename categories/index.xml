@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Kim`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Aug 2019 23:23:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 23:23:09 +0800</lastBuildDate>
     
 	<atom:link href="https://KimYangOfCat.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>系统环境</title>
+      <link>https://KimYangOfCat.github.io/categories/%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sat, 19 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/categories/%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端那些事儿</title>
+      <link>https://KimYangOfCat.github.io/categories/%E5%89%8D%E7%AB%AF%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <pubDate>Fri, 18 Oct 2019 23:23:09 +0800</pubDate>
+      
+      <guid>https://KimYangOfCat.github.io/categories/%E5%89%8D%E7%AB%AF%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apple</title>
