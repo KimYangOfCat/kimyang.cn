@@ -14,28 +14,39 @@
       <pubDate>Sat, 19 Oct 2019 23:23:09 +0800</pubDate>
       
       <guid>https://KimYangOfCat.github.io/2019/2019-10-19-zsh/</guid>
-      <description>&lt;p&gt;本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～
-* 更新系统资源列表：&lt;code&gt;sudo apt-get update&lt;/code&gt;
-* 更新系统软件：&lt;code&gt;sudo apt-get upgrade&lt;/code&gt;
-* 安装 zsh：&lt;code&gt;sudo apt-get install zsh&lt;/code&gt;
-* 安装 git：&lt;code&gt;sudo apt-get install git&lt;/code&gt;
-* 把 zsh 设定为默认命令行工具：&lt;code&gt;chsh -s /bin/zsh&lt;/code&gt;
-* 重启：&lt;code&gt;reboot&lt;/code&gt;
-* 安装 oh-my-zsh:&lt;code&gt;sh -c &amp;quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;或者
-`sh -c &amp;quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&amp;quot;`
-&lt;/code&gt;&lt;/pre&gt;
+      <description>&lt;p&gt;本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;更新系统资源列表：&lt;code&gt;sudo apt-get update&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;更新系统软件：&lt;code&gt;sudo apt-get upgrade&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;安装 zsh：&lt;code&gt;sudo apt-get install zsh&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;安装 git：&lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;把 zsh 设定为默认命令行工具：&lt;code&gt;chsh -s /bin/zsh&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;重启：&lt;code&gt;reboot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;安装 oh-my-zsh:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sh -c &amp;quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;或者&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sh -c &amp;quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&amp;quot;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;安装 my-zsh 插件：&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;语法高亮插件
-&lt;code&gt;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;语法高亮插件&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;自动提示插件
-&lt;code&gt;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;自动提示插件&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;这里发现了一些有意思的事情,my-zsh 的插件都在这里：&lt;/p&gt;

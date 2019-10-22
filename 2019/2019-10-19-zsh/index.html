@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Ubuntu 安装配置 oh-my-zsh ",
     "headline" : "Ubuntu 安装配置 oh-my-zsh ",
-    "description" : "本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～ * 更新系统资源列表：sudo apt-get update * 更新系统软件：sudo apt-get upgrade * 安装 zsh：sudo",
+    "description" : "本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～ 更新系统资源列表：sudo apt-get update 更新系统软件：sudo apt-get upgrade 安装 zsh：sudo apt-get install zsh",
     "inLanguage" : "zh-cn",
     "author" : "Kim Yang",
     "creator" : "Kim Yang",
@@ -57,7 +57,7 @@
     "datePublished": "2019-10-19 23:23:09 \x2b0800 \x2b0800",
     "dateModified" : "2019-10-19 23:23:09 \x2b0800 \x2b0800",
     "url" : "https:\/\/KimYangOfCat.github.io\/2019\/2019-10-19-zsh\/",
-    "wordCount" : "217",
+    "wordCount" : "211",
     "keywords" : [ "环境配置","工具", "Kim`s Blog"]
 }
 </script>
@@ -148,28 +148,39 @@
           
           
 
-          <p>本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～
-* 更新系统资源列表：<code>sudo apt-get update</code>
-* 更新系统软件：<code>sudo apt-get upgrade</code>
-* 安装 zsh：<code>sudo apt-get install zsh</code>
-* 安装 git：<code>sudo apt-get install git</code>
-* 把 zsh 设定为默认命令行工具：<code>chsh -s /bin/zsh</code>
-* 重启：<code>reboot</code>
-* 安装 oh-my-zsh:<code>sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></p>
-
-<pre><code>或者
-`sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;`
-</code></pre>
+          <p>本文旨记录环境配置的命令行，对于 zsh 和 oh-my-zsh 不熟悉，请自行百度～</p>
 
 <ul>
+<li><p>更新系统资源列表：<code>sudo apt-get update</code></p></li>
+
+<li><p>更新系统软件：<code>sudo apt-get upgrade</code></p></li>
+
+<li><p>安装 zsh：<code>sudo apt-get install zsh</code></p></li>
+
+<li><p>安装 git：<code>sudo apt-get install git</code></p></li>
+
+<li><p>把 zsh 设定为默认命令行工具：<code>chsh -s /bin/zsh</code></p></li>
+
+<li><p>重启：<code>reboot</code></p></li>
+
+<li><p>安装 oh-my-zsh:</p>
+
+<p><code>sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></p>
+
+<p>或者</p>
+
+<p><code>sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;</code></p></li>
+
 <li><p>安装 my-zsh 插件：</p>
 
 <ul>
-<li><p>语法高亮插件
-<code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting</code></p></li>
+<li><p>语法高亮插件</p>
 
-<li><p>自动提示插件
-<code>git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions</code></p></li>
+<p><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting</code></p></li>
+
+<li><p>自动提示插件</p>
+
+<p><code>git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions</code></p></li>
 </ul>
 
 <p>这里发现了一些有意思的事情,my-zsh 的插件都在这里：</p>
