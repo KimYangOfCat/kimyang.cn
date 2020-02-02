@@ -13,3 +13,5 @@ The source code of kim's blog !
 
 # 启动本地服务器
 `hugo --i18n-warnings server`
+
+**本仓库启用了 travis CI，点击查看[build历史]()**
