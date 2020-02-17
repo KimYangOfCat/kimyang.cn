@@ -16,7 +16,7 @@ categories: ["值得了解的骚操作"]
 
 首先来看遇到的问题:
 
-![各种网络报错](https://tva1.sinaimg.cn/large/006tNbRwgy1gbhx10i83bj30jk0etq48.jpg)
+![各种网络报错](https://tva1.sinaimg.cn/large/0082zybpgy1gbze897tuwj30jk0etwf5.jpg)
 
 不仅仅是在游览器中如此，在终端中运行 wget 和 curl 亦是如此。。。甚至git push 一段代码都会被卡～
 
@@ -34,7 +34,7 @@ categories: ["值得了解的骚操作"]
 
 首先打开你的小飞机，查看你的小飞机监听的本地端口号：
 
-![查看端口号](https://tva1.sinaimg.cn/large/006tNbRwgy1gbhxgg0utjj30cz08dq3y.jpg)
+![查看端口号](https://tva1.sinaimg.cn/large/0082zybpgy1gbze8b3wooj30cz08dweu.jpg)
 
 打开终端，输入以下命令：
 
@@ -44,7 +44,7 @@ categories: ["值得了解的骚操作"]
 
 至此，git 的网络代理设置完成，仅需两个命令！为确保一定走代理路线，建议将小飞机的代理模式开为全局模式。PAC模式可能会因为代理规则未包括GitHub而导致 git push 失败！
 
-![全局模式](https://tva1.sinaimg.cn/large/006tNbRwgy1gbhxopc6stj30740dagr0.jpg)
+![全局模式](https://tva1.sinaimg.cn/large/0082zybpgy1gbze8bzkbaj30740dagm2.jpg)
 
 ## 终端代理设置
 
@@ -90,7 +90,7 @@ categories: ["值得了解的骚操作"]
 
 经过一顿搜索后，尝试成功的方法中最简单的便是 [Chrome 同步助手](https://chrome.google.com/webstore/category/extensions?hl=zh-CN)，在Google 网上商店下载成功后，使用其默认的代理路线就能帮助你登陆和同步账号～
 
-![Chrome同步助手](https://tva1.sinaimg.cn/large/006tNbRwgy1gbhyvyiqm2j309a05yq34.jpg)
+![Chrome同步助手](https://tva1.sinaimg.cn/large/0082zybpgy1gbze8cz4ayj309a05yaa5.jpg)
 
 没有小飞机的同学，可以在这个[传送门](https://chromecj.com/productivity/2019-01/1792/download.html)去下载～
 
