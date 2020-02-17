@@ -29,9 +29,9 @@ Macbook 上最大的特色就是 Apple 公司特有的 MacOS 操作系统，也�
 
 交互设计，可以说又是 Apple 公司的一大优势。其中最值得一提的就是触控板：相信许多使用 Windows PC 的朋友外出时免不了随身携带一个鼠标，但是使用 Macbook，你绝不会想要带一个鼠标，因为支持多种手势的触控板可比鼠标好用多了。
 
-![手势](https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MacbookPro/20190809163936.gif)
+![手势](https://s2.ax1x.com/2019/12/17/QIO4Nd.gif)
 
-![手势](https://blog-img-1256389522.cos.ap-chengdu.myqcloud.com/MacbookPro/20190809164547.gif)
+![手势](https://s2.ax1x.com/2019/12/17/QIXRx0.gif)
 
 交互方面影响大的便是屏幕的显示效果了，Macbook 的 Retina 屏的显示效果真强过许多的 Windows PC。它采用高亮度 LED 背光、高对比度，因此呈现出来的黑色特别深邃，白色格外明亮。它支持 P3 广色域显示，绿色和红色的显示效果比使用 sRGB 色域时更加鲜艳生动。每一款 MacBook Pro 都加入了原彩显示技术，能根据环境光的色温来自动调节白平衡，带给你更自然的观感。
 
