@@ -31,7 +31,7 @@ draft: false
 
 ### 操作系统
 
-对于目前主流的三大操作系统：Windows、MacOS 和 Linux，均有过了解和使用；从 Windows 入门，但目前日常开发使用 MacOS，生产部署使用 Linux，且偏爱   Ubuntu。
+对于目前主流的三大操作系统：Windows、MacOS 和 Linux，均有过了解和使用；从 Windows 入门，但目前日常开发使用 MacOS，生产部署使用 Linux，且偏爱 Ubuntu。
 
 ### 美工影创
 
@@ -44,5 +44,7 @@ draft: false
 ## 联系我
 
 + 微博：[KimYangLikeCat](https://weibo.com/6373489690/profile?topnav=1&wvr=6&is_all=1)
++ CSDN: [不会秃头的阿Kim](https://me.csdn.net/weixin_43316691)
++ 知乎: [不会秃头的阿Kim](https://www.zhihu.com/people/kim_yang)
 + Github: [KimYangOfCat](https://github.com/KimYangOfCat)
 + E-mail：kim_yang95@163.com

@@ -28,20 +28,24 @@ preserveTaxonomyNames = true
     url = "/tags/"
     weight = 3
   [[menu.main]]
+    name = "Friends"
+    url = "/friends/"
+    weight = 4
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 5
 [params]
     since = 2019
     author = "Kim Yang"                          # Author's name
     avatar = "/images/me/avatar.png"           # Author's avatar
-    subtitle = "Never give up"                  # Subtitle
+    subtitle = "Never give up!"                  # Subtitle
     cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
+    home_mode = "/about" # post or other
     enableGitalk = false # gitalk 评论系统
     google_verification = ""
-    description = "" # (Meta) 描述
-    keywords = "" # site keywords
+    description = "Blog" # (Meta) 描述
+    keywords = "KimYang" # site keywords
     beian = ""
     baiduAnalytics = ""
     license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
