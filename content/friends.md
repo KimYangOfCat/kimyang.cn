@@ -18,7 +18,7 @@
     </div> 
     <div class="item" onclick="window.open('https://godjiawen.github.io/')">
                 <img class="img" src="/images/friends/fanjiawen.png">
-                <div class="name">JiaWen Fan</div>
+                <div class="name">Steve Fan</div>
     </div> 
     
 </div>
