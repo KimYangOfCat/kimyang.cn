@@ -1,6 +1,6 @@
 ---
 title: "MVC"
-date: 2019-06-07T23:23:09+08:00
+date: 2019-06-07
 draft: false
 tags: ["Swift","iOS"]
 categories: ["iOS 开发"]

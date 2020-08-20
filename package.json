@@ -1,0 +1,15 @@
+{
+  "name": "Blog-Src",
+  "version": "1.0.0",
+  "description": "Blog using vuepress",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
+  },
+  "dependencies": {
+    "vuepress": "^1.5.3",
+    "vuepress-theme-reco": "^1.5.5"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "为什么你值得入手一个 Macbook？"
-date: 2019-08-01T23:23:09+08:00
+date: 2019-08-01
 draft: false
 tags: ["MacOS"]
 categories: ["Apple"]

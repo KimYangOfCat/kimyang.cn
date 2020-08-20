@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/go,hugo,macos,windows,webstorm,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=go,hugo,macos,windows,webstorm,visualstudiocode
 
+yarn.lock
+
 node_modules/
 ### Go ###
 # Binaries for programs and plugins

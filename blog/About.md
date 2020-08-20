@@ -1,8 +1,9 @@
 ---
-title: "About"
-date: 2019-05-31T21:22:39+08:00
-draft: false
+home: true
+heroText: Hello, My friends~
+tagline: 
 ---
+
 ## 我是谁
 
 我是 Kim Yang，一个爱仰望星空的人。
