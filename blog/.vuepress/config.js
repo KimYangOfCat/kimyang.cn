@@ -17,7 +17,7 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/',icon:'reco-home' },
             { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-            { text: 'Friends', link: '/friends', icon: 'reco-github' },
+            { text: 'Friends', link: '/friends', icon: 'reco-message' },
             { text: 'GitHub', link: 'https://github.com/KimYangOfCat', icon: 'reco-github' },
             {
                 text: 'other',
@@ -25,7 +25,8 @@ module.exports = {
                 items:[
                     { text: '知乎', link: 'https://www.zhihu.com/people/kim_yang', icon: 'reco-zhihu' },
                     { text: 'CSDN', link: 'https://me.csdn.net/weixin_43316691', icon: 'reco-csdn' },
-                    { text: 'Gitee', link: 'https://me.csdn.net/weixin_43316691', icon: 'reco-mayun' },
+                    { text: '微博', link: 'https://weibo.com/6373489690/profile?topnav=1&wvr=6&is_all=1', icon: 'reco-weibo' },
+                    { text: 'Email', link: 'mailto:Kim.Yang.YJ@outlook.com', icon: 'reco-mail' },
                 ]
             }
             // { text: 'sidebar', link: '/views/sidebar/' },
@@ -51,13 +52,6 @@ module.exports = {
                 logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
                 link: 'https://vuepress-theme-reco.recoluan.com'
             },
-            {
-                title: '午后南杂',
-                desc: 'Enjoy when you can, and endure when you must.',
-                email: 'recoluan@qq.com',
-                link: 'https://www.recoluan.com'
-            },
-            // ...
         ]
     }
 }

@@ -48,4 +48,3 @@ tagline:
 + CSDN: [不会秃头的阿Kim](https://me.csdn.net/weixin_43316691)
 + 知乎: [不会秃头的阿Kim](https://www.zhihu.com/people/kim_yang)
 + Github: [KimYangOfCat](https://github.com/KimYangOfCat)
-+ E-mail：kim_yang95@163.com
