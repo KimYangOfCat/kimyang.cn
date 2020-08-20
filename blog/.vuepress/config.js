@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Kim\'s Blog',
     base: "/",
-    description: "blog",
+    description: "Kim\'s Blog is coming~",
     theme: 'reco',
     port: 2333,
     head: [
