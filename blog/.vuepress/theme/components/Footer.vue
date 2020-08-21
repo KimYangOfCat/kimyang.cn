@@ -1,9 +1,9 @@
 <template>
   <div class="footer-wrapper">
-    <span>
-      <i class="iconfont reco-theme"></i>
-      <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a>
-    </span>
+<!--    <span>-->
+<!--      <i class="iconfont reco-theme"></i>-->
+<!--      <a target="blank" href="https://vuepress-theme-reco.recoluan.com">{{`vuepress-theme-reco@${version}`}}</a>-->
+<!--    </span>-->
     <span v-if="$themeConfig.record">
       <i class="iconfont reco-beian"></i>
       <a :href="$themeConfig.recordLink || '#'">{{ $themeConfig.record }}</a>

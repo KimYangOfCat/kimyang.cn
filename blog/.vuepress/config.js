@@ -12,6 +12,8 @@ module.exports = {
     ],
     themeConfig: {
         type: 'blog',
+        author:"Kim Yang",
+        startYear:2019,
         authorAvatar: '/avatar.jpg',
         mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
         modePicker: false, // 默认 true，false 不显示模式调节按钮，true 则显示
@@ -20,7 +22,6 @@ module.exports = {
         lastUpdated: '最后更新时间：',
         nextLinks: true,
         prevLinks: true,
-
         // 假如你的文档仓库和项目本身不在一个仓库：
         docsRepo: 'KimYangOfCat/Blog',
         // 假如文档不是放在仓库的根目录下：
@@ -84,11 +85,11 @@ function getBlogConfig() {
 
 function getFriendsLink() {
     return [
-        {
-            title: 'vuepress-theme-reco',
-            desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-            logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-            link: 'https://vuepress-theme-reco.recoluan.com'
-        }
+        // {
+        //     title: 'vuepress-theme-reco',
+        //     desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+        //     logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+        //     link: 'https://vuepress-theme-reco.recoluan.com'
+        // }
     ]
 }
