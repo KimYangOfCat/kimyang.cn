@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Hello, My friends~
-tagline: Finding your start～
+tagline: 
 bgImage: '/bg.jpg'
 bgImageStyle: {
    height: '100vh'
