@@ -9,6 +9,8 @@ gitmoji -c
 #master
 git checkout master
 git merge beta
+git add .
+gitmoji -c
 git push
 #dev
 git checkout dev
