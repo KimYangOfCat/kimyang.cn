@@ -6,6 +6,7 @@ git merge dev
 rm -rf ./blog/draft/
 git add .
 gitmoji -c
+git push
 #master
 git checkout master
 git merge beta
