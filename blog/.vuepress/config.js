@@ -13,7 +13,7 @@ module.exports = {
     themeConfig: {
         type: 'blog',
         authorAvatar: '/avatar.jpg',
-        mode: 'auto', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
+        mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
         modePicker: false, // 默认 true，false 不显示模式调节按钮，true 则显示
         noFoundPageByTencent: false,//关闭404
         codeTheme: 'tomorrow',
