@@ -1,8 +1,8 @@
 ---
 title: "使用CLion 刷题解决多个main函数问题的终极方法"
 date: 2020-06-25
-tags: ["CLion","LeetCode","C++"]
-categories: ["奇妙技巧"]
+tags: [CLion,LeetCode,C++]
+categories: [🔑 奇妙技巧]
 ---
 
 # 
