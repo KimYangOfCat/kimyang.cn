@@ -13,6 +13,7 @@ module.exports = {
     themeConfig: {
         type: 'blog',
         author:"Kim Yang",
+        logo:'/favicon.ico',
         startYear:2019,
         authorAvatar: '/avatar.jpg',
         mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式

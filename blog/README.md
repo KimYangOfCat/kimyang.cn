@@ -6,7 +6,7 @@ bgImageStyle: {
 }
 ---
 
-### I'm KimYang,a person loving startgazing
+### I'm KimYang,a person loving stargazing!
    - 🛠  "I now develop Web applications";
    - 🤔  "I focus on GUI and anything about user interface"; 
    - 🔗  "I used C++, JavaScript, Python,Swift, etc";
