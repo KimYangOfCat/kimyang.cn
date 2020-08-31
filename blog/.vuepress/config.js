@@ -29,9 +29,9 @@ module.exports = {
         // 假如文档放在一个特定的分支下：
         docsBranch: 'master',
         // 默认是 false, 设置为 true 来启用
-        editLinks: true,
-        // 默认为 "Edit this page"
-        editLinkText: '帮助我们改善此页面！',
+        // editLinks: true,
+        // // 默认为 "Edit this page"
+        // editLinkText: '帮助我们改善此页面！',
         nav: getNav(),
         sidebar: getSidebar(),
         // 博客配置
@@ -50,7 +50,6 @@ function getNav() {
     return [
         {text: 'Home', link: '/', icon: 'reco-home'},
         {text: 'TimeLine', link: '/timeline/', icon: 'reco-date'},
-        {text: 'Friends', link: '/friends', icon: 'reco-message'},
         {text: 'GitHub', link: 'https://github.com/KimYangOfCat', icon: 'reco-github'},
         {
             text: 'other',
@@ -66,8 +65,6 @@ function getNav() {
                 {text: 'Email', link: 'mailto:Kim.Yang.YJ@outlook.com', icon: 'reco-mail'},
             ]
         }
-        // { text: 'sidebar', link: '/views/sidebar/' },
-        // { text: 'sidebar', link: '/views/sidebargroup/' }
     ]
 }
 
@@ -90,11 +87,29 @@ function getBlogConfig() {
 
 function getFriendsLink() {
     return [
-        // {
-        //     title: 'vuepress-theme-reco',
-        //     desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        //     logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        //     link: 'https://vuepress-theme-reco.recoluan.com'
-        // }
+        {
+            title: 'TJNU iOS Club',
+            desc: ' iOS club of Tianjin Normal University',
+            logo: "/images/friends/TJNUiOSClub.jpg",
+            link: 'https://tjnuios.club/'
+        },
+        {
+            title: 'C422 Studio',
+            desc: 'C422 studio at Department of Computer and Information Engineering, Tianjin Normal University',
+            logo: "/images/friends/C422.jpg",
+            link: 'https://c422.github.io/'
+        },
+        {
+            title: 'YiQin Zhao',
+            desc: 'To work hard, to be diligent',
+            logo: "/images/friends/YiqinZhao.jpg",
+            link: 'https://yiqinzhao.me/'
+        },
+        {
+            title: 'Steve Fan',
+            desc: ' Steve Fan',
+            logo: "/images/friends/fanjiawen.png",
+            link: 'https://godjiawen.github.io/'
+        },
     ]
 }
