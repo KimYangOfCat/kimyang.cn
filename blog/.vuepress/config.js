@@ -29,9 +29,9 @@ module.exports = {
         // 假如文档放在一个特定的分支下：
         docsBranch: 'master',
         // 默认是 false, 设置为 true 来启用
-        editLinks: true,
-        // 默认为 "Edit this page"
-        editLinkText: '帮助我们改善此页面！',
+        // editLinks: true,
+        // // 默认为 "Edit this page"
+        // editLinkText: '帮助我们改善此页面！',
         nav: getNav(),
         sidebar: getSidebar(),
         // 博客配置
@@ -65,8 +65,6 @@ function getNav() {
                 {text: 'Email', link: 'mailto:Kim.Yang.YJ@outlook.com', icon: 'reco-mail'},
             ]
         }
-        // { text: 'sidebar', link: '/views/sidebar/' },
-        // { text: 'sidebar', link: '/views/sidebargroup/' }
     ]
 }
 
