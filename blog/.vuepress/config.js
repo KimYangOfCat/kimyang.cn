@@ -37,6 +37,11 @@ module.exports = {
         // 博客配置
         blogConfig: getBlogConfig(),
         friendLink: getFriendsLink(),
+        //Comments
+        valineConfig: {
+            appId: 'jKwH5EJyUIoKLdDddNDTUueK-gzGzoHsz',// your appId
+            appKey: 'v7DTuoMTFCv63zxKtkYMUFp8', // your appKey
+        }
     }
 }
 
