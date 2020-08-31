@@ -50,7 +50,6 @@ function getNav() {
     return [
         {text: 'Home', link: '/', icon: 'reco-home'},
         {text: 'TimeLine', link: '/timeline/', icon: 'reco-date'},
-        {text: 'Friends', link: '/friends', icon: 'reco-message'},
         {text: 'GitHub', link: 'https://github.com/KimYangOfCat', icon: 'reco-github'},
         {
             text: 'other',
@@ -90,11 +89,29 @@ function getBlogConfig() {
 
 function getFriendsLink() {
     return [
-        // {
-        //     title: 'vuepress-theme-reco',
-        //     desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        //     logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        //     link: 'https://vuepress-theme-reco.recoluan.com'
-        // }
+        {
+            title: 'TJNU iOS Club',
+            desc: ' iOS club of Tianjin Normal University',
+            logo: "/images/friends/TJNUiOSClub.jpg",
+            link: 'https://tjnuios.club/'
+        },
+        {
+            title: 'C422 Studio',
+            desc: 'C422 studio at Department of Computer and Information Engineering, Tianjin Normal University',
+            logo: "/images/friends/C422.jpg",
+            link: 'https://c422.github.io/'
+        },
+        {
+            title: 'YiQin Zhao',
+            desc: 'To work hard, to be diligent',
+            logo: "/images/friends/YiqinZhao.jpg",
+            link: 'https://yiqinzhao.me/'
+        },
+        {
+            title: 'Steve Fan',
+            desc: ' Steve Fan',
+            logo: "/images/friends/fanjiawen.png",
+            link: 'https://godjiawen.github.io/'
+        },
     ]
 }
