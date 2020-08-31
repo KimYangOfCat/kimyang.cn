@@ -12,16 +12,21 @@
           />
         </ModuleTransition>
 
-        <ModuleTransition delay="0.04">
-          <h1 v-if="recoShowModule && $frontmatter.heroText !== null">
-            {{ $frontmatter.heroText || $title || 'vuePress-theme-reco' }}
-          </h1>
+        <ModuleTransition delay="0.14">
+<!--          <h1 v-if="recoShowModule && $frontmatter.heroText !== null">-->
+<!--            {{ $frontmatter.heroText || $title || 'vuePress-theme-reco' }}-->
+<!--          </h1>-->
+          <h3 style="font-size: xx-large;font-weight: bolder">Hello,Friends~</h3>
         </ModuleTransition>
 
-        <ModuleTransition delay="0.08">
-          <p v-if="recoShowModule && $frontmatter.tagline !== null" class="description">
-            {{ $frontmatter.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}
-          </p>
+<!--        <ModuleTransition delay="0.08">-->
+<!--          <p v-if="recoShowModule && $frontmatter.tagline !== null" class="description">-->
+<!--            {{ $frontmatter.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}-->
+<!--          </p>-->
+<!--        </ModuleTransition>-->
+
+        <ModuleTransition delay="0.18">
+          <Content v-show="recoShowModule" class="home-center" custom style="font-size: larger;font-weight: bold;text-align: left; background-color: rgba(0,0,0,0.4);border-radius: 10px"/>
         </ModuleTransition>
       </div>
     </div>
@@ -60,9 +65,9 @@
       </div>
     </ModuleTransition>
 
-    <ModuleTransition delay="0.24">
-      <Content v-show="recoShowModule" class="home-center" custom/>
-    </ModuleTransition>
+<!--    <ModuleTransition delay="0.24">-->
+<!--      <Content v-show="recoShowModule" class="home-center" custom/>-->
+<!--    </ModuleTransition>-->
   </div>
 </template>
 
