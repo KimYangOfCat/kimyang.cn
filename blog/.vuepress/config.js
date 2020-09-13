@@ -3,7 +3,7 @@ module.exports = {
     base: "/",
     description: "Kim\'s Blog is coming~",
     // theme: '/theme/layouts/Layout.vue',
-    port: 2333,
+    port: 2233,
     head: [
         ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
         ['link', {rel: 'icon', href: '/favicon.ico', type: "image/x-icon"}],
@@ -105,6 +105,12 @@ function getFriendsLink() {
             desc: 'To work hard, to be diligent',
             logo: "/images/friends/YiqinZhao.jpg",
             link: 'https://yiqinzhao.me/'
+        },
+        {
+            title: '某莔の异次元空间',
+            desc: ' 某莔の异次元空间',
+            logo: "/images/friends/Arabaku.jpg",
+            link: 'https://fix.moe/'
         },
         {
             title: 'Steve Fan',
