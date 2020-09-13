@@ -2,8 +2,8 @@
 title: "MVC"
 date: 2019-06-07
 draft: false
-tags: ["Swift","iOS"]
-categories: ["iOS 开发"]
+tags: [Swift,iOS]
+categories: [📗 学习笔记]
 ---
 
 这是学习swift的笔记系列，学习的课程是[斯坦福  iOS11 swift语言](https://www.bilibili.com/medialist/play/ml148451180)。

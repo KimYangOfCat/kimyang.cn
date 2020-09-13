@@ -3,7 +3,7 @@ module.exports = {
     base: "/",
     description: "Kim\'s Blog is coming~",
     // theme: '/theme/layouts/Layout.vue',
-    port: 2333,
+    port: 2233,
     head: [
         ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
         ['link', {rel: 'icon', href: '/favicon.ico', type: "image/x-icon"}],
@@ -13,6 +13,7 @@ module.exports = {
     themeConfig: {
         type: 'blog',
         author:"Kim Yang",
+        logo:'/favicon.ico',
         startYear:2019,
         authorAvatar: '/avatar.jpg',
         mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
@@ -29,14 +30,19 @@ module.exports = {
         // 假如文档放在一个特定的分支下：
         docsBranch: 'master',
         // 默认是 false, 设置为 true 来启用
-        editLinks: true,
-        // 默认为 "Edit this page"
-        editLinkText: '帮助我们改善此页面！',
+        // editLinks: true,
+        // // 默认为 "Edit this page"
+        // editLinkText: '帮助我们改善此页面！',
         nav: getNav(),
         sidebar: getSidebar(),
         // 博客配置
         blogConfig: getBlogConfig(),
         friendLink: getFriendsLink(),
+        //Comments
+        valineConfig: {
+            appId: 'jKwH5EJyUIoKLdDddNDTUueK-gzGzoHsz',// your appId
+            appKey: 'v7DTuoMTFCv63zxKtkYMUFp8', // your appKey
+        }
     }
 }
 
@@ -45,7 +51,6 @@ function getNav() {
     return [
         {text: 'Home', link: '/', icon: 'reco-home'},
         {text: 'TimeLine', link: '/timeline/', icon: 'reco-date'},
-        {text: 'Friends', link: '/friends', icon: 'reco-message'},
         {text: 'GitHub', link: 'https://github.com/KimYangOfCat', icon: 'reco-github'},
         {
             text: 'other',
@@ -61,8 +66,6 @@ function getNav() {
                 {text: 'Email', link: 'mailto:Kim.Yang.YJ@outlook.com', icon: 'reco-mail'},
             ]
         }
-        // { text: 'sidebar', link: '/views/sidebar/' },
-        // { text: 'sidebar', link: '/views/sidebargroup/' }
     ]
 }
 
@@ -85,11 +88,35 @@ function getBlogConfig() {
 
 function getFriendsLink() {
     return [
-        // {
-        //     title: 'vuepress-theme-reco',
-        //     desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        //     logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        //     link: 'https://vuepress-theme-reco.recoluan.com'
-        // }
+        {
+            title: 'TJNU iOS Club',
+            desc: ' iOS club of Tianjin Normal University',
+            logo: "/images/friends/TJNUiOSClub.jpg",
+            link: 'https://tjnuios.club/'
+        },
+        {
+            title: 'C422 Studio',
+            desc: 'C422 studio at Department of Computer and Information Engineering, Tianjin Normal University',
+            logo: "/images/friends/C422.jpg",
+            link: 'https://c422.github.io/'
+        },
+        {
+            title: 'YiQin Zhao',
+            desc: 'To work hard, to be diligent',
+            logo: "/images/friends/YiqinZhao.jpg",
+            link: 'https://yiqinzhao.me/'
+        },
+        {
+            title: '某莔の异次元空间',
+            desc: ' 某莔の异次元空间',
+            logo: "/images/friends/Arabaku.jpg",
+            link: 'https://fix.moe/'
+        },
+        {
+            title: 'Steve Fan',
+            desc: ' Steve Fan',
+            logo: "/images/friends/fanjiawen.png",
+            link: 'https://godjiawen.github.io/'
+        },
     ]
 }
