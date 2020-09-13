@@ -15,4 +15,3 @@ gitmoji -c
 git push
 #dev
 git checkout dev
-git reset --hard HEAD
