@@ -13,4 +13,3 @@ git merge beta
 git push
 #dev
 git checkout dev
-git reset --hard HEAD
