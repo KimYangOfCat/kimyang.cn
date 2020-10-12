@@ -9,6 +9,7 @@
     "build": "vuepress build blog"
   },
   "dependencies": {
+    "vue-router": "3.4.5",
     "vuepress": "^1.5.3",
     "@vuepress-reco/vuepress-plugin-back-to-top": "^1.5.5",
     "@vuepress-reco/vuepress-plugin-comments": "^1.4.6",
