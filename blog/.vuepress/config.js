@@ -5,16 +5,16 @@ module.exports = {
     // theme: '/theme/layouts/Layout.vue',
     port: 2233,
     head: [
-        ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
-        ['link', {rel: 'icon', href: '/favicon.ico', type: "image/x-icon"}],
-        ['link', {rel: ' short icon', href: '/favicon.ico', type: "image/x-icon"}],
-        ['link', {rel: 'apple-touch-icon', href: `/favicon.ico`, type: "image/x-icon"}],
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+        ['link', { rel: 'icon', href: '/favicon.ico', type: "image/x-icon" }],
+        ['link', { rel: ' short icon', href: '/favicon.ico', type: "image/x-icon" }],
+        ['link', { rel: 'apple-touch-icon', href: `/favicon.ico`, type: "image/x-icon" }],
     ],
     themeConfig: {
         type: 'blog',
-        author:"Kim Yang",
-        logo:'/favicon.ico',
-        startYear:2019,
+        author: "Kim Yang",
+        logo: '/favicon.ico',
+        startYear: 2019,
         authorAvatar: '/avatar.jpg',
         mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
         modePicker: false, // 默认 true，false 不显示模式调节按钮，true 则显示
@@ -49,21 +49,21 @@ module.exports = {
 //导航栏设置
 function getNav() {
     return [
-        {text: 'Home', link: '/', icon: 'reco-home'},
-        {text: 'TimeLine', link: '/timeline/', icon: 'reco-date'},
-        {text: 'GitHub', link: 'https://github.com/KimYangOfCat', icon: 'reco-github'},
+        { text: 'Home', link: '/', icon: 'reco-home' },
+        { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+        { text: 'GitHub', link: 'https://github.com/KimYangOfCat', icon: 'reco-github' },
         {
             text: 'other',
             ariaLabel: 'Other Menu',
             items: [
-                {text: '知乎', link: 'https://www.zhihu.com/people/kim_yang', icon: 'reco-zhihu'},
-                {text: 'CSDN', link: 'https://me.csdn.net/weixin_43316691', icon: 'reco-csdn'},
-                {
-                    text: '微博',
-                    link: 'https://weibo.com/6373489690/profile?topnav=1&wvr=6&is_all=1',
-                    icon: 'reco-weibo'
-                },
-                {text: 'Email', link: 'mailto:Kim.Yang.YJ@outlook.com', icon: 'reco-mail'},
+                { text: '知乎', link: 'https://www.zhihu.com/people/kim_yang', icon: 'reco-zhihu' },
+                { text: 'CSDN', link: 'https://me.csdn.net/weixin_43316691', icon: 'reco-csdn' },
+                // {
+                //     text: '微博',
+                //     link: 'https://weibo.com/6373489690/profile?topnav=1&wvr=6&is_all=1',
+                //     icon: 'reco-weibo'
+                // },
+                { text: 'Email', link: 'mailto:Kim.Yang.YJ@outlook.com', icon: 'reco-mail' },
             ]
         }
     ]
