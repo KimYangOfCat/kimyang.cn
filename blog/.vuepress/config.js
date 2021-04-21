@@ -43,7 +43,10 @@ module.exports = {
             appId: 'jKwH5EJyUIoKLdDddNDTUueK-gzGzoHsz',// your appId
             appKey: 'v7DTuoMTFCv63zxKtkYMUFp8', // your appKey
         }
-    }
+    },
+    plugin: [['@vuepress-reco/rss', {
+        site_url: 'https://kimyang.cn',
+    }],],
 }
 
 //导航栏设置

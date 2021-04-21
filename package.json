@@ -9,18 +9,18 @@
     "build": "vuepress build blog"
   },
   "dependencies": {
-    "vue-router": "^3.4.5",
-    "vuepress": "^1.5.3",
     "@vuepress-reco/vuepress-plugin-back-to-top": "^1.5.5",
     "@vuepress-reco/vuepress-plugin-comments": "^1.4.6",
     "@vuepress-reco/vuepress-plugin-loading-page": "^1.4.0",
     "@vuepress-reco/vuepress-plugin-pagation": "^1.4.7",
+    "@vuepress-reco/vuepress-plugin-rss": "^1.0.2",
     "@vuepress/plugin-blog": "1.9.2",
     "@vuepress/plugin-medium-zoom": "1.5.0",
     "docsearch.js": "2.6.3",
     "md5": "2.2.1",
     "vue-click-outside": "1.1.0",
+    "vue-router": "^3.4.5",
+    "vuepress": "^1.5.3",
     "vuepress-plugin-smooth-scroll": "^0.0.9"
   }
-
 }
