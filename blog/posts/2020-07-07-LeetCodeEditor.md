@@ -2,7 +2,7 @@
 title: "LeetCode editor开箱体验——在 IntelliJ IDE中刷 Leetcode 题目"
 date: 2020-07-07
 tags: [ LeetCode,LeetCode editor,IntelliJ IDE]
-categories: [🛠 高效工具,🎁 初体验]
+categories: [🛠 高效工具]
 ---
 # 
 
