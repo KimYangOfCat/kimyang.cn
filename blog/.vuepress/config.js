@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Kim\'s Blog',
     base: "/",
-    description: "Kim\'s Blog is coming~",
+    description: "做技术与艺术的创新者～",
     // theme: '/theme/layouts/Layout.vue',
     port: 2233,
     head: [
