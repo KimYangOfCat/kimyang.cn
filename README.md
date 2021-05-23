@@ -12,13 +12,18 @@
 ### Webpack
 
 + [webpack5 已出，还研究webpack4.x有什么用？](blog/posts/2021-4-10-webpack入门篇.md)
-+  [基于 webpack4.x 聊聊前端性能优化](blog/posts/2021-4-14-webpack优化篇.md) 
++ [基于 webpack4.x 聊聊前端性能优化](blog/posts/2021-4-14-webpack优化篇.md) 
 
 ### 工具推荐
 
 + [Ubuntu 安装配置 oh-my-zsh ](blog/posts/2019-10-19-zsh.md) 
-+  [Typora——最好的Markdown编辑器](blog/posts/2020-02-03-typora使用体验.md) 
-+  [LeetCode editor开箱体验——在 IntelliJ IDE中刷 Leetcode 题目](blog/posts/2020-07-07-LeetCodeEditor.md) 
++ [Typora——最好的Markdown编辑器](blog/posts/2020-02-03-typora使用体验.md) 
++ [LeetCode editor开箱体验——在 IntelliJ IDE中刷 Leetcode 题目](blog/posts/2020-07-07-LeetCodeEditor.md) 
+
+### 翻译校对
+
++ [使用GPU.js让你的Angular.js提速10倍](blog/posts/2021-05-24-使用GPU.js让你的Angular.js提速10倍.md)
++ [如何在TC39中提起一项提案?](blog/posts/2021-05-23-如何在TC39中提起一项提案.md)
 
 ## Thanks
 
