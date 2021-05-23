@@ -1,5 +1,5 @@
 ---
-title: "JavaScript 类型化数组"
+title: "【译】JavaScript 类型化数组"
 date: 2021-05-18
 tags: [JavaScript,前端]
 categories: [🌏 翻译校对]
