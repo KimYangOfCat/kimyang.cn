@@ -22,8 +22,14 @@
 
 ### 翻译校对
 
-+ [使用GPU.js让你的Angular.js提速10倍](blog/posts/2021-05-24-使用GPU.js让你的Angular.js提速10倍.md)
-+ [如何在TC39中提起一项提案?](blog/posts/2021-05-23-如何在TC39中提起一项提案.md)
++ [使用 GPU.js 让你的 Angular.js 提速10倍](blog/posts/2021-05-24-使用GPU.js让你的Angular.js提速10倍.md)
++ [如何在 TC39 中提起一项提案?](blog/posts/2021-05-23-如何在TC39中提起一项提案.md)
++ [Web 开发者应该避免的 5 个 CSS 的做法](blog/posts/2021-05-20-Web开发者应该避免的5个CSS的做法.md)
++ [有关 ECMAScript 最新版本的所有信息｜ECMAScript 2021](blog/posts/2021-05-19-ECMAScript2021.md)
++ [JavaScript 类型化数组](blog/posts/2021-05-18-JavaScript类型化数组.md)
++ [现代化的 React 路由 Hookrouter 开发使用](blog/posts/2021-05-17-现代化的React路由Hookrouter开发使用.md)
++ [快停止在 CSS 中使用像素单位](blog/posts/2021-05-16-快停止在CSS中使用像素单位.md)
++ [...]()
 
 ## Thanks
 
