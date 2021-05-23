@@ -29,6 +29,8 @@
 + [JavaScript 类型化数组](blog/posts/2021-05-18-JavaScript类型化数组.md)
 + [现代化的 React 路由 Hookrouter 开发使用](blog/posts/2021-05-17-现代化的React路由Hookrouter开发使用.md)
 + [快停止在 CSS 中使用像素单位](blog/posts/2021-05-16-快停止在CSS中使用像素单位.md)
++ [从 React 转换到 Next.js 的五个理由](blog/posts/2021-05-03-从React转换到Next.js的五个理由.md)
++ [将 JavaScript 放到一边 —— 用 Mint 这门强大的语言来创建一个 Web 应用](blog/posts/2021-05-02-Mint.md)
 + [...]()
 
 ## Thanks
