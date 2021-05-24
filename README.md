@@ -22,9 +22,12 @@
 
 ### 翻译校对
 
++ [使用 Web Workers 来加速 JavaScript 应用](blog/posts/2021-05-25-使用WebWorkers来加速JavaScript应用.md)
++ [TypeScript 中的依赖注入](blog/posts/2021-05-24-TypeScript中的依赖注入.md)
 + [使用 GPU.js 让你的 Angular.js 提速10倍](blog/posts/2021-05-24-使用GPU.js让你的Angular.js提速10倍.md)
 + [如何在 TC39 中提起一项提案?](blog/posts/2021-05-23-如何在TC39中提起一项提案.md)
 + [如何阅读一份提案草案?](blog/posts/2021-05-22-如何阅读一份提案草案.md)
++ [16px 或更大的字体大小可以避免 iOS 的表单缩放问题](blog/posts/2021-05-21-16px或更大的字体大小可以避免iOS的表单缩放问题.md)
 + [Web 开发者应该避免的 5 个 CSS 的做法](blog/posts/2021-05-20-Web开发者应该避免的5个CSS的做法.md)
 + [有关 ECMAScript 最新版本的所有信息｜ECMAScript 2021](blog/posts/2021-05-19-ECMAScript2021.md)
 + [JavaScript 类型化数组](blog/posts/2021-05-18-JavaScript类型化数组.md)
