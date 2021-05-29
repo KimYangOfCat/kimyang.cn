@@ -22,6 +22,13 @@
 
 ### 翻译校对
 
++ [深入理解 CORS：发展史、工作原理和最佳实践](blog/posts/2021-06-01-CORS.md)
++ [阶段 3 提案评审](blog/posts/2021-05-31-阶段3提案评审.md)
++ [简述 TC39 提案的实现和交付](blog/posts/2021-05-30-简述TC39提案的实现和交付.md)
++ [如何写一个好的说明文件](blog/posts/2021-05-29-如何写一个好的说明文件.md)
++ [如何针对 ECMAScript 规范创建一个拉取请求](blog/posts/2021-05-28-如何针对ECMAScript规范创建一个拉取请求.md)
++ [如何提出有用的反馈](blog/posts/2021-05-27-如何提出有用的反馈.md)
++ [CSRF 攻击：解析、预防和 CSRF 令牌](blog/posts/2021-05-27-如何提出有用的反馈.md)
 + [使用 Web Workers 来加速 JavaScript 应用](blog/posts/2021-05-25-使用WebWorkers来加速JavaScript应用.md)
 + [TypeScript 中的依赖注入](blog/posts/2021-05-24-TypeScript中的依赖注入.md)
 + [使用 GPU.js 让你的 Angular.js 提速10倍](blog/posts/2021-05-24-使用GPU.js让你的Angular.js提速10倍.md)
