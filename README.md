@@ -21,7 +21,10 @@
 + [LeetCode editor开箱体验——在 IntelliJ IDE中刷 Leetcode 题目](blog/posts/2020-07-07-LeetCodeEditor.md) 
 
 ### 翻译校对
-
++ [一个编译成 JavaScript 接口框架的案例](blog/posts/2021-06-13-一个编译成JavaScript接口框架的案例.md)
++ [简述自动生成的社交媒体图片](blog/posts/2021-06-12-简述自动生成的社交媒体图片.md)
++ [如何做会议记录](blog/posts/2021-06-11-如何做会议记录.md)
++ [如何参与会议](blog/posts/2021-06-10-如何参与会议.md)
 + [修订后的参与 TC39 标准委员会的模式](blog/posts/2021-06-07-修订后的参与TC39标准委员会的模式.md)
 + [Chrome 浏览器的自定义状态伪类](blog/posts/2021-06-04-Chrome浏览器的自定义状态伪类.md)
 + [向 TC39 提交提案](blog/posts/2021-06-03-向TC39提交提案.md)
