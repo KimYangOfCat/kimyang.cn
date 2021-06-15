@@ -29,7 +29,7 @@ jobs:
           CI: true
       # 部署到腾讯云服务器
       - name: Deploy to Server
-        uses: burnett01/rsync-deployments@4.0
+        uses: burnett01/rsync-deployments@4.1
         env:
           # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
           remote_key: ${{ secrets.SSH }}
@@ -38,7 +38,7 @@ jobs:
           # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
           path: dist/
           # 服务器域名
-          remote_host: kimyang.cn
+          remote_host: 121.5.162.26
           # 腾讯云默认用户名为root
           remote_user: kim
           # 目标目录
