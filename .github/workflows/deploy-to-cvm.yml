@@ -29,6 +29,6 @@ jobs:
           host: "kimyang.cn"
           username: "kim"
           key: ${{ secrets.SSH }}
-          source: "dist/"
+          source: "./dist/"
           target: "/srv/kim-blog/"
           rm: true
