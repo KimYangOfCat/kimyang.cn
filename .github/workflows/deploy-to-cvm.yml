@@ -1,34 +1,17 @@
 name: deploy-to-cvm
 on:
   push:
-    branches: [master]
+    branches: [gh-pages]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      # 切换分支获取源码
-      - name: Checkout # step的名称，将会在 github action 的控制台中显示
-        # 选择一个action，可以理解为若干 steps.run，有利于代码复用
-        uses: actions/checkout@master
-      # 安装使用 node:10
-      - name: use Node.js 10
-        uses: actions/setup-node@v1
-        with:
-          node-version: 10
-      # 运行命令，npm install && npm run build
-      - name: npm install and build
-        run: |
-          npm install
-          npm run build
-        env:
-          CI: true
-
-      - name: copy file via ssh password
-        uses: appleboy/scp-action@master
-        with:
-          host: "kimyang.cn"
-          username: "kim"
-          key: ${{ secrets.SSH }}
-          source: "./dist/"
-          target: "/srv/kim-blog/"
-          rm: true
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@gh-pages
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
+      with:
+        host: "kimyang.cn"
+        username: "kim"
+        key: ${{ secrets.SSH }}
+        source: "./*"
+        target: "/srv/kim-blog/"
+        rm: true
