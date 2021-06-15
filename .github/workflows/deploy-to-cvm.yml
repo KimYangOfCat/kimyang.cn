@@ -36,7 +36,7 @@ jobs:
           # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
           switches: -avzr --delete
           # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-          path: dist/
+          path: blog/.vuepress/dist/
           # 服务器域名
           remote_host: 121.5.162.26
           # 腾讯云默认用户名为root
