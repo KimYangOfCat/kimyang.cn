@@ -6,25 +6,35 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: build
-        uses: actions/checkout@v2
+      # 切换分支获取源码
+      - name: Checkout # step的名称，将会在 github action 的控制台中显示
+        # 选择一个action，可以理解为若干 steps.run，有利于代码复用
+        uses: actions/checkout@master
+      # 安装使用 node:10
+      - name: use Node.js 14
         uses: actions/setup-node@v1
-        run: 
-            npm install
-            npm run build
+        with:
+          node-version: 14
+      # 运行命令，npm install && npm run build
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
+        env:
+          CI: true
 
       - name: Deploy to cvm
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
-            # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
-            SSH_PRIVATE_KEY: ${{ secrets.SSH }} 
-            # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
-            ARGS: "-avzr --delete" 
-            # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-            SOURCE: "dist/" 
-            # 服务器域名
-            REMOTE_HOST: "kimyang.cn" 
-            # 腾讯云默认用户名为root
-            REMOTE_USER: "kim" 
-            # 目标目录
-            TARGET: "/srv/kim-blog/" 
+          # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
+          SSH_PRIVATE_KEY: ${{ secrets.SSH }}
+          # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
+          ARGS: "-avzr --delete"
+          # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
+          SOURCE: "dist/"
+          # 服务器域名
+          REMOTE_HOST: "kimyang.cn"
+          # 腾讯云默认用户名为root
+          REMOTE_USER: "kim"
+          # 目标目录
+          TARGET: "/srv/kim-blog/"
