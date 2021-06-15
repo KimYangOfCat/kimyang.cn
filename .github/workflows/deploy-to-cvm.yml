@@ -29,17 +29,17 @@ jobs:
           CI: true
       # 部署到腾讯云服务器
       - name: Deploy to Server
-        uses: burnett01/rsync-deployments@4.1
+        uses: easingthemes/ssh-deploy@v2.2.11
         env:
           # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
-          remote_key: ${{ secrets.SSH }}
+          SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
           # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
-          switches: -avzr --delete
+          ARGS: "-avzr --delete"
           # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-          path: blog/.vuepress/dist/
+          SOURCE: "blog/.vuepress/dist/"
           # 服务器域名
-          remote_host: 121.5.162.26
+          REMOTE_HOST: "kimyang.cn"
           # 腾讯云默认用户名为root
-          remote_user: kim
+          REMOTE_USER: "kim"
           # 目标目录
-          remote_path: /srv/kim-blog
+          TARGET: "/srv/kim-blog"
