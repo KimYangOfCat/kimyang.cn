@@ -40,6 +40,6 @@ jobs:
           # 服务器域名
           remote_host: kimyang.cn
           # 腾讯云默认用户名为root
-          remote_user: "kim"
+          remote_user: kim
           # 目标目录
-          remote_path: "/srv/kim-blog"
+          remote_path: /srv/kim-blog
