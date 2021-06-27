@@ -21,6 +21,9 @@
 + [LeetCode editor开箱体验——在 IntelliJ IDE中刷 Leetcode 题目](blog/posts/2020-07-07-LeetCodeEditor.md) 
 
 ### 翻译校对
++ [简述 JavaScript 高阶函数的开发使用](blog/posts/2021-06-26-简述JavaScript高阶函数的开发使用.md)
++ [如何打造可被摇树优化的库](blog/posts/2021-06-25-如何打造可被摇树优化的库.md)
++ [Chrome 92 DevTools 的新功能](blog/posts/2021-06-24-Chrome92DevTools的新功能.md)
 + [一个编译成 JavaScript 接口框架的案例](blog/posts/2021-06-13-一个编译成JavaScript接口框架的案例.md)
 + [简述自动生成的社交媒体图片](blog/posts/2021-06-12-简述自动生成的社交媒体图片.md)
 + [如何做会议记录](blog/posts/2021-06-11-如何做会议记录.md)
