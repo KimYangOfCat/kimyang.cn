@@ -21,6 +21,8 @@
 + [LeetCode editor开箱体验——在 IntelliJ IDE中刷 Leetcode 题目](blog/posts/2020-07-07-LeetCodeEditor.md) 
 
 ### 翻译校对
++ [纯 CSS 创建五彩斑斓的智能阴影](blog/posts/2021-07-08-纯CSS创建五彩斑斓的智能阴影.md)
++ [下一代 CSS@container](blog/posts/2021-07-09-下一代CSS@container.md)
 + [简述 JavaScript 高阶函数的开发使用](blog/posts/2021-06-26-简述JavaScript高阶函数的开发使用.md)
 + [如何打造可被摇树优化的库](blog/posts/2021-06-25-如何打造可被摇树优化的库.md)
 + [Chrome 92 DevTools 的新功能](blog/posts/2021-06-24-Chrome92DevTools的新功能.md)
