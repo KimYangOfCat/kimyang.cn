@@ -1,5 +1,5 @@
 ---
-title: "【译】从 React 转换到 Next.js 的五个理由"
+title: "从 React 转换到 Next.js 的五个理由"
 date: 2021-05-03
 tags: [Next,前端]
 categories: [🌏 翻译校对]

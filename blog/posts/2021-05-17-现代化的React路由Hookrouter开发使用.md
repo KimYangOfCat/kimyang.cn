@@ -1,5 +1,5 @@
 ---
-title: "【译】现代化的 React 路由 Hookrouter 开发使用"
+title: "现代化的 React 路由 Hookrouter 开发使用"
 date: 2021-05-17
 tags: [React,前端]
 categories: [🌏 翻译校对]

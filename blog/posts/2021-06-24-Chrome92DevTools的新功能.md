@@ -1,5 +1,5 @@
 ---
-title: "【译】Chrome 92 DevTools 的新功能"
+title: "Chrome 92 DevTools 的新功能"
 date: 2021-06-24
 tags: [前端,Chrome]
 categories: [🌏 翻译校对]

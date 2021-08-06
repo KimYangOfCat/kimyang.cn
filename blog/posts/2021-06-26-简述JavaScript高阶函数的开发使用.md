@@ -1,5 +1,5 @@
 ---
-title: "【译】简述 JavaScript 高阶函数的开发使用"
+title: "简述 JavaScript 高阶函数的开发使用"
 date: 2021-06-26
 tags: [JavaScript]
 categories: [🌏 翻译校对]

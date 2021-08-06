@@ -1,5 +1,5 @@
 ---
-title: "【译】TypeScript 中的依赖注入"
+title: "TypeScript 中的依赖注入"
 date: 2021-05-24
 tags: [TypeScript,前端]
 categories: [🌏 翻译校对]

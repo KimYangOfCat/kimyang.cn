@@ -1,5 +1,5 @@
 ---
-title: "【译】使用 Web Workers 来加速 JavaScript 应用"
+title: "使用 Web Workers 来加速 JavaScript 应用"
 date: 2021-05-25
 tags: [JavaScript,前端]
 categories: [🌏 翻译校对]
