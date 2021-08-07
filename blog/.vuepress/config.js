@@ -44,9 +44,7 @@ module.exports = {
             appKey: 'v7DTuoMTFCv63zxKtkYMUFp8', // your appKey
         }
     },
-    plugin: [['@vuepress-reco/rss', {
-        site_url: 'https://kimyang.cn',
-    }],],
+    plugin: [],
 }
 
 //导航栏设置

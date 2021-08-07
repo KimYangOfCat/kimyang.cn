@@ -2,7 +2,7 @@ const path = require('path')
 
 // Theme API.
 module.exports = (options, ctx) => ({
-  alias () {
+  alias() {
     const { themeConfig, siteConfig } = ctx
     // resolve algolia
     const isAlgoliaSearch = (
@@ -24,6 +24,12 @@ module.exports = (options, ctx) => ({
     '@vuepress-reco/pagation',
     '@vuepress-reco/comments',
     '@vuepress/active-header-links',
+    ["vuepress-plugin-nuggets-style-copy", {
+      copyText: "复制代码",  //vuepress复制粘贴提示插件P 先安装在配置 npm install vuepress-plugin-nuggets-style-copy --save
+      tip: {
+        content: "复制成功!"
+      }
+    }],
     ['@vuepress/medium-zoom', {
       selector: '.theme-reco-content :not(a) > img'
     }],
@@ -93,6 +99,6 @@ module.exports = (options, ctx) => ({
         '/': 'See More',
         '/zh/': '更多'
       }
-    }]
+    }],
   ]
 })
