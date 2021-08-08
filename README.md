@@ -1,9 +1,13 @@
 # Blog 🤔 
-我在这里用文字记录了我所有折腾过的内容，您可以通过[在线博客](https://kimyang.cn/)获得更好的阅读体验，同时您也可关注我的微信公众号来获得实时文章更新通知。
+我在这里用文字记录了我所有折腾过的内容，您可以通过在线博客获得更好的阅读体验，地址如下：
+
+[Blog](https://kimyang.cn) | [github pages](https://kimyangofcat.github.io/Blog/)
+
+同时您也可关注我的微信公众号来获得实时文章更新通知。
 
 **得君青睐，喜不自胜**
 
-![微信二维码](https://cdn.jsdelivr.net/gh/KimYangOfCat/PictureBed/wechat/search.png)
+![二维码](https://pic-bed-1256389522.cos.ap-chengdu.myqcloud.com/info/binarycode.png)
 
 **声明：未经博主允许，禁止以任何方式转载博客文章！！**
 
