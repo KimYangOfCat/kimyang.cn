@@ -45,7 +45,7 @@ module.exports = {
                     { text: '标签', link: '/tag/', icon: 'reco-tag' },
                 ], icon: 'reco-category'
             },
-            { text: 'RSS', link: '/rss.xml', icon: 'reco-rss' },
+            { text: 'RSS', link: 'https://kimyang.cn/rss.xml', icon: 'reco-rss' },
         ],
         sidebar: {
 
