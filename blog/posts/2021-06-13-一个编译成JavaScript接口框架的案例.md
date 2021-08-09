@@ -5,8 +5,6 @@ tags: [前端]
 categories: [🌏 翻译校对]
 ---
 
-# 一个编译成 JavaScript 接口框架的案例
-
 ![图源 [Ferenc Almasi](https://unsplash.com/@flowforfrank?utm_source=medium&utm_medium=referral) 上传至 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10296/0*LUP7NJrirKlw-voh)
 
 如今的 web 框架，类似 React 和 Vue 在创建现代 web 应用方面非常受欢迎，这是有原因的。这些框架帮助把代码片段变成可复用的组件，通过使用声明式性的标记使组件易于根据数据更新。

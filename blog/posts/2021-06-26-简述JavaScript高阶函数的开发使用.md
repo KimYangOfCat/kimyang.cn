@@ -4,7 +4,6 @@ date: 2021-06-26
 tags: [JavaScript]
 categories: [🌏 翻译校对]
 ---
-# 简述 JavaScript 高阶函数的开发使用
 
 ![](https://cdn-images-1.medium.com/max/2400/1*KQnA_VQkW6DVV-4zLBu_-Q.png)
 

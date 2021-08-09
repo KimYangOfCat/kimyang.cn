@@ -5,8 +5,6 @@ tags: [前端,Chrome]
 categories: [🌏 翻译校对]
 ---
 
-# Chrome 92 DevTools 的新功能
-
 ![](https://developer-chrome-com.imgix.net/image/dPDCek3EhZgLQPGtEG3y0fTn4v82/XtJztwxzQqOWhOHrKmhM.jpg?auto=format)
 
 ## CSS 网格编辑器

@@ -4,7 +4,6 @@ date: 2021-05-25
 tags: [JavaScript,前端]
 categories: [🌏 翻译校对]
 ---
-# 使用 Web Workers 来加速 JavaScript 应用
 
 ![](https://cdn-images-1.medium.com/max/5760/1*dc6I4-IzvGDNryL2KpZX-Q.png)
 

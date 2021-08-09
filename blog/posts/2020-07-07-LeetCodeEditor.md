@@ -4,7 +4,6 @@ date: 2020-07-07
 tags: [ LeetCode,LeetCode editor,IntelliJ IDE]
 categories: [🛠 高效工具]
 ---
-# 
 
 最近开始在刷 LeetCode 上的题目，在经过一段时间的的网页端上写代码打卡挑战，但是网页端的写代码体验原始得让习惯了强大IDE智能补充的我无比痛苦😖。本着改善工具使用体验，提高个人学习效率（装逼😎是第一生产力）的原则，我开始搜索有没有办法能让我在我自己比较习惯的 IntelliJ IDE中刷 Leetcode上的题目。于是我找到了让我脱离苦海的神奇——LeetCode editor
 

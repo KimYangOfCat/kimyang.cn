@@ -4,7 +4,6 @@ date: 2021-05-28
 tags: [ECMA,前端]
 categories: [🌏 翻译校对]
 ---
-# 如何针对 ECMAScript 规范创建一个拉取请求
 
 对 JavaScript 规范的所有更改最终都会变为对 [ecma262](https://github.com/tc39/ecma262/) 或 [ecma402](https://github.com/tc39/ecma402/) 存储库的拉取请求。
 

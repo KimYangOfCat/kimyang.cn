@@ -4,7 +4,6 @@ date: 2021-05-03
 tags: [Next,前端]
 categories: [🌏 翻译校对]
 ---
-# 从 React 转换到 Next.js 的五个理由
 
 > 选择错误的框架可能会成为一个可怕的噩梦。
 

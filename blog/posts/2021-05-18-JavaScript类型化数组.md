@@ -4,7 +4,6 @@ date: 2021-05-18
 tags: [JavaScript,前端]
 categories: [🌏 翻译校对]
 ---
-# JavaScript 类型化数组
 
 ![图源 [Pierre Bamin](https://unsplash.com/@bamin?utm_source=juejin&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=juejin&utm_medium=referral)](https://cdn-images-1.medium.com/max/10992/0*u7yLuqz5vOYfScJQ)
 

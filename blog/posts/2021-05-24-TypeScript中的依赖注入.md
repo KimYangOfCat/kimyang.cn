@@ -4,7 +4,6 @@ date: 2021-05-24
 tags: [TypeScript,前端]
 categories: [🌏 翻译校对]
 ---
-# TypeScript 中的依赖注入
 
 ![图源 [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix?utm_source=medium&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/11174/0*EjOezZWFJ92qj8bt)
 

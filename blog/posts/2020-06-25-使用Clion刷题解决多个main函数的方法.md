@@ -5,8 +5,6 @@ tags: [CLion,LeetCode,C++]
 categories: [🔑 奇妙技巧]
 ---
 
-# 
-
 在写 C++ 的题目的时候经常会遇到这样的问题，写了多个 cpp 文件，在 clion 中编译报错不能同时存在多 main 函数。
 
 下面列举几种方法：
