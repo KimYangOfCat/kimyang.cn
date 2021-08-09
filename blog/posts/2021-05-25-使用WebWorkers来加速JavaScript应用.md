@@ -9,7 +9,7 @@ categories: [🌏 翻译校对]
 
 Web Workers 是一种可以调用浏览器在后台执行大量且耗时任务的方法。它拥有开启新线程的能力，从而允许你优先处理某些任务，并可以解决如 JavaScript 这类单线程语言中的阻塞行为。
 
-但是我们真的需要多线程的 JavaScript 吗？为了回答这个问题，让我们先来理解单线程 JavaScript 的局限性在哪。
+但是我们真的需要多线程的 JavaScript 吗？为了回答这个问题，让我们先来理解单线程 JavaScript 的局限性在哪。<!-- more -->
 
 ## 单线程 JavaScript 的局限性
 

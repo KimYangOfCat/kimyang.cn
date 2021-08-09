@@ -11,7 +11,7 @@ categories: [📗 学习笔记]
 学习swift的笔记(一)：[**introduction to iOS11, Xcode 9 and Swift 4**](https://kimyang.cn/2019/2019-06-01-swiftlearning1/)
 
 今天学习的是课程的第二集：[**MVC**](https://www.bilibili.com/video/av16339375/?p=2)
-
+<!-- more -->
 这一节主要讲的就是MVC(Model View Controller)开发模式,这种开发模式主要包含以下三部分：
 ![Three Maps](https://tva1.sinaimg.cn/large/0082zybpgy1gbze8f9udwj314h0pnu0x.jpg)
 

@@ -6,7 +6,7 @@ categories: [🌏 翻译校对]
 ---
 
 Chrome 正在试验 CSS `@container` 查询器功能，这是由 [Oddbird](https://css.oddbird.net/rwd/query/) 的 [Miriam Suzanne](https://twitter.com/TerribleMia) 和一群网络平台开发者支持的 CSS 工作组 [Containment Level 3 规范](https://github.com/w3c/csswg-drafts/issues?q=is%3Aissue+label%3Acss-contain-3+)。`@container` 查询器使我们能够**根据父容器的大小来设置元素的样式**。
-
+<!-- more -->
 > `@container` API 不稳定，会受到语法变化的影响。如果你想要自己尝试一下，可能会遇到一些错误。请将这些错误报告给相应的浏览器引擎！**报告错误的链接如下：**
 >
 > * [Chrome](https://bugs.chromium.org/p/chromium/issues/list)

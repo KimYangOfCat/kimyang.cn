@@ -8,7 +8,7 @@ categories: [🌏 翻译校对]
 ![图源 [Ferenc Almasi](https://unsplash.com/@flowforfrank?utm_source=medium&utm_medium=referral) 上传至 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10296/0*LUP7NJrirKlw-voh)
 
 如今的 web 框架，类似 React 和 Vue 在创建现代 web 应用方面非常受欢迎，这是有原因的。这些框架帮助把代码片段变成可复用的组件，通过使用声明式性的标记使组件易于根据数据更新。
-
+<!-- more -->
 但几乎所有的这类框架运行时都需要重量型的程序库，这代表着性能上的消耗。而且这类界面语言不够强势，且因为原生 js 的限制而更繁琐。
 
 不管怎样，针对这个问题的解决方案可以让你使用更简洁的代码获得更好的性能

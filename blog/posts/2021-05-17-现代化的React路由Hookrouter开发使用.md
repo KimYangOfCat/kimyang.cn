@@ -9,7 +9,7 @@ categories: [🌏 翻译校对]
 
 路由在单页应用程序（SPA）页面中导航和初始化状态是至关重要的。对于 React，大多数开发者都使用过 `react-router-dom`，这是 Reactrouter 库用于路由的一个变量。
 
-然而，随着 React hooks 的引入，最近一个被称为 [**Hookrouter**](https://github.com/Paratron/hookrouter) 的新模块被推出，作为一个基于 hooks 的灵活、快速的路由。
+然而，随着 React hooks 的引入，最近一个被称为 [**Hookrouter**](https://github.com/Paratron/hookrouter) 的新模块被推出，作为一个基于 hooks 的灵活、快速的路由。<!-- more -->
 
 本文将重点介绍我们如何使用 Hookrouter 模块来实现 Reactrouter 的基本功能。
 

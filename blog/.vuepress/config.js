@@ -86,10 +86,10 @@ module.exports = {
                 separator: "-", // Separator of the slug, default: '-'
             },
         ],
-        ['@vuepress-reco/vuepress-plugin-pagation', {
-            //修改分页数量
-            perPage: 18
-        }],
+        // ['@vuepress-reco/vuepress-plugin-pagation', {
+        //     //修改分页数量
+        //     perPage: 18
+        // }],
     ],
 }
 

@@ -6,7 +6,7 @@ categories: [🌏 翻译校对]
 ---
 
 ![图源 [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix?utm_source=medium&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/11174/0*EjOezZWFJ92qj8bt)
-
+<!-- more -->
 ## 简介
 
 每一个软件程序都有其最基础的构建模块。在面向对象的编程语言中， 我们使用类去构建复杂的体系架构。像建一幢大楼，我们把模块之间建立的联系称之为**依赖**。其他的类为了支持我们类的需求，提供复杂的封装操作。

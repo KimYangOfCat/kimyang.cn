@@ -9,7 +9,7 @@ categories: [📗 学习笔记]
 这是学习swift的笔记系列，学习的课程是[斯坦福  iOS11 swift语言](https://www.bilibili.com/medialist/play/ml148451180)。
 
 今天学习的是课程的第一集：[**introduction to iOS11, Xcode 9 and Swift 4**](https://www.bilibili.com/video/av16339375/?p=1)
-
+<!-- more -->
 #### What's in iOS ?
 
 我们可以将 iOS 分为 Core OS、Core Services、Media 和 Cocoa Touch 四层，最前面一层最接近硬件，最后面一层最接近用户。下面详细解释每一层的作用：

@@ -5,7 +5,7 @@ tags: [JavaScript,前端]
 categories: [🌏 翻译校对]
 ---
 
-![图源 [Pierre Bamin](https://unsplash.com/@bamin?utm_source=juejin&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=juejin&utm_medium=referral)](https://cdn-images-1.medium.com/max/10992/0*u7yLuqz5vOYfScJQ)
+![图源 [Pierre Bamin](https://unsplash.com/@bamin?utm_source=juejin&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=juejin&utm_medium=referral)](https://cdn-images-1.medium.com/max/10992/0*u7yLuqz5vOYfScJQ)<!-- more -->
 
 在 JavaScript 这门语言中，我们所有人都必须对数组足够熟悉，知晓数组本质上是动态的，并且可以容纳任何 JavaScript 对象。不过，如果你曾经使用过类似于 C 语言这样的其他语言，你应该知道其数组本质上不是动态的。而且你只能在该数组中存储特定的数据类型，毕竟从性能角度来看，这可以确保数组效率更高。但数组的动态化与存储信息类型的多样化其实并没有使 JavaScript 数组效率低下。在 JavaScript 引擎优化的帮助下，JavaScript 中数组的执行速度其实非常快。
 
