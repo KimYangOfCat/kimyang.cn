@@ -2,7 +2,7 @@
 home: true
 bgImage: '/bg.jpg'
 bgImageStyle: {
-   height: '100vh'
+   height: '50vh'
 }
 ---
 

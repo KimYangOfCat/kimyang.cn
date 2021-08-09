@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Kim\'s Blog',
     base: process.env.BASE_BLOG,
-    description: "做技术与艺术的创新者～",
+    description: "做技术与艺术的创新者!",
     port: 2233,
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
@@ -40,7 +40,7 @@ module.exports = {
         nav: [
             { text: '首页', link: '/', icon: 'reco-home' },
             {
-                text: '其他功能', items: [
+                text: '其他', items: [
                     { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
                     { text: '标签', link: '/tag/', icon: 'reco-tag' },
                 ], icon: 'reco-category'
