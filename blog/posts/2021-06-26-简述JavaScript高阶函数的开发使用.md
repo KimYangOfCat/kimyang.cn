@@ -53,7 +53,7 @@ console.log(resultantArray); // [4, 5]
 const ageArray = [10, 12, 35, 55, 40, 32, 15]; 
 
 const filterAgeArray = ageArray.filter((age)=> {
-    return age < 18; >
+    return age < 18; 
 }); 
 
 console.log(filterAgeArray); 

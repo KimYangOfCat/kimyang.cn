@@ -4,12 +4,11 @@ date: 2021-08-06
 tags: [JavaScript]
 categories: [🌏 翻译校对]
 ---
-# 可视化 JavaScript 引擎
 
 ![](https://cdn-images-1.medium.com/max/2000/0*XIjsf6eB35MwgNCg.png)
 
 作为 JavaScript 开发人员，我们通常不需要亲自与编译器打交道。但知晓 JavaScript 引擎的基础知识，以及了解它是如何处理我们各自不同的 JS 代码并将其转化为机器能理解的东西，也是很好的！🥳
-
+<!-- more -->
 > **注意：** 这篇文章主要基于 Node.js 和以 Chromium 为基础的浏览器使用的 V8 引擎。
 
 ---
@@ -77,9 +76,10 @@ JavaScript 是动态类型的语言，这代表数据类型可以不断改变。
 > 如果发现译文存在错误或其他需要改进的地方，欢迎到 [掘金翻译计划](https://github.com/xitu/gold-miner) 对译文进行修改并 PR，也可获得相应奖励积分。文章开头的 **本文永久链接** 即为本文在 GitHub 上的 MarkDown 链接。
 
 ---
+
 > * 原文地址：[JavaScript Visualized: The JavaScript Engine](https://javascript.plainenglish.io/javascript-visualized-the-javascript-engine-1e3fc5d5310d)
 > * 原文作者：[Harsh Patel](https://medium.com/@harsh-patel)
 > * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
 > * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md)
 > * 译者：[没事儿](https://github.com/Tong-H)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat) [Usualminds](https://github.com/Usualminds)
+> * 校对者：[Kim Yang](https://github.com/KimYangOfCat) [Usualminds](https://github.com/Usualminds)
