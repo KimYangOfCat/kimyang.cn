@@ -3,7 +3,7 @@ title: 关于我
 date: 2019-06-01
 sticky: 1
 ---
-
+<Boxx :changeTime='6000'/>
 我是 KimYang，一只喜欢仰望星空的程序猿!
 
    - 🛠  "I now develop Web applications";
@@ -24,5 +24,5 @@ sticky: 1
 地址：https://kimyang.cn(必须)
 名称：Kim's Blog(必须)
 描述：Kim 的折腾记录站点(可选)
-头像：https://kimyang.cn/avatar.jpg
+头像：https://kimyang.cn/avatar.jpg(必须)
 ```

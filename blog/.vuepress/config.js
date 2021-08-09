@@ -8,7 +8,18 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico', type: "image/x-icon" }],
         ['link', { rel: ' short icon', href: '/favicon.ico', type: "image/x-icon" }],
         ['link', { rel: 'apple-touch-icon', href: `/favicon.ico`, type: "image/x-icon" }],
+        ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
+        ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }],
     ],
+    //支持数学latex语法
+    markdown: {
+        extendMarkdown: md => {
+            md.set({
+                html: true
+            })
+            md.use(require('markdown-it-katex'))
+        }
+    },
     theme: 'reco',
     locales: {
         '/': {
@@ -50,6 +61,7 @@ module.exports = {
             { text: '标签', link: '/tag/', icon: 'reco-tag' },
             { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
             { text: 'RSS', link: 'https://kimyang.cn/rss.xml', icon: 'reco-rss' },
+
         ],
         sidebar: {
 
@@ -80,9 +92,44 @@ module.exports = {
         valineConfig: {
             appId: 'jKwH5EJyUIoKLdDddNDTUueK-gzGzoHsz',// your appId
             appKey: 'v7DTuoMTFCv63zxKtkYMUFp8', // your appKey
+            placeholder: '填写邮箱可以收到回复哦!',
+            notify: true, // 邮件提醒
+            verify: true, // 验证码
+            recordIP: true
         }
     },
     plugins: [
+        ['@neilsustc/markdown-it-katex'],
+        ['vuepress-plugin-mermaidjs'],
+        ['flowchart'],
+        ["vuepress-plugin-boxx"],
+        ['@vuepress-reco/extract-code'],
+        ['@vuepress/pwa', {
+            serviceWorker: true,
+            updatePopup: {
+                message: "有新的内容更新啦！",
+                buttonText: "更新"
+            }
+        }],
+        [
+            //图片放大插件 
+            '@vuepress/medium-zoom',
+            {
+                selector: '.page img',
+                delay: 1000,
+                options: {
+                    margin: 24,
+                    background: 'rgba(25,18,25,0.9)',
+                    scrollOffset: 40
+                }
+            }
+        ],
+        ["vuepress-plugin-nuggets-style-copy", {
+            copyText: "复制代码",  //vuepress复制粘贴提示插件P 先安装在配置 npm install vuepress-plugin-nuggets-style-copy --save
+            tip: {
+                content: "复制成功!"
+            }
+        }],
         // 支持中文文件名
         [
             "permalink-pinyin",
@@ -99,6 +146,42 @@ module.exports = {
             //RSS
             site_url: "https://kimyang.cn"
         }],
+        // ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+        //     width: '300px', // 默认 260px
+        //     title: '欢迎关注',
+        //     body: [
+        //         {
+        //             type: 'title',
+        //             content: '更多资源请关注我的微信公众号！🎉🎉🎉',
+        //             style: 'text-aligin: center;'
+        //         },
+        //         {
+        //             type: 'image',
+        //             src: '/qc/wechatqc.png'
+        //         },
+        //         {
+        //             type: 'image',
+        //             src: '/qc/bilibili.png'
+        //         }
+        //     ],
+        //     footer: [
+        //         {
+        //             type: 'button',
+        //             text: '赞赏',
+        //             link: '/sponsor'
+        //         }
+        //     ]
+        // }], [
+        //     'vuepress-plugin-sponsor',
+        //     {
+        //         theme: 'simple',
+        //         alipay: '/sponsor/alipag.png',
+        //         wechat: '/sponsor/wechatpay.png',
+        //         qq: '/sponsor/qqpay.png',
+        //         // paypal: 'https://www.paypal.me/yokefellow',
+        //         duration: 2000
+        //     }
+        // ],
     ],
 }
 

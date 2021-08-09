@@ -7,4 +7,3 @@ bgImageStyle: {
    height: '50vh'
 }
 ---
-
