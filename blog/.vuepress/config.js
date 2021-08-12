@@ -8,18 +8,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico', type: "image/x-icon" }],
         ['link', { rel: ' short icon', href: '/favicon.ico', type: "image/x-icon" }],
         ['link', { rel: 'apple-touch-icon', href: `/favicon.ico`, type: "image/x-icon" }],
-        ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
-        ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }],
     ],
-    //支持数学latex语法
-    markdown: {
-        extendMarkdown: md => {
-            md.set({
-                html: true
-            })
-            md.use(require('markdown-it-katex'))
-        }
-    },
     theme: 'reco',
     locales: {
         '/': {
@@ -50,21 +39,21 @@ module.exports = {
         editLinkText: '发现错误？欢迎斧正',
         nav: [
             { text: '首页', link: '/', icon: 'reco-home' },
-            // {
-            //    // 合并
-            //     text: '其他', items: [
-            //         { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
-            //         { text: '标签', link: '/tag/', icon: 'reco-tag' },
-            //         { text: 'RSS', link: 'https://kimyang.cn/rss.xml', icon: 'reco-rss' },
-            //     ], icon: 'reco-category'
-            // },
-            { text: '标签', link: '/tag/', icon: 'reco-tag' },
-            { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
-            { text: 'RSS', link: 'https://kimyang.cn/rss.xml', icon: 'reco-rss' },
-
+            { text: '算法题解', link: '/algorithm/', icon: 'reco-message' },
+            {
+                // 合并
+                text: '其他', items: [
+                    { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+                    { text: '标签', link: '/tag/', icon: 'reco-tag' },
+                    { text: 'RSS', link: 'https://kimyang.cn/rss.xml', icon: 'reco-rss' },
+                ], icon: 'reco-category'
+            },
+            // { text: '标签', link: '/tag/', icon: 'reco-tag' },
+            // { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+            // { text: 'RSS', link: 'https://kimyang.cn/rss.xml', icon: 'reco-rss' },
         ],
         sidebar: {
-
+            '/algorithm/': getAlgorithmSidebar(),
         },
         subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
         // 博客配置
@@ -73,10 +62,6 @@ module.exports = {
                 location: 2,     // 在导航栏菜单中所占的位置，默认2
                 text: '归档' // 默认文案 “分类”
             },
-            // tag: {
-            //     location: 3,     // 在导航栏菜单中所占的位置，默认3
-            //     text: '标签'      // 默认文案 “标签”
-            // },
             socialLinks: [     // 信息栏展示社交账号
                 { link: 'mailto:Kim.Yang.HG@outlook.com', icon: 'reco-mail' },
                 { link: 'https://github.com/KimYangOfCat', icon: 'reco-github' },
@@ -99,7 +84,10 @@ module.exports = {
         }
     },
     plugins: [
-        ['@neilsustc/markdown-it-katex'],
+        ['@renovamen/vuepress-plugin-katex', {
+            'throwOnError': false,  // (optional)
+            'errorColor': '#cc0000'  // (optional)
+        }],
         ['vuepress-plugin-mermaidjs'],
         ['flowchart'],
         ["vuepress-plugin-boxx"],
@@ -217,5 +205,21 @@ function getFriendsLink() {
             logo: "/images/friends/fanjiawen.png",
             link: 'https://godjiawen.github.io/'
         },
+    ]
+}
+function getAlgorithmSidebar() {
+    return [
+        '/algorithm/',
+        '/algorithm/35-搜索插入位置',
+        '/algorithm/38-外观数列',
+        '/algorithm/53-最大子序和',
+        '/algorithm/58-最后一个单词的长度',
+        '/algorithm/66-加一',
+        '/algorithm/70-爬楼梯',
+        '/algorithm/690-员工的重要性',
+        '/algorithm/1779-找到最近的有相同x或y坐标的点',
+        '/algorithm/1832-判断句子是否为全字母句',
+        '/algorithm/1833-雪糕的最大数量',
+        '/algorithm/lcp22-黑白方格画',
     ]
 }
