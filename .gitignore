@@ -2,7 +2,8 @@
 # Created by https://www.gitignore.io/api/go,hugo,macos,windows,webstorm,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=go,hugo,macos,windows,webstorm,visualstudiocode
 
-yarn.lock
+yarn-error.log
+
 blog/.vuepress/dist/*
 node_modules/*
 ### Go ###
