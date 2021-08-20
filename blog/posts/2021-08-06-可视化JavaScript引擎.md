@@ -73,10 +73,6 @@ JavaScript 是动态类型的语言，这代表数据类型可以不断改变。
 
 感谢阅读，祝你有美好的一天！❤
 
-> 如果发现译文存在错误或其他需要改进的地方，欢迎到 [掘金翻译计划](https://github.com/xitu/gold-miner) 对译文进行修改并 PR，也可获得相应奖励积分。文章开头的 **本文永久链接** 即为本文在 GitHub 上的 MarkDown 链接。
-
----
-
 > * 原文地址：[JavaScript Visualized: The JavaScript Engine](https://javascript.plainenglish.io/javascript-visualized-the-javascript-engine-1e3fc5d5310d)
 > * 原文作者：[Harsh Patel](https://medium.com/@harsh-patel)
 > * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)

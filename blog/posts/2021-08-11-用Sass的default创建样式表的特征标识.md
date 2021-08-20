@@ -111,18 +111,9 @@ $disable-font-cdn: false !default;
 
 这些只是 Sass `!default` 的几个例子。当你将该技术应用于自己的项目时，请参考这些文档资源和使用示例。
 
-* [`!default` 文档](https://sass-lang.com/documentation/variables#default-values)
-* [`@use with` 文档](https://sass-lang.com/documentation/at-rules/use#configuration)
-* [Bootstrap 中的变量默认值](https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults)
-* [一个 Sass `default` 使用案例](https://thoughtbot.com/blog/sass-default) (thoughtbot)
-
-> 如果发现译文存在错误或其他需要改进的地方，欢迎到 [掘金翻译计划](https://github.com/xitu/gold-miner) 对译文进行修改并 PR，也可获得相应奖励积分。文章开头的 **本文永久链接** 即为本文在 GitHub 上的 MarkDown 链接。
-
----
-
 > * 原文地址：[Creating Stylesheet Feature Flags With Sass !default](https://css-tricks.com/creating-stylesheet-feature-flags-with-sass-default/)
 > * 原文作者：[Nathan Babcock](https://css-tricks.com/author/nathanbabcock/)
 > * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
 > * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating-stylesheet-feature-flags-with-sass-default.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating-stylesheet-feature-flags-with-sass-default.md)
 > * 译者：[Gesj-yean](https://github.com/Gesj-yean)
-> * 校对者：[KimYang](https://github.com/KimYangOfCat) [nia3y](https://github.com/nia3y)
+> * 校对者：[Kim Yang](https://github.com/KimYangOfCat) [nia3y](https://github.com/nia3y)
