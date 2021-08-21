@@ -16,7 +16,7 @@ sticky: 1
 
 ## 交换友链
 
-想加友链的朋友，可以直接在下方留言，合适的基本都加！需要确保站点长期可用，若长时间失联，会被单方面移除嗷！
+想加友链的朋友，可以直接通过 PR 的方式提交信息，合适的基本都加嗷！[传送门在此](https://github.com/KimYangOfCat/Blog/tree/master/blog/.vuepress/config/friends.js)
 
 ### 格式
 
