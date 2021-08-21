@@ -68,11 +68,11 @@ module.exports = {
             verify: true, // 验证码
             recordIP: true
         },
-    //config 目录
+  
+         //config 目录
+        nav,
+        sidebar,
         friendLink,
     },
-
-    nav,
     plugins,
-    sidebar,
 }
