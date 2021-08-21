@@ -61,8 +61,50 @@
  * @param {number[][]} points
  * @return {number}
  */
-var nearestValidPoint = function(x, y, points) {
-
+ var nearestValidPoint = function(x, y, points) {
+    let minIndex=-1;//最小下标
+    let minAbs=Infinity;//最小曼哈顿距离
+    for(let i=0;i<points.length;i++){
+        if(points[i][0]===x||points[i][1]===y){
+            let abs=Math.abs(points[i][0]-x)+Math.abs(points[i][1]-y);
+            //计算曼哈顿距离
+            if(abs<minAbs){
+              //这里不必再单独处理曼哈顿距离相同时的情况了
+                minAbs=abs;
+                minIndex=i;
+            }
+        }
+    };
+    return minIndex;
 };
 // @lc code=end
 
+var nearestValidPoint = function(x, y, points) {
+    let out = points.reduce((pre,val,index)=>{
+        if(val[0]==x||val[1]==y){
+            //判断是否为有效点
+            let abs=Math.abs(x-val[0])+Math.abs(y-val[1]);
+            //计算曼哈顿距离
+            if(abs<pre[1]){
+                //此处不必再单独考虑距离相同时取下标较小值的问题，因为reduce遍历数组是从头向尾遍历的
+                pre=[index,abs]
+            }  
+        }
+        return pre;//不管pre有没有修改，都得将最后的结果返回回去，以便进行下一轮时pre有值。
+    },[-1,Infinity])
+    return out[0];
+};
+
+var nearestValidPoint = function(x, y, points) {
+    let out = points.reduce((pre,val,index)=>{
+        //将两种最小曼哈顿距离的有效点分开计算
+        if(val[0]===x&&Math.abs(val[1]-y)<pre[1]){
+            pre=[index,Math.abs(val[1]-y)] 
+        }
+        if(val[1]===y&&Math.abs(val[0]-x)<pre[1]){
+             pre=[index,Math.abs(val[0]-x)]
+        }
+        return pre;
+    },[-1,Infinity])
+    return out[0];
+};
