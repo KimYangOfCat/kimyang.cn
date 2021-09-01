@@ -2,7 +2,7 @@
 我在这里用文字记录了我所有折腾过的内容，您可以通过在线博客获得更好的阅读体验，地址如下：
 
 [Blog](https://kimyang.cn) | [github pages](https://kimyangofcat.github.io/Blog/)
-## Contents
+## 目录
 
 ### Webpack
 
@@ -53,7 +53,8 @@
 
 同时您也可关注我的微信公众号来获得实时文章更新通知。
 ![二维码](https://pic-bed-1256389522.cos.ap-chengdu.myqcloud.com/info/binarycode.png)
-## Thanks
+
+## 鸣谢
 
 * theme: [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)
 * Tool: [vuepress](https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html)
