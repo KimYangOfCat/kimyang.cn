@@ -16,6 +16,7 @@ jobs:
         # 选择一个action，可以理解为若干 steps.run，有利于代码复用
         uses: actions/checkout@master
         with:
+          ssh-key: ${{ secrets.SSH }}
           submodules: true
       # 安装使用 node:10
       - name: use Node.js 10

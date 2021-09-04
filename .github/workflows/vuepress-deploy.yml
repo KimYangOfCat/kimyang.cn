@@ -13,8 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
+          ssh-key: ${{ secrets.SSH }}
           submodules: true
-
       - name: vuepress-deploy
         uses: jenkey2011/vuepress-deploy@master
         env:
