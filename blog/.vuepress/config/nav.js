@@ -1,5 +1,6 @@
 module.exports=[
     { text: '首页', link: '/', icon: 'reco-home' },
+    { text: 'TC39', link: '/tc39-work/', icon: 'reco-message' },
     { text: '算法题解', link: '/algorithm/', icon: 'reco-message' },
     {
         // 合并
