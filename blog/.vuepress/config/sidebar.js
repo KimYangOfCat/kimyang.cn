@@ -47,5 +47,6 @@ function getTC39WorkSidebar(){
 
         '/tc39-work/archival.md',
         '/tc39-work/terminology.md',
+        '/tc39-work/TODO.md'
     ]
 }
