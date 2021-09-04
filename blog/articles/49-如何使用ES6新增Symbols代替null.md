@@ -7,7 +7,7 @@ publish: true
 ---
 
 ![](https://cdn-images-1.medium.com/max/4480/1*cF5KQi37G9SnB99KyYLADQ.jpeg)
-
+<!-- more -->
 当我在做业余项目库时，我需要表示一个缺失的值。在过去，我习惯在设置中使用 `nullable` 方法，而当我想要更多的控制时，则使用 `Option` 方法。
 
 在这种情况下，我觉得两者都不合适，所以我想出了一个不同的方法，并在本文中分享出来。

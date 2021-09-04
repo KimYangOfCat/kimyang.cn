@@ -7,7 +7,7 @@ publish: true
 ---
 
 ![](https://cdn-images-1.medium.com/max/2560/1*pdPTFvogzT9vzmc7k-qY2Q.jpeg)
-
+<!-- more -->
 处理字符串可能是一项繁琐的任务，因为我们需要考虑许多不同的用例。举例来说，像将字符串转为驼峰格式这样简单的任务就需要好几行代码来实现。
 
 ```js
