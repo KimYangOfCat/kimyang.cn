@@ -9,7 +9,7 @@ categories: [🐛 BUG集锦]
 
 ## 问题复现
 
-![image-20200627001641215](https://tva1.sinaimg.cn/large/007S8ZIlly1gg65cv48ayj319p0u0tif.jpg)
+![image-20200627001641215](https://picbed.kimyang.cn/202109050806334.jpg)
 
 报错: `error Command failed with exit code 137 ` <!-- more -->
 
@@ -17,7 +17,7 @@ categories: [🐛 BUG集锦]
 
 首先说明报错环境，大致如下：
 
-![博客插图](https://tva1.sinaimg.cn/large/007S8ZIlly1gg657c82ngj30h90awq46.jpg)
+![博客插图](https://picbed.kimyang.cn/202109050806335.jpg)
 
 ## 原因及解决思路
 
@@ -31,13 +31,13 @@ categories: [🐛 BUG集锦]
 
 其实一开始CI报错之后我并没有注意到是Docker的问题，毕竟Drone确实是个可以正常运行的，只是编译的过程中出现错误。而且在编译的过程中yarn警告了项目的许多依赖库 outdated ，于是我就以为是依赖库过时导致编译失败。
 
-![image-20200627004226901](https://tva1.sinaimg.cn/large/007S8ZIlly1gg663oay1kj31d20u0wn4.jpg)
+![image-20200627004226901](https://picbed.kimyang.cn/202109050806336.jpg)
 
 经过一下午升级相关依赖库及重写部分调用相关API的代码，最终尝试在本地编译，编译过程终于没有了警告⚠️！！Yes🎉🎉！但是进入流水线之后依旧报错，这时候我才注意到了这个137 错误代码！！经过一番查询之后这个错误代码是和Drone容器内存相关的，于是把问题反馈给了大佬！最后大佬通过添加swapfile修复了这个问题！🎉
 
 其实这个问题一个月前便出现了，只是当时自己懒，且很神奇的是当时，第一遍流水线跑不通，重启一次就能跑通！于是懒懒的自己就这样得过且过了！经过一个月，这些没有收敛的问题终究发散到了不得不收拾的地步。其实要是早早修复相关BUG，今天也不会因为Outdated 问题 被迷惑了老半天，浪费很多时间最后才查到具体的原因！
 
-![image-20200627004447532](https://tva1.sinaimg.cn/large/007S8ZIlly1gg6663q1ozj31f80u07dj.jpg)
+![image-20200627004447532](https://picbed.kimyang.cn/202109050806337.jpg)
 
 总结：**已经发散的问题如果不及时解决，一定不可能自动收敛，只会引起更多发散的问题！** 
 

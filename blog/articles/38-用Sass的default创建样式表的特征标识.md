@@ -95,7 +95,7 @@ $disable-font-cdn: false !default;
 
 ## 用例 3：调试间隔标记可视化
 
-![](https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/05/sass-default-visually-debugging.png?resize=1808%2C468&ssl=1)
+![](https://picbed.kimyang.cn/202109050841151.png)
 
 [查看演示](https://codepen.io/nathanbabcock/project/editor/AYYygg)
 

@@ -62,7 +62,7 @@ categories: [🌏 翻译校对]
 
 假如在我 `evil.com` 域名下的页面上有一个 `<script>` 标签。看起来这只是个普普通通的页面，用户可以在上面获取一些有用的信息。实际上，在 `<script>` 标签中，我写了一段向银行的 `DELETE /account` 接口发起请求的代码。由于上文我们假设浏览器允许各种跨域请求，所以每当你访问这个页面时，都会有个 AJAX 请求悄悄地调用银行的 API。
 
-![噗，你的账号完犊子了🌬](https://ieftimov.com/back-to-the-origin-with-cors/malicious-javascript-injection.png)
+![噗，你的账号完犊子了🌬](https://picbed.kimyang.cn/202109050834331.png)
 
 嘿嘿 —— 想象一下你正悠闲地浏览网页，突然就收到了一封来自银行的邮件，内容是恭喜你成功删除了你的账户。我知道你在想啥，如果这么简单就能把账户删掉的话，那就能对银行做**任何事**了，咳咳，离题了。
 
@@ -76,7 +76,7 @@ categories: [🌏 翻译校对]
 
 这意味着我将能够获得有关你的一些信息。 虽然这些信息不足以让我发起一次有价值的攻击，不过你能访问棒棒公司的内网，这条消息对于攻击发起者来说就比较有价值了。
 
-![向第三方泄露信息 💦](https://ieftimov.com/back-to-the-origin-with-cors/resource-embed-attack-vector.png)
+![向第三方泄露信息 💦](https://picbed.kimyang.cn/202109050835399.png)
 
 以上两个例子非常简单，不过也恰恰说明了同源策略和 CORS 的必要性。当然跨域请求的危害也不止这些。有的危害我们可以避免，但也有一些危害让我们束手无策 —— 它们天然根植于网络当中。不过目前通过媒介发起的攻击已经大大减少 —— 这多亏了 CORS。
 
@@ -163,7 +163,7 @@ $ crystal run server.cr
 
 服务启动并开始监听 `localhost:4000`。通过浏览器访问 `localhost:4000`，将会看到 “Hello World”：
 
-![Hello, world! 🌍](https://ieftimov.com/back-to-the-origin-with-cors/hello-world-localhost.png)
+![Hello, world! 🌍](https://picbed.kimyang.cn/202109050835757.png)
 
 好啦，我们的服务已经成功运行了，现在从浏览器的控制台向 `localhost:4000` 发起一个 `POST /greet` 请求吧。我们使用 `fetch` 方法发起请求：
 
@@ -179,7 +179,7 @@ fetch('http://localhost:4000/greet', {
 
 执行此段代码后，我们收到了来自服务的问候：
 
-![Hi there! 👋](https://ieftimov.com/back-to-the-origin-with-cors/hello-world-localhost-post.png)
+![Hi there! 👋](https://picbed.kimyang.cn/202109050835204.png)
 
 这是一个没有跨域的 `POST` 请求，是从 `http://localhost:4000`（和请求目标地址同源）页面发起的同源请求。
 
@@ -434,11 +434,11 @@ Fetch API 说明文档将 CORS 和 `fetch` API 的交互以及浏览器所采用
 
 如果将此设置应用于响应私有网络（比如受防火墙保护，或者需要挂载 VPN 才可以访问）上资源的请求，会有一定的风险。当你通过 VPN 连上公司的内网后，有了内网文件的访问权限：
 
-![简化 VPNs 连接的示例](https://ieftimov.com/back-to-the-origin-with-cors/vpn-access-diagram.png)
+![简化 VPNs 连接的示例](https://picbed.kimyang.cn/202109050835828.png)
 
 现在，假设攻击者的网站 `dangerous.com` 上有一个连接到内网文件的链接，则他们（理论上）可以在其网站上创建有该文件访问权限的脚本：
 
-![文件泄漏](https://ieftimov.com/back-to-the-origin-with-cors/vpn-access-attacker-diagram.png)
+![文件泄漏](https://picbed.kimyang.cn/202109050835900.png)
 
 虽然发起这样的攻击很难，并且需要大量有关 VPN 及其中存储的文件的知识，但我们必须要意识到设置为 `Access-Control-Allow-Origin: *` 是有潜在风险的。
 
@@ -450,13 +450,13 @@ Fetch API 说明文档将 CORS 和 `fetch` API 的交互以及浏览器所采用
 
 此例中，我们的后端 API 是公共的，不过我们可不希望 **任何** 网站都可以向我们的数据采集 API 发送数据。实际上，我们只对来自我们自己网站上的请求感兴趣 —— 就是这样。
 
-![](https://ieftimov.com/back-to-the-origin-with-cors/no-cross-origin-api.png)
+![](https://picbed.kimyang.cn/202109050835584.png)
 
 此例中，我们将 API 的响应头属性 `Access-Control-Allow-Origin` 值设置为我们网站的 URL。这样的话来自别的源的请求会被浏览器拦截。
 
 即使用户或别的网站拼命地塞数据到我们的统计接口，在 API 资源响应头部设置的 `Access-Control-Allow-Origin` 属性也不会让请求通过：
 
-![](https://ieftimov.com/back-to-the-origin-with-cors/failed-cross-origin-api.png)
+![](https://picbed.kimyang.cn/202109050835824.png)
 
 ### 请求头中 Origin 属性值为 NUll
 

@@ -5,7 +5,7 @@ tags: [前端]
 categories: [🌏 翻译校对]
 ---
 
-![图源 [Ferenc Almasi](https://unsplash.com/@flowforfrank?utm_source=medium&utm_medium=referral) 上传至 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10296/0*LUP7NJrirKlw-voh)
+![](https://picbed.kimyang.cn/202109050837274.jpeg)
 
 如今的 web 框架，类似 React 和 Vue 在创建现代 web 应用方面非常受欢迎，这是有原因的。这些框架帮助把代码片段变成可复用的组件，通过使用声明式性的标记使组件易于根据数据更新。
 <!-- more -->
@@ -31,9 +31,9 @@ Solid 可以被看成是运行时的框架，但由于它常常用于优化代�
 
 根据 BundlePhobia 计算，React 和 vue 的包大小分别是 39.4kb GZip 和 22.9kb GZip。
 
-![React 包大小](https://cdn-images-1.medium.com/max/2724/1*yWAVUnOXKsrwrRzTSb6kzw.png)
+![React 包大小](https://picbed.kimyang.cn/202109050837662.png)
 
-![Vue 包大小](https://cdn-images-1.medium.com/max/2684/1*eTVWVuDuNORYhxf1g5bF_w.png)
+![Vue 包大小](https://picbed.kimyang.cn/202109050837029.png)
 
 相比之下，Svelte 除了原生 DOM 操作以外使用的东西很少，所以几乎没有基本的包大小，且对于只有一些小型函数帮助 DOM 更新。
 
@@ -41,11 +41,11 @@ Solid 可以被看成是运行时的框架，但由于它常常用于优化代�
 
 另外，Solid 和 Svelte 在运行时都明显更快。 根据 [Krausest Framework Benchmarks](https://krausest.github.io/js-framework-benchmark/2021/table_chrome_90.0.4430.72.html), Solid 和 Svelte 在启动时间，DOM 操作速度以及内存使用方面更快。
 
-![框架速度基准对比](https://cdn-images-1.medium.com/max/2000/1*cyKBaU7O35rKAPZJ4jsO2A.png)
+![框架速度基准对比](https://picbed.kimyang.cn/202109050837835.png)
 
-![框架启动速度对比](https://cdn-images-1.medium.com/max/2000/1*m5e36L44ph12wCOhCq576Q.png)
+![框架启动速度对比](https://picbed.kimyang.cn/202109050837196.png)
 
-![框架内存基准对比](https://cdn-images-1.medium.com/max/2000/1*EuwkvRIURVuvKk7XqphdYQ.png)
+![框架内存基准对比](https://picbed.kimyang.cn/202109050837400.png)
 
 就像你看到的，在大型 Dom 操作上，启动（受脚本大小和编译时间影响）时间和内存使用方面，Solid 和 Svelte 比 React 和 Vue 表现更佳。
 

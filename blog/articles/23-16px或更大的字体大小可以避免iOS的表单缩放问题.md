@@ -11,7 +11,7 @@ categories: [🌏 翻译校对]
 
 总的来说，我还挺喜欢这个功能。它可以帮助人们了解自己在做什么，并且也表了态 —— 苹果不建议开发者在 UI 中使用过小的字体。让人略感遗憾的是（我在这里并没责怪任何人），在不同字体大小的可读性上，并非所有字体都是一样的。比如说，下图是字体大小为 16px 的 *San Francisco* 与 *Caveat* 的对比：
 
-![](https://i2.wp.com/css-tricks.com/wp-content/uploads/2021/04/Screen-Shot-2021-04-30-at-9.11.55-AM.png?resize=558％2C344&ssl=1)
+![](https://picbed.kimyang.cn/202109050831146.png)
 
 <small>左边是 *San Francisco*，右边是 *Caveat*。即使 `font-size` 相同，*Caveat* 在外观上看起来也要小得多。</small>
 
@@ -23,9 +23,9 @@ categories: [🌏 翻译校对]
 > 
 > 从用户体验的角度来看有很大的不同！
 > 
-> [comment]: <> (Original Video Link: https://video.twimg.com/tweet_video/EyX2MSaXMAExyQA.mp4)
+> [comment]: <> "Original Video Link: https://video.twimg.com/tweet_video/EyX2MSaXMAExyQA.mp4"
 > 
-> ![](https://github.com/PassionPenguin/gold-miner-images/blob/master/16px-or-larger-text-prevents-ios-form-zoom-EyX2MSaXMAExyQA.gif?raw=true)
+> ![](https://picbed.kimyang.cn/202109050831477.gif)
 > 
 > —— Josh W. Comeau @JoshWComeau 9:07, Apr 7, 2021
 > 
@@ -35,9 +35,9 @@ categories: [🌏 翻译校对]
 > 
 > 另外，人们始终可以根据需要手动放大。
 > 
-> ![](https://pbs.twimg.com/media/EyX5HAlXEAErIj6?format=png&name=small)
+> ![](https://picbed.kimyang.cn/202109050831884.png)
 > 
-> ![](https://pbs.twimg.com/media/EyX5IBWWUAA8Sis?format=png&name=small)
+> ![](https://picbed.kimyang.cn/202109050831246.png)
 > 
 > —— Josh W. Comeau @JoshWComeau 9:07, Apr 7, 2021
 

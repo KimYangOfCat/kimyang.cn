@@ -16,11 +16,11 @@ categories: [🐛 BUG集锦]
 
 首先检查了网络设置上的问题，结果打开网络设置中心，直接告诉我系统相关的组件崩了！！！🙀
 
-![系统网络组件无法启动](https://tva1.sinaimg.cn/large/0082zybpgy1gbw8jgr9c0j31hc0ome6j.jpg)
+![系统网络组件无法启动](https://picbed.kimyang.cn/202109050824739.jpg)
 
 然后运行 Windows 的网络检测功能，它直接告诉我它找不到硬件～😨这就很可怕了，有可能是驱动坏了，但是更有可能硬件坏了。这要是硬件坏了，我在这种特殊时期去哪儿给它买？？😱
 
-![系统找不到硬件](https://tva1.sinaimg.cn/large/0082zybpgy1gbw8jsgillj31hc0omb0m.jpg)
+![系统找不到硬件](https://picbed.kimyang.cn/202109050824274.jpg)
 
 综上所述，明确了两个问题，一是系统已经在崩溃的边缘疯狂试探了，二是驱动和硬件二坏一。
 
@@ -34,17 +34,17 @@ categories: [🐛 BUG集锦]
 
 之后没得办法的我只能去百度了一下：Win7 纯净系统，纯净网就这样入了我的眼👀！
 
-![垃圾爱纯净](https://tva1.sinaimg.cn/large/0082zybpgy1gbw9l86g2aj30rk0l5gub.jpg)
+![垃圾爱纯净](https://picbed.kimyang.cn/202109050824471.jpg)
 
 但是当我看到它的系统大小——6 GB，我就觉得隐隐不对。毕竟，我从 MSDN 上下载的系统只有 3 GB左右。但是走头无路的我，只能选择相信这个网站的名字。
 
 于是便用老毛桃制作PE系统将其刷入那个老笔记本之中！
 
-![垃圾系统的刷入过程](https://tva1.sinaimg.cn/large/0082zybpgy1gbw9tovaczj31hc0u0b2f.jpg)
+![垃圾系统的刷入过程](https://picbed.kimyang.cn/202109050825752.jpg)
 
 最后的结果嘛，显而易见啦～
 
-![541581685752_.pic_hd](https://tva1.sinaimg.cn/large/0082zybpgy1gbw9v520gjj30u01hc7wk.jpg)
+![541581685752_.pic_hd](https://picbed.kimyang.cn/202109050825160.jpg)
 
 安装好系统，不出三分钟，360全家福，各种毒霸，各大视频软件和音乐🎵软件，铺天盖地而来。
 
@@ -52,7 +52,7 @@ categories: [🐛 BUG集锦]
 
 然后我又在纯净网上看到了一些现在看来讽刺至极的言语！真就我傻了呗！信了你的名！
 
-![在线甩锅](https://tva1.sinaimg.cn/large/0082zybpgy1gbwa3fl5nzj30kc0bamzn.jpg)
+![在线甩锅](https://picbed.kimyang.cn/202109050825907.jpg)
 
 ![此地无银三百两](https://tva1.sinaimg.cn/large/0082zybpgy1gbwa5g8gbbj30k103fdgd.jpg)
 
@@ -72,7 +72,7 @@ categories: [🐛 BUG集锦]
 
 以后大家遇见类似的情况，给安利一下这个网卡版！
 
-![image-20200214222312507](https://tva1.sinaimg.cn/large/0082zybpgy1gbwanswg20j30se0dkdon.jpg)
+![image-20200214222312507](https://picbed.kimyang.cn/202109050825048.jpg)
 
 当我打完所有驱动之后，却发现，系统没有激活！！！
 

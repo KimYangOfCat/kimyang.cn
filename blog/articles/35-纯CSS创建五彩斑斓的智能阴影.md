@@ -7,7 +7,7 @@ categories: [🌏 翻译校对]
 
 几天前，我在 Home Depot（也就是大孩子的[玩具反斗城](http://en.wikipedia.org/wiki/Toys_R_Us)）处发现，他们有一个巨大的显示器来展示所有这些彩色的供销售的电灯泡！其中一项是一组在电视后面的智能灯泡。它们会在电视的后面投影近似于电视在播出的内容的彩色阴影，与以下内容 [类似](https://www.philips-hue.com/en-us/p/hue-play-hdmi-sync-box-/046677555221)：
 
-![](https://www.kirupa.com/html5/images/lighting_behind_tv.png)
+![](https://picbed.kimyang.cn/202109050839877.png)
 <!-- more -->
 注意电视后面发生的事情。屏幕中所显示的颜色会被灯泡投影为电视机身后面的彩色阴影。随着屏幕上的颜色发生变化，投射在背景中的颜色也会发生变化。真的很酷，对吧？
 
@@ -19,7 +19,7 @@ categories: [🌏 翻译校对]
 
 正如您将在以下部分中看到的，使用 CSS 创建这种彩色阴影似乎是一项艰巨的任务（当然，只是就刚开始而言）。当我们开始进入它并将这个困难的任务的核心分割成一个个小任务时，我们其实能够发现，要实现这个效果，其实蛮简单的。在接下来的几个小节中，我们将创建以下示例：
 
-![](https://user-images.githubusercontent.com/5164225/122199432-9bf35d80-cecc-11eb-9150-28c7b09c595e.gif)
+![](https://picbed.kimyang.cn/202109050840537.gif)
 
 你应该看到的是一张后面有一个五颜六色的阴影的寿司的图片。（只是为了强调我们正在做这一切，我们为阴影添加了脉冲的动画效果）抛开示例，让我们深入了解实现，看看 HTML 和 CSS 如何让这一切变为现实！
 
@@ -49,7 +49,7 @@ categories: [🌏 翻译校对]
 
 在此样式规则中，我们将 div 的大小指定为 150 x 150 像素，并在其上设置 `background-image` 和相关的其他属性。就目前而言，我们所看到的 HTML 和 CSS 会给我们提供如下所示的内容：
 
-![](https://www.kirupa.com/html5/images/chrome_sushi_only.png)
+![](https://picbed.kimyang.cn/202109050840984.png)
 
 ## 现在是阴影时间
 
@@ -110,7 +110,7 @@ categories: [🌏 翻译校对]
 
 我们的 **drop-shadow** 过滤器设置为显示不透明度为 50% 的黑色阴影，而我们的 **blur** 过滤器会将我们的伪元素模糊 20px。 这两个过滤器的组合最终创建了彩色的阴影，当应用这两个样式规则时，该阴影现在将出现在我们的寿司图像后面：
 
-![](https://www.kirupa.com/html5/images/chrome_sushi_shadow.png)
+![](https://picbed.kimyang.cn/202109050840105.png)
 
 至此，我们已经实现了智能阴影。为完整起见，如果我们想要彩色阴影缩放的动画，如下 CSS 代码的添加能够助力我们实现目标：
 

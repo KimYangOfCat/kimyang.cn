@@ -7,8 +7,9 @@ categories: [🌏 翻译校对]
 
 在本文中，我们将通过一些示例代码向大家介绍 ECMAScript 2021 最新版本的功能。
 
-![](https://cdn-images-1.medium.com/max/2000/1*ex1pND6jnzW3Hj2vjRjaDA.jpeg)
+![](https://picbed.kimyang.cn/202109050830831.jpeg)
 <!-- more -->
+
 ## 新的功能
 
 ### 1. String.replaceAll( )
@@ -72,7 +73,7 @@ Promise
 
 ### 3. 逻辑赋值操作符
 
-![来源: [https://exploringjs.com/impatient-js/ch_operators.html#logical-assignment-operators](https://exploringjs.com/impatient-js/ch_operators.html#logical-assignment-operators)](https://cdn-images-1.medium.com/max/2972/1*WS3OZEp_hEv0_zLaihk6-Q.png)
+![](https://picbed.kimyang.cn/202109050831375.png)
 
 `a ||= b` 等同于 `a || (a = b)`（短路运算符）
 

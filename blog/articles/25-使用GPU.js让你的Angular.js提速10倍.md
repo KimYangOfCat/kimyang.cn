@@ -5,7 +5,7 @@ tags: [Angular,前端]
 categories: [🌏 翻译校对]
 ---
 
-![Photo by [Lucas Kepner](https://unsplash.com/@lucaskphoto?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral).](https://cdn-images-1.medium.com/max/12878/0*rDxYRR86genkrPIK)
+![](https://picbed.kimyang.cn/202109050833617.jpeg)
 
 对于开发者来说，提高程序的性能是永恒的目标。但当程序中的计算任务很大时，我们可优化的选项很少，因为这些计算任务主要依赖 CPU 的性能。
 
@@ -29,7 +29,7 @@ ng new <project-name>
 
 接着，运行 `ng serve` 命令，并在浏览器上打开 `[http://localhost:4200/](http://localhost:4200/)` 测试程序是否创建成功。
 
-![](https://cdn-images-1.medium.com/max/3800/1*Ae4A5eiYOynQNWqNdr9aSg.png)
+![](https://picbed.kimyang.cn/202109050833569.png)
 
 ### 2. 安装 GPU.js
 
@@ -37,7 +37,7 @@ ng new <project-name>
 
 如果机器中没有运行 GPU，你的应用程序使用了 GPU.js 也可以正常运行。如果设备没有 GPU，它会重新回到常规的 JavaScript 引擎的运行状态。所以，使用 GPU.js 没有任何坏处。
 
-![Source: [GPU.js](https://gpu.rocks/#/)](https://cdn-images-1.medium.com/max/3710/0*gxIob58_QAXfYe3a.png)
+![](https://picbed.kimyang.cn/202109050833987.png)
 
 像其他 JavaScript 库一样，使用 npm 或 yarn 都可以获取到 GPU.js。你可以使用任一命令安装 GPU.js：
 
@@ -138,7 +138,7 @@ yarn add gpu.js
 
 现在我要实现一个简单页面，用户在这个页面输入数组大小，然后就可以得到程序执行所花的时间。
 
-![](https://cdn-images-1.medium.com/max/2000/1*2nHeMQvrijEV_4sb99Andw.png)
+![](https://picbed.kimyang.cn/202109050834365.png)
 
 ```HTML
 <div class="container-fluid">
@@ -294,7 +294,7 @@ export class AppComponent {
 
 因此，我使用不同大小的数组作为输入参数，执行了多次，结果非常有趣：
 
-![Execution times](https://cdn-images-1.medium.com/max/2000/1*ur_7EfLMeJAVMvOu9GV_WQ.png)
+![Execution times](https://picbed.kimyang.cn/202109050834528.png)
 
 你可以看到，当任务较小时，CPU 的性能较好。任务大小在 200 以下时，CPU 表现出了最佳性能，而 GPU 却花费了更多时间才完成任务。
 

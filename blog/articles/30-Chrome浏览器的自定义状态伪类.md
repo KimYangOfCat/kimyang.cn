@@ -106,7 +106,7 @@ labeled-checkbox:--checked {
 }
 ```
 
-![](https://github.com/PassionPenguin/gold-miner-images/blob/master/custom-state-pseudo-classes-in-chrome-custom-state-pseudo-class.gif?raw=true)
+![](https://picbed.kimyang.cn/202109050836870.gif)
 
 [用 Chrome 浏览器打开这个 demo](https://codepen.io/simevidas/pen/ZELwEBy)
 

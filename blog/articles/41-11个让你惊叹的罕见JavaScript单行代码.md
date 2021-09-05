@@ -5,7 +5,7 @@ tags: [JavaScript]
 categories: [🌏 翻译校对]
 ---
 
-![Source: [Pexels](https://www.pexels.com/photo/blue-eyed-man-staring-at-the-mirror-54377/)](https://cdn-images-1.medium.com/max/8576/1*-0ag6JFjkLmmXTJVVZPVmA.jpeg)
+![](https://picbed.kimyang.cn/202109050843757.jpeg)
 
 如果你想给专业开发人员留下深刻印象，你会怎么做？这很简单：用简易的策略和尽量少的代码来解决一个复杂的难题。随着 ES6 引入了箭头函数功能，我们可以创建看起来优雅又简单的单行代码。
 
@@ -16,7 +16,7 @@ categories: [🌏 翻译校对]
 
 获取字符数是一个很实用的功能，在许多场景下都很适用。你可以使用它来获取空格数和随后的单词数，或者用于获取字符串中某个分隔符的统计次数。
 
-![](https://cdn-images-1.medium.com/max/2412/1*4JTq7Wv6G1Tu0GUkHjJqNA.png)
+![](https://picbed.kimyang.cn/202109050843469.png)
 
 ```js
 const characterCount = (str, char) => str.split(char).length - 1
@@ -30,7 +30,7 @@ const characterCount = (str, char) => str.split(char).length - 1
 
 幸运的是，下面的单行代码实现了我们想要完成的事。
 
-![](https://cdn-images-1.medium.com/max/3100/1*raLs5fvNEPlEUQnU4z-Chw.png)
+![](https://picbed.kimyang.cn/202109050843123.png)
 
 ```js
 const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object
@@ -42,7 +42,7 @@ const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === 
 
 在这个单行代码中，我们将接触一些简单的异步编程概念。在运行代码时，如果你想等待一定的时间，这是 `wait` 的单行代码：
 
-![](https://cdn-images-1.medium.com/max/3448/1*zED3kVo1HB1p-rMsEB-rbw.png)
+![](https://picbed.kimyang.cn/202109050843684.png)
 
 ```js
 const wait = async (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -56,7 +56,7 @@ const wait = async (milliseconds) => new Promise((resolve) => setTimeout(resolve
 
 这是一个强大的单行代码来计算两个日期之间的天数差。但这还没结束。和我一样，你可以创建自己的单行代码来计算月数差、年数差等。
 
-![](https://cdn-images-1.medium.com/max/3416/1*pWjSKnUvpmNYGi2F7VZWLQ.png)
+![](https://picbed.kimyang.cn/202109050844934.png)
 
 ```js
 const daysBetween = (date1, date2) => Math.ceil(Math.abs(date1 - date2) / (1000 * 60 * 60 * 24))
@@ -70,7 +70,7 @@ const daysBetween = (date1, date2) => Math.ceil(Math.abs(date1 - date2) / (1000 
 
 这个单行代码正好适用于我上面提到的情况，但我认为你可以找到更多的使用场景。
 
-![](https://cdn-images-1.medium.com/max/2000/1*Ab_JYkkPUZ1wdOksFFqGZQ.png)
+![](https://picbed.kimyang.cn/202109050844703.png)
 
 ```js
 const redirect = url => location.href = url
@@ -82,7 +82,7 @@ const redirect = url => location.href = url
 
 随着可以连接到互联网的设备越来越多，创建响应式网站的必要性也越来越高。20 年前，开发者应该考虑过桌面版网站，但今天超过 50% 的网络流量来自触摸设备。因此，采取一些行动以支持设备的触屏是非常重要的。
 
-![](https://cdn-images-1.medium.com/max/4056/1*hCg1ziRq2M2JniqKfc2sBA.png)
+![](https://picbed.kimyang.cn/202109050844994.png)
 
 ```js
 const touchSupported = () => ('ontouchstart' in window || DocumentTouch && document instanceof DocumentTouch)
@@ -96,7 +96,7 @@ const touchSupported = () => ('ontouchstart' in window || DocumentTouch && docum
 
 这是在 HTML 元素之后立即注入一串 HTML 的单行代码。通过几分钟的思考和谷歌搜索，我相信你可以找到这个单行**之前**的版本。
 
-![](https://cdn-images-1.medium.com/max/2840/1*52MWqa-s4AMOMSKOIqgODw.png)
+![](https://picbed.kimyang.cn/202109050844114.png)
 
 ```js
 const insertHTMLAfter = (html, el) => el.insertAdjacentHTML('afterend', html)
@@ -108,7 +108,7 @@ const insertHTMLAfter = (html, el) => el.insertAdjacentHTML('afterend', html)
 
 为此，这里提供了一个能让你可以每天使用的单行 `shuffle` 代码：
 
-![](https://cdn-images-1.medium.com/max/2336/1*__MeJCilbgX-QPSqpquOYQ.png)
+![](https://picbed.kimyang.cn/202109050844705.png)
 
 ```js
 const shuffle = arr => arr.sort(() => 0.5 - Math.random())
@@ -120,7 +120,7 @@ const shuffle = arr => arr.sort(() => 0.5 - Math.random())
 
 浏览器在全局 `windows` 对象上有一个名为 `getSelection` 的内置方法。使用此方法，你可以创建一个单行代码，返回网页上被框选的文本。
 
-![](https://cdn-images-1.medium.com/max/2840/1*HKml5QxPBuZWWymaNC26GQ.png)
+![](https://picbed.kimyang.cn/202109050844142.png)
 
 ```js
 const getSelectedText = () => window.getSelection().toString()
@@ -130,7 +130,7 @@ const getSelectedText = () => window.getSelection().toString()
 
 在编程时，尤其是在编写游戏时，有时你会想要某些行为被随机的执行。在这种情况下，下面的单行代码让事情变得非常方便。
 
-![](https://cdn-images-1.medium.com/max/2080/1*xpI9zORD0YwiQwtd1Qr_0w.png)
+![](https://picbed.kimyang.cn/202109050844129.png)
 
 ```js
 const getRandomBoolean = () => Math.random() >= 0.5
@@ -144,7 +144,7 @@ const getRandomBoolean = () => Math.random() >= 0.5
 
 计算数组的平均值有很多种方法，但每个的逻辑都是一样的。你必须获得数组的总和及其长度，然后相除得出平均值。
 
-![](https://cdn-images-1.medium.com/max/2652/1*z2pUB4_rZKS7vfbW4YDubw.png)
+![](https://picbed.kimyang.cn/202109050844041.png)
 
 ```js
 const average = (arr) => arr.reduce((a, b) => a + b) / arr.length

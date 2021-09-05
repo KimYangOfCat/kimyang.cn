@@ -5,7 +5,7 @@ tags: [JavaScript]
 categories: [🌏 翻译校对]
 ---
 
-![](https://cdn-images-1.medium.com/max/2000/0*XIjsf6eB35MwgNCg.png)
+![](https://picbed.kimyang.cn/202109050840752.png)
 
 作为 JavaScript 开发人员，我们通常不需要亲自与编译器打交道。但知晓 JavaScript 引擎的基础知识，以及了解它是如何处理我们各自不同的 JS 代码并将其转化为机器能理解的东西，也是很好的！🥳
 <!-- more -->
@@ -15,13 +15,13 @@ categories: [🌏 翻译校对]
 
 HTML 解析器在你的代码中寻找 `script` 标签以及其对应的来源，并从其来源加载程序或代码。它可能来自 **网络**，**临时存储**，或者其它**service worker**。然后以**字节流**的格式响应，稍后该字节流将被字节流解码器接管！主要是**字节流解码器**会解码到来的流数据。
 
-![](https://cdn-images-1.medium.com/max/2000/1*cOoWhcaQqt7YIefpVMjTYw.gif)
+![](https://picbed.kimyang.cn/202109050840815.gif)
 
 ---
 
 字节流解码器根据已解码的的字节流创建 token。比如，`0066` 解码为 `f`，`0075` 变` u`，`006e` 变 `n`，`0063` 变 `c`，`0074` 变 `t`，`0069` 变 `i`，`006f` 变 `o`，006e` 变为 `n` 和一个空格。看上去好像是你写了 function！这在 JavaScript 中是一个保留关键字，一个 token 被创建并发送给解析器（以及预解析器，这并没有涵盖在动图里但稍后会解释）。其余字节流的处理也一样。
 
-![](https://cdn-images-1.medium.com/max/2000/1*Eb2a3HrsWCQogSpEW9gHjA.gif)
+![](https://picbed.kimyang.cn/202109050841540.gif)
 
 ---
 
@@ -29,13 +29,13 @@ HTML 解析器在你的代码中寻找 `script` 标签以及其对应的来源�
 
 解析器根据从字节流解码器处接收的 token 来创建节点，并用这些节点来创建一个抽象语法树（AST）。🌳
 
-![](https://cdn-images-1.medium.com/max/2000/1*r4CyGfK7TWvm1sFl1jaOWQ.gif)
+![](https://picbed.kimyang.cn/202109050841290.gif)
 
 ---
 
 下一步，解释器出场！解释器遍历 AST 并根据 AST 所包含的信息来生成字节码。一旦字节码生成完毕，AST 就会被删除从而清空内存空间。最后，我们就拥有了机器可以使用的东西。🎉
 
-![](https://cdn-images-1.medium.com/max/2000/1*5WJid_AePzCASZ0NTLZv-w.gif)
+![](https://picbed.kimyang.cn/202109050841747.gif)
 
 ---
 
@@ -43,7 +43,7 @@ HTML 解析器在你的代码中寻找 `script` 标签以及其对应的来源�
 
 字节码以及产生的类型反馈会一起发送给优化编译器。优化编译器接收字节码和类型反馈，并从中生成高度优化后的机器码。🚀
 
-![](https://cdn-images-1.medium.com/max/2000/1*xJ3kFQ776JaMquxron2-gQ.gif)
+![](https://picbed.kimyang.cn/202109050841326.gif)
 
 ---
 
@@ -55,7 +55,7 @@ JavaScript 是动态类型的语言，这代表数据类型可以不断改变。
 
 比如说我们有一个如下所示的求和函数，目前为止该函数每一次调用都会带有数字类型的参数。
 
-![](https://cdn-images-1.medium.com/max/2000/1*2VZ1b9rX099PDz_wDtwJSw.png)
+![](https://picbed.kimyang.cn/202109050841848.png)
 
 该函数会返回数字 3！当我们再次调用时，引擎会假定我们依然携带两个数字类型的参数。
 
@@ -63,7 +63,7 @@ JavaScript 是动态类型的语言，这代表数据类型可以不断改变。
 
 比如下一次调用它时我们传递的是字符串而不是数字。因为 JavaScript 是动态类型语言，我们可以这样做而且不会引发报错。
 
-![](https://cdn-images-1.medium.com/max/2000/1*7IlQ3bxyDA7cdl4Gn1lbCA.png)
+![](https://picbed.kimyang.cn/202109050841566.png)
 
 这意味着数字 `2` 将会强制转为字符串，而该函数将会返回字符串 `"12"`。引擎将回退去解释字节码以及更新类型反馈。
 

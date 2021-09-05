@@ -5,7 +5,7 @@ tags: [CSS,前端]
 categories: [🌏 翻译校对]
 ---
 
-![图源 [Pankaj Patel](https://unsplash.com/@pankajpatel)，上传至 [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral).](https://cdn-images-1.medium.com/max/9874/1*0Ca38BL7C5MRI0qsdAQT3Q.jpeg)
+![](https://picbed.kimyang.cn/202109050831043.jpeg)
 
 有人认为 CSS 很难学习，觉得 CSS 有很多的坑，甚至还有一点儿魔幻，难以理解，很容易会搬起石头砸自己的脚。对此我感到难过，毕竟，我可不这么认为。<!-- more -->
 

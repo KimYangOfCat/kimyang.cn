@@ -90,7 +90,7 @@ Python 线程是一个危险的话题，有时，多线程可能会更慢！戴�
 
 无论如何，我仍然会使用 Python 线程来完成 HTTP 请求工作。我将使用一个队列来保存 100 个链接并创建 10 个 HTTP 工作线程来异步下载这 100 个链接。
 
-![How the multi-thread works](https://cdn-images-1.medium.com/max/2994/1*JfPvverf5eScyBkQQ6NOqw.png)
+![How the multi-thread works](https://picbed.kimyang.cn/202109050845822.png)
 
 要使用 Session 对象，为 10 个线程创建 10 个 Session 对象是一种浪费，我只想要创建一个 Session 对象并在所有下载工作中重用它。为了实现这一点，代码将利用 `threading` 包中的 `local` 对象，这样 10 个线程工作将共享一个 Session 对象。
 
@@ -162,7 +162,7 @@ Python 还提供了 `ThreadPoolExecutor` 来执行多线程工作，我很喜欢
 
 有了 ThreadPoolExecutor 及其 map 函数，我们可以创建一个代码非常简洁的多线程版本，只需要从同步版本中进行很小的代码更改。
 
-![How the ThreadPoolExecutor version works](https://cdn-images-1.medium.com/max/2676/1*21PJpOn4vMaFCgJPn1CDbQ.png)
+![How the ThreadPoolExecutor version works](https://picbed.kimyang.cn/202109050845482.png)
 
 代码：
 
@@ -209,7 +209,7 @@ download 100 links in 1.0798051357269287 seconds
 
 你敢相信吗，`asyncio` 只有在一个线程、一个 CPU 核心中运行！
 
-![asyncio Event Loop](https://cdn-images-1.medium.com/max/3490/1*yByf16mv2X7XaaTX4oQFaA.png)
+![asyncio Event Loop](https://picbed.kimyang.cn/202109050845198.png)
 
 在 `asyncio` 中实现的事件循环几乎与 Javascript 中使用的相同。
 

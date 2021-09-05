@@ -5,7 +5,7 @@ tags: [JavaScript]
 categories: [🌏 翻译校对]
 ---
 
-![](https://cdn-images-1.medium.com/max/2400/1*KQnA_VQkW6DVV-4zLBu_-Q.png)
+![](https://picbed.kimyang.cn/202109050839769.png)
 
 作为一个 JavaScript 开发者，会经常使用高阶函数，所以你务必对这些函数有正确的理解。目前，我看到部分开发者经常对 `reduce()` 的使用感到困惑。因此，我的这篇文章将会详细说明，你要试着逐步地去理解它，我相信你一定能掌握。
 <!-- more -->

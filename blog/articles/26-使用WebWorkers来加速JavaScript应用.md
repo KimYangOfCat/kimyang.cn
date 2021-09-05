@@ -5,7 +5,7 @@ tags: [JavaScript,前端]
 categories: [🌏 翻译校对]
 ---
 
-![](https://cdn-images-1.medium.com/max/5760/1*dc6I4-IzvGDNryL2KpZX-Q.png)
+![](https://picbed.kimyang.cn/202109050834960.png)
 
 Web Workers 是一种可以调用浏览器在后台执行大量且耗时任务的方法。它拥有开启新线程的能力，从而允许你优先处理某些任务，并可以解决如 JavaScript 这类单线程语言中的阻塞行为。
 
@@ -64,7 +64,7 @@ const Start_Animation = () => {
 
 运行上述代码，你将会看到如下的输出。如果仔细观察，你会发现当你调用 `Run_Calculation` 函数时，动画会冻结几秒钟。
 
-![一个没有使用 Web Worker 的应用程序示例](https://cdn-images-1.medium.com/max/2280/1*ccudXc7quomjAc-4KQ2Wrg.gif)
+![一个没有使用 Web Worker 的应用程序示例](https://picbed.kimyang.cn/202109050834102.gif)
 
 既然你已经察觉到单线程 JavaScript 的局限性，让我们看看如何使用 Web Workers 来处理这个问题。
 
@@ -157,7 +157,7 @@ worker.onmessage = event => {
 
 现在，一切都设置好了，你可以在浏览器中重新加载程序，启动动画，并点击 `Run_Calculation` 按钮开始计算。你会看到质数计算结果仍然出现在浏览器控制台中，但这对图像的移动没有影响。因此，可以看到我们的应用程序表现有了**很大幅度的提高**。
 
-![一个使用 Web Worker 应用程序示例](https://cdn-images-1.medium.com/max/2280/1*x0judL4Qm9bdKJ8RM4yeyQ.gif)
+![一个使用 Web Worker 应用程序示例](https://picbed.kimyang.cn/202109050834580.gif)
 
 ### 第三步 — 终止 web worker
 

@@ -7,7 +7,7 @@ categories: [🛠 高效工具]
 
 写下此文时的使用版本如图所示：
 
-![image-20200205003915313](https://tva1.sinaimg.cn/large/006tNbRwgy1gbkueaafplj307w06u74k.jpg)
+![image-20200205003915313](https://picbed.kimyang.cn/202109050823082.jpg)
 
 使用平台：macOS，整篇文章谈论的都是 macOS 平台的使用体验，Windows PC 上的 Typora 可能会略有不同～<!-- more -->
 
@@ -23,11 +23,11 @@ categories: [🛠 高效工具]
 
     而如今 Typora 和 iPic 合作，在 Typora 中可以直接通过 iPic 上传至其默认图床，并直接将其插入文章中，整个过程完全不需要用户去考虑，可谓十分便捷，大大提高了写作体验！设置方法如下：
 
-    ![设置方法](https://tva1.sinaimg.cn/large/006tNbRwgy1gbljs06pqej30jf0djmza.jpg)
+    ![设置方法](https://picbed.kimyang.cn/202109050823935.jpg)
 
     甚至你可以选择应用对象！设置好了之后，用户只需要通过简单`Cmd+v`将截取或复制的图片粘贴在文章中，或者将直接将图片拖入正在编辑的文件中也可， Typora 会自动将其上传至 iPic 中设置的图床中，整个过程方便快捷，写作时完全不需要去考虑图片的问题！
 
-    ![Copy上传](https://tva1.sinaimg.cn/large/006tNbRwgy1gbljzjk6wjj30oe0ar0ub.jpg)
+    ![Copy上传](https://picbed.kimyang.cn/202109050824746.jpg)
 
     其实图像存储一直是 Markdown 写作者的痛点，但是也不能修改 Markdown 语法以支持图像存储，这就与其最初希望简化写作的愿景相背。而绝大多数的 Markdown 编辑器发现了用户痛点，却也没有勇气去解决它，独立运营一个图床是需要大量的资金的。但 Typora 给出了一个很好的解决办法，合作实现共赢，iPic 作为图床上传工具的鼻祖，真的是一个很好的合作伙伴～
 
@@ -39,35 +39,35 @@ categories: [🛠 高效工具]
 
     现在 Topra 不仅支持重新显示语法修改及渲染，还支持一键切换，查看整篇文章的语法：`Cmd+\`
 
-    ![打开即使渲染中显示源码](https://tva1.sinaimg.cn/large/006tNbRwgy1gbllhl8y6yj30jg0dcmym.jpg)
+    ![打开即使渲染中显示源码](https://picbed.kimyang.cn/202109050824775.jpg)
 
 以上两点便是我最初使用 Typora 的痛点，以及为什么我放弃它的原因！如今再次体验它，不仅修复了我曾经使用的痛点，还多出了许多让我惊艳的功能：
 
 1.  启动选项设置：
 
-    ![启动选项设置](https://tva1.sinaimg.cn/large/006tNbRwgy1gblkvd1ur5j30jg0dcmy8.jpg)
+    ![启动选项设置](https://picbed.kimyang.cn/202109050824994.jpg)
 
-    ![重新打开历史目录](https://tva1.sinaimg.cn/large/006tNbRwgy1gblkvvnl7rj30jg0dcwgs.jpg)
+    ![重新打开历史目录](https://picbed.kimyang.cn/202109050824396.jpg)
 
     Typora 现在支持设定启动文件选项，你可以更具自己的需要设定属于你的专门存放写作文件的目录，方便查找～还记得以前，Typora 每次重新打开都是新建的空白文件想要恢复之前的写作记录还得一番查找！但如今，只要你设定好启动选项，随时都能重新打开你上次离开时工作区，让你的写作激情再次燃起！
 
     结合网盘挂载软件，更能让你的 Markdown 笔记备份云端，多机协同～我便是使用 CloudMounter 挂载 Google 网盘，在其中新建一个文件夹作为 Typora 的工作空间，随时备份，多机协同～
 
-    ![Google 云盘](https://tva1.sinaimg.cn/large/006tNbRwgy1gbll5r6is7j30le0c4jvq.jpg)
+    ![Google 云盘](https://picbed.kimyang.cn/202109050824309.jpg)
 
-    ![Cloudmounter](https://tva1.sinaimg.cn/large/006tNbRwgy1gbll6e8grlj306609ldjf.jpg)
+    ![Cloudmounter](https://picbed.kimyang.cn/202109050824784.jpg)
 
 2.  多种主题选择
 
     Typora 支持多种主题：
 
-    ![自带主题](https://tva1.sinaimg.cn/large/006tNbRwgy1gbll9m74gbj30db03wju3.jpg)
+    ![自带主题](https://picbed.kimyang.cn/202109050824235.jpg)
 
     同时还提供一个[主题下载网站](http://theme.typora.io/)：
 
-    ![image-20200205152218487](https://tva1.sinaimg.cn/large/006tNbRwgy1gbljx367tjj30jg0dct9m.jpg)
+    ![image-20200205152218487](https://picbed.kimyang.cn/202109050824105.jpg)
 
-    点击获取主题访问：![主题网站](https://tva1.sinaimg.cn/large/006tNbRwgy1gbllc67v3xj31fq0u01kx.jpg)
+    点击获取主题访问：![主题网站](https://picbed.kimyang.cn/202109050824869.jpg)
 
     添加主题的方法：
 
@@ -79,11 +79,11 @@ categories: [🛠 高效工具]
 
 3.  对 Markdown 的支持
 
-    ![Markdown](https://tva1.sinaimg.cn/large/006tNbRwgy1gblljb0wo5j30jg0dcdhi.jpg)
+    ![Markdown](https://picbed.kimyang.cn/202109050824298.jpg)
 
 在偏好设置中可以开启各种对 Markdown 的支持，其中包含数学公式，图表、代码块等等。
 
-![对 Markdown 的各种支持](https://tva1.sinaimg.cn/large/006tNbRwgy1gbllli3plij30jg0dc3zv.jpg)
+![对 Markdown 的各种支持](https://picbed.kimyang.cn/202109050824157.jpg)
 
 ---
 

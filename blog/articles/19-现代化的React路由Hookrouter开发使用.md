@@ -5,7 +5,7 @@ tags: [React,前端]
 categories: [🌏 翻译校对]
 ---
 
-![](https://cdn-images-1.medium.com/max/5760/1*04u1ylnBHOx19jxSMkenVA.jpeg)
+![](https://picbed.kimyang.cn/202109050830612.jpeg)
 
 路由在单页应用程序（SPA）页面中导航和初始化状态是至关重要的。对于 React，大多数开发者都使用过 `react-router-dom`，这是 Reactrouter 库用于路由的一个变量。
 

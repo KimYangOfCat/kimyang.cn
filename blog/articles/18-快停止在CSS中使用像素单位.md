@@ -5,7 +5,7 @@ tags: [CSS,前端]
 categories: [🌏 翻译校对]
 ---
 
-![图源 [Alexander Andrews](https://unsplash.com/@alex_andrews?utm_source=medium&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral).](https://cdn-images-1.medium.com/max/12450/0*5eX8OB4YTWwqM1RV)
+![](https://picbed.kimyang.cn/202109050829775.jpeg)
 
 为什么 Web 开发者如此盲目地使用 px 单位？这只是一个坏习惯吗？是因为缺乏其他单位的知识吗？也许是因为设计团队的模拟依赖于 px 和 pt？<!-- more -->目前我们也无法明白为什么像素是大多数团队当前的首选单位。
 
@@ -27,9 +27,9 @@ px 单位可以使你轻松上手，但是后来却变成了一个问题。在�
 
 让我们看一下每英寸点数不同的像素等效于 1mm 的像素：
 
-![在 Pixelcalculator 上平均 MacBook dpi 的毫米到像素](https://cdn-images-1.medium.com/max/2000/1*xgFl-SLMot8k2KR0HEn4mQ.png)
+![在 Pixelcalculator 上平均 MacBook dpi 的毫米到像素](https://picbed.kimyang.cn/202109050829468.png)
 
-![Pixelcalculator 上平均 iPhone dpi 的毫米到像素](https://cdn-images-1.medium.com/max/2000/1*qBVYc5fFUBNnzgTMJYHtoQ.png)
+![Pixelcalculator 上平均 iPhone dpi 的毫米到像素](https://picbed.kimyang.cn/202109050829830.png)
 
 可以区分屏幕上像素的日子已经一去不复返了。我们已经习惯了这种限制，这是一个我们需要放弃的想法。随着时间的流逝，“像素”一词的含义已失去其含义，现在该停止在我们的 CSS 代码中将其设为默认单位了。
 
@@ -39,7 +39,7 @@ px 单位可以使你轻松上手，但是后来却变成了一个问题。在�
 
 如果要满足广大受众的需求，绝对的值通常不是很有用。px 是唯一的绝对单位吗？不，CSS 中还有另外六个绝对单位，如下图：
 
-![CSS 支持的绝对单位列表](https://cdn-images-1.medium.com/max/2000/1*aXVUdpRMgeFox_6uHkR_SA.png)
+![CSS 支持的绝对单位列表](https://picbed.kimyang.cn/202109050829281.png)
 
 这意味着，如果你使用这些单位，网站的访问着就会看到各种各样的布局，而让你的页面进行任何可能显示的分辨率进行适配都会是不合理的。
 
@@ -49,7 +49,7 @@ px 单位可以使你轻松上手，但是后来却变成了一个问题。在�
 
 让我们检查一下我们可以使用的相对单位：
 
-![CSS 中可用的相关相对单位列表](https://cdn-images-1.medium.com/max/2000/1*4AZByHrtdOwFI_bDnfMKmQ.png)
+![CSS 中可用的相关相对单位列表](https://picbed.kimyang.cn/202109050829754.png)
 
 你会看到相对单位的列表大于绝对单位列表。为什么会有那么多的相对单位？
 
@@ -111,7 +111,7 @@ px 单位可以使你轻松上手，但是后来却变成了一个问题。在�
 </html>
 ```
 
-![使用 `ch` 单位构建动态内容宽度的例子](https://cdn-images-1.medium.com/max/2000/1*1K2l3CJ41vA1UMqLOVbp_Q.png)
+![使用 `ch` 单位构建动态内容宽度的例子](https://picbed.kimyang.cn/202109050829309.png)
 
 如你所见，我们限制了我们内容的 `max-width` 为 `20ch`。
 
@@ -203,7 +203,7 @@ px 单位可以使你轻松上手，但是后来却变成了一个问题。在�
 </html>
 ```
 
-![使用不同字体大小的并排可访问组件](https://cdn-images-1.medium.com/max/2400/1*OHY0OQ7_MXRAbx9J5mmFTg.png)
+![使用不同字体大小的并排可访问组件](https://picbed.kimyang.cn/202109050830212.png)
 
 请注意，我们已将 `rem` 应用于 `padding`、`width` 和 `font-size` 三个属性。
 

@@ -7,7 +7,7 @@ categories: [🌏 翻译校对]
 
 > 选择错误的框架可能会成为一个可怕的噩梦。
 
-![图源 [arash payam](https://unsplash.com/@arash_payam?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/7936/0*_KSkOhjmAnWJXTY9)<!-- more -->
+![](https://picbed.kimyang.cn/202109050828210.jpeg)<!-- more -->
 
 那是在 2020 年，第一次疫情封城刚开始的时候。像全球各地的人们一样，我发现自己有计划外的闲暇时间。
 
@@ -29,7 +29,7 @@ categories: [🌏 翻译校对]
 
 这时我才明白 Next.js 的标语 —— “用于生产的 React 框架”的真正含义。
 
-![源自[Next.js 站点](https://nextjs.org/)](https://cdn-images-1.medium.com/max/2672/1*sQGE3HQsLTifb1-BDf_ydg.jpeg)
+![](https://picbed.kimyang.cn/202109050829665.jpeg)
 
 我从 React 转到 Next.js 主要有以下五个原因。
 

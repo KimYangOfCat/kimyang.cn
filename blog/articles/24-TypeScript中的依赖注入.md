@@ -5,8 +5,9 @@ tags: [TypeScript,前端]
 categories: [🌏 翻译校对]
 ---
 
-![图源 [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix?utm_source=medium&utm_medium=referral)，出自 [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/11174/0*EjOezZWFJ92qj8bt)
+![](https://picbed.kimyang.cn/202109050832970.jpeg)
 <!-- more -->
+
 ## 简介
 
 每一个软件程序都有其最基础的构建模块。在面向对象的编程语言中， 我们使用类去构建复杂的体系架构。像建一幢大楼，我们把模块之间建立的联系称之为**依赖**。其他的类为了支持我们类的需求，提供复杂的封装操作。
@@ -26,7 +27,7 @@ IoC **只**提供了一种方法而非具体的实现。为了使用依赖注入
 
 ## 概览和角色划分
 
-![依赖注入概览](https://cdn-images-1.medium.com/max/2000/1*Wk4iA2XNAOl4pAF5cYbU3w.png)
+![依赖注入概览](https://picbed.kimyang.cn/202109050833517.png)
 
 在依赖注入原则中，我们需要理解**四**种不同的**角色**:
 

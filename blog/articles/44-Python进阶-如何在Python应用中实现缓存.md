@@ -14,7 +14,7 @@ publish: true
 
 本篇文章主要探讨缓存在 Python 中是如何运作的。
 
-![](https://miro.medium.com/max/671/1*4f9xjNXx1FVXzIoQZ4CdpQ.png)
+![](https://picbed.kimyang.cn/202109050845891.png)
 <!-- more -->
 
 这对 Python 开发者来说是一个进阶的话题。如果你正在使用 Python 或打算使用它，那么你非常适合阅读本篇文章。
@@ -47,7 +47,7 @@ publish: true
 
 下图展示了我们的目标应用程序是如何配置的：
 
-![](https://miro.medium.com/max/700/1*XcWM5A0G6yKWqr_yWUfgnw.png)
+![](https://picbed.kimyang.cn/202109050845040.png)
 
 上图说明了应用程序服务器如何从数据库服务器获取数据。
 
@@ -57,7 +57,7 @@ publish: true
 
 与其每次都查询数据库，我们可以将结果缓存，如下所示：
 
-![数据存储在临时缓存中](https://miro.medium.com/max/700/1*3mv7SdqieweoDQYEhkNAhA.png)
+![数据存储在临时缓存中](https://picbed.kimyang.cn/202109050845001.png)
 
 获取数据的请求必须通过网线，响应也必须通过网线返回。
 
@@ -313,7 +313,7 @@ blog = client.get('blog')
 
 第一个应用程序从数据库服务器获取数据，第二个应用程序更新数据库服务器中的数据。数据被频繁获取，我们希望将数据缓存在第一个应用程序服务器中：
 
-![](https://miro.medium.com/max/700/1*2gi4DqkHWejxgU7sSRoDGQ.png)
+![](https://picbed.kimyang.cn/202109050845905.png)
 
 这里有几种方法可以解决它：
 

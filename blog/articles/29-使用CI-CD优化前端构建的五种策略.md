@@ -6,7 +6,7 @@ categories: [🌏 翻译校对]
 ---
 
 
-![](https://cdn-images-1.medium.com/max/2560/1*4QARtPZqNOK5peGb0vFLSg.jpeg)
+![](https://picbed.kimyang.cn/202109050835496.jpeg)
 
 如今使用 CI/CD 工具是网页应用程序开发的一个必要条件。作为关键开发路径的一部分，加快构建系统的速度对于提高开发人员的生产效率是至关重要的。<!-- more -->
 
@@ -66,7 +66,7 @@ parallel-webpack --watch
 
 然而，如果我们使用微前端，我们可以将应用程序的功能拆分，并独立维护应用程序的构建和发布管道，以便不断提交更新和修复错误。
 
-![Micro Frontend Architecture](https://cdn-images-1.medium.com/max/2000/1*_wBCz4UeRf6qW8Dk38zs1A.png)
+![Micro Frontend Architecture](https://picbed.kimyang.cn/202109050835881.png)
 
 通常，可以独立地整合和部署每个应用程序，让你更快地修复重要功能。因此，这确实对 CI/CD 流程的提速有很大帮助。
 

@@ -6,7 +6,7 @@ categories: [🌏 翻译校对]
 publish: true
 ---
 
-![](https://cdn-images-1.medium.com/max/2560/1*pdPTFvogzT9vzmc7k-qY2Q.jpeg)
+![](https://picbed.kimyang.cn/202109050847971.jpeg)
 <!-- more -->
 处理字符串可能是一项繁琐的任务，因为我们需要考虑许多不同的用例。举例来说，像将字符串转为驼峰格式这样简单的任务就需要好几行代码来实现。
 
@@ -21,7 +21,7 @@ function camelize(str) {
 
 上方的代码片段是在 Stack Overflow 中最受好评的答案。然而，它无法解决字符串中包含 `---Foo---bAr---` 的用例。
 
-![运行结果](https://cdn-images-1.medium.com/max/2000/1*B2BkvkI5nmrksHi8UpLHIQ.png)
+![运行结果](https://picbed.kimyang.cn/202109050847238.png)
 
 这时字符串处理库就派上用场了。这些库考虑了给定问题的每一种可能的用例，使得复杂字符串操作的实现变得简单。这对你很有帮助，因为你只需要调用一个函数就能得到有效的解决方案。
 

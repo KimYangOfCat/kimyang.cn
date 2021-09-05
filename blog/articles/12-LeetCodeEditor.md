@@ -20,7 +20,7 @@ Leetcode是发布在官方插件中供所有人免费使用，所以它的安装
 
 安装完成后，默认会询问你是否重启IDE，没有的话，手动重启一下也是可以的，重启之后可以在`Perferences >> Plugins >>Installed`中查看已安装插件的状态，你可以确定一下是否启用了leetcode editor ，一般默认情况下是启用了的。
 
-![image-20200705233708890](https://tva1.sinaimg.cn/large/007S8ZIlly1gggiskssmhj314x0u0qbf.jpg)
+![image-20200705233708890](https://picbed.kimyang.cn/202109050806811.jpg)
 
 
 
@@ -28,7 +28,7 @@ Leetcode是发布在官方插件中供所有人免费使用，所以它的安装
 
 安装完成之后，可在`Perferences >> Plugins >> Tools >>leetcode plugin`中设置详细账号信息。
 
-![image-20200705235038434](https://tva1.sinaimg.cn/large/007S8ZIlly1gggj6kcnk3j31di0u0wrv.jpg)
+![image-20200705235038434](https://picbed.kimyang.cn/202109050806813.jpg)
 
 如图，详细设置内容解析如下：
 
@@ -69,13 +69,13 @@ Leetcode是发布在官方插件中供所有人免费使用，所以它的安装
 
 参照上文中配置方法配置完成之后,可在项目界面的右下角找到Leetcode图标，点击即可出现小窗。
 
-![image-20200707222906376](https://tva1.sinaimg.cn/large/007S8ZIlly1ggis2d2a82j31gm0u01kx.jpg)
+![image-20200707222906376](https://picbed.kimyang.cn/202109050806814.jpg)
 
 提示：清空生成文件一定要慎重！！不然如果没有使用git版本管理工具的话，很有可能找不回来文件了！！
 
 ### 线上测试及提交
 
-![image-20200707225541431](https://tva1.sinaimg.cn/large/007S8ZIlly1ggistz1rs1j30u00ucwue.jpg)
+![image-20200707225541431](https://picbed.kimyang.cn/202109050806815.jpg)
 
 
 

@@ -11,17 +11,17 @@ categories: [🎁 初体验]
 ### 官网下载
 [官网下载地址](https://www.mongodb.com/download-center/enterprise)，如下图，选择你所需要的 MongoDB 版本就好
 
-![官网下载选择界面](https://tva1.sinaimg.cn/large/0082zybpgy1gbzea6mb17j31hm0u045g.jpg)
+![官网下载选择界面](https://picbed.kimyang.cn/202109050822677.jpg)
 
 下载完成以后，打开下载的压缩包，解压后的文件目录大致如下：
 
-![文件结构](https://tva1.sinaimg.cn/large/0082zybpgy1gbzea7xjunj313q0lk7bs.jpg)
+![文件结构](https://picbed.kimyang.cn/202109050823033.jpg)
 
 其中 bin 文件夹下存放的都是 mongoDB 的命令，接下来我们三步配置
 
 * 构建目录结构：在 mongoDB 文件夹下新建 `data` 文件夹；然后在 `data` 文件夹下新建 `db`、`logs` 和 `etc` 三个文件夹分别用于存放数据、输出日志和环境配置；然后在 `logs` 文件夹下建立 `mongodb.log` 文件，在 `etc` 下新建 `mongo.conf`
 
-![修改后的文件结构](https://tva1.sinaimg.cn/large/0082zybpgy1gbzea8z8lkj317a0rmqa7.jpg)
+![修改后的文件结构](https://picbed.kimyang.cn/202109050823758.jpg)
 
 * 编辑 `mongo.conf` ：
 
@@ -80,9 +80,9 @@ mongod --config  /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/m
 
 **一行命令下载 Homebrew：**
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
- 
+
 **在 Homebrew 中搜索可下载版本：**`brew search mongodb`
-![](https://tva1.sinaimg.cn/large/0082zybpgy1gbzeaabs1ij30q00batjj.jpg)
+![](https://picbed.kimyang.cn/202109050823366.jpg)
 
 **在 Homebrew 中下载你需要的版本：**例如：`brew install mongodb`
 
@@ -92,4 +92,4 @@ mongod --config  /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/m
 
 **经过实际验证，现在 Homebrew 似乎已经不支持 mongodb 的下载了，不知道具体原因，也许是我个人环境造成的。**
 
-![不能下载了](https://tva1.sinaimg.cn/large/0082zybpgy1gbzeabsimkj312u0g01ec.jpg)
+![不能下载了](https://picbed.kimyang.cn/202109050823338.jpg)
