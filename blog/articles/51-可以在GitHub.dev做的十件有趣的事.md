@@ -1,7 +1,7 @@
 ---
 title: "可以在 GitHub.dev 做的十件有趣的事😎"
 date: 2021-09-5
-tags: [JavaScript]
+tags: [GitHub]
 categories: [🌏 翻译校对]
 publish: true
 ---

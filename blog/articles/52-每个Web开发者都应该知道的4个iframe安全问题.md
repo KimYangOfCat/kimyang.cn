@@ -1,7 +1,7 @@
 ---
 title: "每个 Web 开发人员都应该知道的 4 个 iframe 安全问题"
 date: 2021-09-6
-tags: [JavaScript]
+tags: [HTML,游览器]
 categories: [🌏 翻译校对]
 publish: true
 ---
