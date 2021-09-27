@@ -26,6 +26,9 @@ module.exports = {
         logo: '/favicon.ico',
         mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
         startYear: 2019,
+         // 备案
+        record: '蜀ICP备2021014312号',
+        recordLink: 'https://icp.chinaz.com/home/info?host=kimyang.cn',
         authorAvatar: '/avatar.jpg',
         noFoundPageByTencent: false,//关闭404
         codeTheme: 'tomorrow',
