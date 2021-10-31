@@ -66,7 +66,7 @@ module.exports = {
         valineConfig: {
             appId: 'jKwH5EJyUIoKLdDddNDTUueK-gzGzoHsz',// your appId
             appKey: 'v7DTuoMTFCv63zxKtkYMUFp8', // your appKey
-            placeholder: '填写邮箱可以收到回复哦!',
+            placeholder: 'kim@kimyang.cn',
             notify: true, // 邮件提醒
             verify: true, // 验证码
             recordIP: true
