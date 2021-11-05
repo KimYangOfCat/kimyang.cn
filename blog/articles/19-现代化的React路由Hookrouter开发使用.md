@@ -295,9 +295,10 @@ useRedirect('/', '/greeting');
 
 谢谢你的阅读！
 
-> * 原文地址：[Hookrouter: A Modern Approach to React Routing](https://blog.bitsrc.io/hookrouter-a-modern-approach-to-react-routing-b6e36f7d49d9)
-> * 原文作者：[Isuri Devindi](https://medium.com/@isuridevindi)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md](https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md)
-> * 译者：[Zz招锦](https://github.com/zenblo)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[PassionPenguin](https://github.com/PassionPenguin)
+---
+ * 原文地址：[Hookrouter: A Modern Approach to React Routing](https://blog.bitsrc.io/hookrouter-a-modern-approach-to-react-routing-b6e36f7d49d9)
+ * 原文作者：[Isuri Devindi](https://medium.com/@isuridevindi)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md](https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md)
+ * 译者：[Zz招锦](https://github.com/zenblo)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[PassionPenguin](https://github.com/PassionPenguin)

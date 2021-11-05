@@ -93,9 +93,10 @@ Mint 实际上提供了[几种不同的方式](https://www.mint-lang.com/guide/r
 
 官方的 [mint-ui](https://ui.mint-lang.com/) 组件库才刚刚发布，这个语言似乎正在受到大家的关注。我希望 Mint 在 2021 年能更上一层楼。
 
-> * 原文地址：[Leave JavaScript Aside — Mint Is a Great Language for Building Web Apps](https://betterprogramming.pub/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps-3ce5a6873d48)
-> * 原文作者：[Chris Vibert](https://medium.com/@cp.vibert)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md](https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md)
-> * 译者：[Usualminds](https://github.com/Usualminds)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[PassionPenguin](https://github.com/PassionPenguin)
+---
+ * 原文地址：[Leave JavaScript Aside — Mint Is a Great Language for Building Web Apps](https://betterprogramming.pub/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps-3ce5a6873d48)
+ * 原文作者：[Chris Vibert](https://medium.com/@cp.vibert)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md](https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md)
+ * 译者：[Usualminds](https://github.com/Usualminds)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[PassionPenguin](https://github.com/PassionPenguin)

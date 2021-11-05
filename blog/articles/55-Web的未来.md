@@ -212,9 +212,10 @@ Web 将是最终的操作系统，所有设备都连接到一起，永远发展�
 
 总有一天，有人指着他们的电脑设备，但他们不会指着他们的笔记本电脑、手机、眼镜或甚至微波炉，他们会指着天空说“它在某个地方......到处都是！”
 
-> * 原文地址：[The Future Of The Web](https://www.hazem.cool/blog/the-future-of-the-web)
-> * 原文作者：[Hazem Osama](https://www.hazem.cool/)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/the-future-of-the-web.md](https://github.com/xitu/gold-miner/blob/master/article/2021/the-future-of-the-web.md)
-> * 译者：[Gesj-yean](https://github.com/Gesj-yean)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)
+---
+ * 原文地址：[The Future Of The Web](https://www.hazem.cool/blog/the-future-of-the-web)
+ * 原文作者：[Hazem Osama](https://www.hazem.cool/)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/the-future-of-the-web.md](https://github.com/xitu/gold-miner/blob/master/article/2021/the-future-of-the-web.md)
+ * 译者：[Gesj-yean](https://github.com/Gesj-yean)
+ * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)

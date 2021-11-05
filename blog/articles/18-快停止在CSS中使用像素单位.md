@@ -244,9 +244,10 @@ html {
 
 我希望本文能为你提供最后的动力，使你尽可能远离像素单位。
 
-> * 原文地址：[Stop Using the Pixel Unit in CSS](https://betterprogramming.pub/stop-using-the-pixel-unit-in-css-8b8788a1301f)
-> * 原文作者：[Jose Granja](https://medium.com/@dioxmio)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/stop-using-the-pixel-unit-in-css.md](https://github.com/xitu/gold-miner/blob/master/article/2021/stop-using-the-pixel-unit-in-css.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)，[Kimhooo](https://github.com/Kimhooo)
+---
+ * 原文地址：[Stop Using the Pixel Unit in CSS](https://betterprogramming.pub/stop-using-the-pixel-unit-in-css-8b8788a1301f)
+ * 原文作者：[Jose Granja](https://medium.com/@dioxmio)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/stop-using-the-pixel-unit-in-css.md](https://github.com/xitu/gold-miner/blob/master/article/2021/stop-using-the-pixel-unit-in-css.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)，[Kimhooo](https://github.com/Kimhooo)

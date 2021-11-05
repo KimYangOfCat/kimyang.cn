@@ -96,9 +96,10 @@ CSRF 攻击存在的原因是所有与请求的目标源相关的 cookie 都将�
 
 幸运的是，通过运行 Acunetix 漏洞扫描器对网站进行自动扫描，将非常容易检查你的网站是否存在 CSRF 漏洞和其他漏洞。Acunetix 漏洞扫描器包括专门的 [CSRF 扫描器](https://www.acunetix.com/vulnerability-scanner/csrf-scanner/)模块。[查看示例](https://www.acunetix.com/web-vulnerability-scanner/demo/)并找到更多关于如何通过 CSRF 扫描器保护你的网站和应用的信息。
 
-> - 原文地址：[CSRF Attacks: Anatomy, Prevention, and XSRF Tokens](https://www.acunetix.com/websitesecurity/csrf-attacks/)
-> - 原文作者：[Acunetix](https://www.acunetix.com/)
-> - 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> - 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/csrf-attacks.md](https://github.com/xitu/gold-miner/blob/master/article/2021/csrf-attacks.md)
-> - 译者：[MoonBall](https://github.com/MoonBall)
-> - 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)
+---
+ - 原文地址：[CSRF Attacks: Anatomy, Prevention, and XSRF Tokens](https://www.acunetix.com/websitesecurity/csrf-attacks/)
+ - 原文作者：[Acunetix](https://www.acunetix.com/)
+ - 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ - 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/csrf-attacks.md](https://github.com/xitu/gold-miner/blob/master/article/2021/csrf-attacks.md)
+ - 译者：[MoonBall](https://github.com/MoonBall)
+ - 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)

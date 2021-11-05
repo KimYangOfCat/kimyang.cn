@@ -185,9 +185,10 @@ UserRepository 是我们的最后一步。我们用 Service 来注解这个类�
 * [4] [https://stackoverflow.com/questions/21288/which-net-dependency-injection-frameworks-are-worth-looking-into](https://stackoverflow.com/questions/21288/which-net-dependency-injection-frameworks-are-worth-looking-into)
 * [5] [https://docs.typestack.community/typedi/v/develop/01-getting-started](https://docs.typestack.community/typedi/v/develop/01-getting-started)
 
-> * 原文地址：[Dependency Injection in TypeScript](https://levelup.gitconnected.com/dependency-injection-in-typescript-2f66912d143c)
-> * 原文作者：[Mert Türkmenoğlu](https://medium.com/@mertturkmenoglu)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/dependency-injection-in-typescript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/dependency-injection-in-typescript.md)
-> * 译者：[Usualminds](https://github.com/Usualminds)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[PassionPenguin](https://github.com/PassionPenguin)
+---
+ * 原文地址：[Dependency Injection in TypeScript](https://levelup.gitconnected.com/dependency-injection-in-typescript-2f66912d143c)
+ * 原文作者：[Mert Türkmenoğlu](https://medium.com/@mertturkmenoglu)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/dependency-injection-in-typescript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/dependency-injection-in-typescript.md)
+ * 译者：[Usualminds](https://github.com/Usualminds)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[PassionPenguin](https://github.com/PassionPenguin)

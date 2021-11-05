@@ -129,9 +129,10 @@ socket.addEventListener('open', function (event) {
 * [JavaScript 类型化数组 - MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Typed_arrays)
 * [Exploring JS by Dr. Axel](https://exploringjs.com/es6/ch_typed-arrays.html)
 
-> * 原文地址：[JavaScript Typed Arrays](https://blog.bitsrc.io/javascript-typed-arrays-ccfa5ae8838d)
-> * 原文作者：[Mahdhi Rezvi](https://medium.com/@mahdhirezvi)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)
+---
+ * 原文地址：[JavaScript Typed Arrays](https://blog.bitsrc.io/javascript-typed-arrays-ccfa5ae8838d)
+ * 原文作者：[Mahdhi Rezvi](https://medium.com/@mahdhirezvi)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)

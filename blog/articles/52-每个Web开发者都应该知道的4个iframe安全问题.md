@@ -121,9 +121,10 @@ iframe 能提高用户的互动性。但是，当你使用 iframe 的时候，�
 
 谢谢您的阅读！
 
-> * 原文地址：[4 Security Concerns with iframes Every Web Developer Should Know](https://blog.bitsrc.io/4-security-concerns-with-iframes-every-web-developer-should-know-24c73e6a33e4)
-> * 原文作者：[Piumi Liyana Gunawardhana](https://medium.com/@piumi-16)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md](https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md)
-> * 译者：[jaredliw](https://github.com/jaredliw)
-> * 校对者：[Usualminds](https://github.com/Usualminds)、[KimYangOfCat](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[4 Security Concerns with iframes Every Web Developer Should Know](https://blog.bitsrc.io/4-security-concerns-with-iframes-every-web-developer-should-know-24c73e6a33e4)
+ * 原文作者：[Piumi Liyana Gunawardhana](https://medium.com/@piumi-16)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md](https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md)
+ * 译者：[jaredliw](https://github.com/jaredliw)
+ * 校对者：[Usualminds](https://github.com/Usualminds)、[KimYangOfCat](https://github.com/KimYangOfCat)

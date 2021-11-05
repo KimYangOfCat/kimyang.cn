@@ -73,9 +73,10 @@ JavaScript 是动态类型的语言，这代表数据类型可以不断改变。
 
 感谢阅读，祝你有美好的一天！❤
 
-> * 原文地址：[JavaScript Visualized: The JavaScript Engine](https://javascript.plainenglish.io/javascript-visualized-the-javascript-engine-1e3fc5d5310d)
-> * 原文作者：[Harsh Patel](https://medium.com/@harsh-patel)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md)
-> * 译者：[没事儿](https://github.com/Tong-H)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat) [Usualminds](https://github.com/Usualminds)
+---
+ * 原文地址：[JavaScript Visualized: The JavaScript Engine](https://javascript.plainenglish.io/javascript-visualized-the-javascript-engine-1e3fc5d5310d)
+ * 原文作者：[Harsh Patel](https://medium.com/@harsh-patel)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md)
+ * 译者：[没事儿](https://github.com/Tong-H)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat) [Usualminds](https://github.com/Usualminds)

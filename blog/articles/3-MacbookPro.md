@@ -3,7 +3,7 @@ title: "为什么你值得入手一个 Macbook？"
 date: 2019-08-01
 draft: false
 tags: [MacOS,MBP]
-categories: [⚙️ 硬件杂谈]
+categories: [⚙️ 数码产品]
 ---
 在开始看正文之前，首先明确 Macbook 适合的人群：学生、白领、文字工作者等需要高生产力工具的人群。如果你本身是一个游戏爱好者，PC 对你来说最大的应用场景就是游戏，那么你也许有更好的选择！
 

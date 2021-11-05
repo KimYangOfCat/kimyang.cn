@@ -114,9 +114,10 @@ labeled-checkbox:--checked {
 
 [过去三年来](https://github.com/WICG/webcomponents/issues/738)，浏览器厂商一直在讨论如何通过自定义伪类来暴露自定义元素的内部状态。Google 的[自定义状态伪类](https://wicg.github.io/custom-state-pseudo-class/)规范目前托管在 WICG 名下，仍然处于一个非官方的状态。该功能由 W3C 技术架构组（TAG）[进行设计审查](https://github.com/w3ctag/design-reviews/issues/428)并[移交给 CSS 工作组](https://github.com/w3c/csswg-drafts/issues/4805)。在 Chrome 的“出货意向”讨论中，[Mounir Lamouri 写道](https://groups.google.com/a/chromium.org/g/blink-dev/c/dJibhmzE73o/m/VT-NceIhAAAJ)：
 
-> * 原文地址：[Custom State Pseudo-Classes in Chrome](https://css-tricks.com/custom-state-pseudo-classes-in-chrome/)
-> * 原文作者：[Šime Vidas](https://css-tricks.com/author/simevidas/)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md](https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md)
-> * 译者：[iceytea](https://github.com/iceytea)
-> * 校对者：[darkyzhou](https://github.com/darkyzhou)、[Chor](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[Custom State Pseudo-Classes in Chrome](https://css-tricks.com/custom-state-pseudo-classes-in-chrome/)
+ * 原文作者：[Šime Vidas](https://css-tricks.com/author/simevidas/)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md](https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md)
+ * 译者：[iceytea](https://github.com/iceytea)
+ * 校对者：[darkyzhou](https://github.com/darkyzhou)、[Chor](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)

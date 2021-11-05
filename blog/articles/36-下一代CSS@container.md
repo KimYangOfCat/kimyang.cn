@@ -133,9 +133,10 @@ viewport 和用户代理不再是我们创建响应式布局和 UI 样式的唯�
 
 ![](https://picbed.kimyang.cn/202109050840468.png)
 
-> * 原文地址：[Next Gen CSS: @container](https://css-tricks.com/next-gen-css-container/)
-> * 原文作者：[Una Kravets](https://css-tricks.com/author/unakravets/)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-containermd](https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-container.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
-> * 校对者：[Chorer](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[Next Gen CSS: @container](https://css-tricks.com/next-gen-css-container/)
+ * 原文作者：[Una Kravets](https://css-tricks.com/author/unakravets/)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-containermd](https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-container.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+ * 校对者：[Chorer](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)

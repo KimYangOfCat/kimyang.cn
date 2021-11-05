@@ -3,7 +3,7 @@ title: "macOS 下 MongoDB 配置与使用"
 date: 2019-10-18
 draft: false
 tags: [MongoDB]
-categories: [🎁 初体验]
+categories: [🎁 开发体验]
 ---
 [MongoDB](https://www.mongodb.com/) 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。
 <!-- more -->

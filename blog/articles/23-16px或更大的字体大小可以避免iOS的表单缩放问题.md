@@ -1,7 +1,7 @@
 ---
 title: "16px 或更大的字体大小可以避免 iOS 的表单缩放问题"
 date: 2021-05-21
-tags: [CSS,前端]
+tags: [iOS,前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -41,9 +41,10 @@ categories: [🌏 翻译校对]
 > 
 > —— Josh W. Comeau @JoshWComeau 9:07, Apr 7, 2021
 
-> * 原文地址：[16px or Larger Text Prevents iOS Form Zoom](https://css-tricks.com/16px-or-larger-text-prevents-ios-form-zoom/)
-> * 原文作者：[Chris Coyier ](https://css-tricks.com/author/chriscoyier/)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/.md](https://github.com/xitu/gold-miner/blob/master/article/2021/.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)
+---
+ * 原文地址：[16px or Larger Text Prevents iOS Form Zoom](https://css-tricks.com/16px-or-larger-text-prevents-ios-form-zoom/)
+ * 原文作者：[Chris Coyier ](https://css-tricks.com/author/chriscoyier/)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/.md](https://github.com/xitu/gold-miner/blob/master/article/2021/.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)

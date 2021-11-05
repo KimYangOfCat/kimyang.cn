@@ -176,9 +176,10 @@ JavaScript 事件捕获和冒泡可以用来有效地处理 Web 应用程序中�
 
 感谢阅读！
 
-> * 原文地址：[Event Bubbling and Capturing in JavaScript](https://blog.bitsrc.io/event-bubbling-and-capturing-in-javascript-6bc908321b22)
-> * 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md)
-> * 译者：[Z招锦](https://github.com/zenblofe)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)
+---
+ * 原文地址：[Event Bubbling and Capturing in JavaScript](https://blog.bitsrc.io/event-bubbling-and-capturing-in-javascript-6bc908321b22)
+ * 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md)
+ * 译者：[Z招锦](https://github.com/zenblofe)
+ * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)

@@ -158,9 +158,10 @@ const average = (arr) => arr.reduce((a, b) => a + b) / arr.length
 
 感谢你的阅读。如果你喜欢这篇文章，记得点赞。如果你对这篇文章有什么想说的，请留言。下一篇文章见。
 
-> * 原文地址：[11 Rare JavaScript One-Liners That Will Amaze You](https://betterprogramming.pub/11-rare-javascript-one-liners-that-will-amaze-you-331659832301)
-> * 原文作者：[Can Durmus](https://medium.com/@candurmuss)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md](https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md)
-> * 译者：[jaredliw](https://github.com/jaredliw)
-> * 校对者：[Z招锦](https://github.com/zenblofe)、[Kim Yang](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[11 Rare JavaScript One-Liners That Will Amaze You](https://betterprogramming.pub/11-rare-javascript-one-liners-that-will-amaze-you-331659832301)
+ * 原文作者：[Can Durmus](https://medium.com/@candurmuss)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md](https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md)
+ * 译者：[jaredliw](https://github.com/jaredliw)
+ * 校对者：[Z招锦](https://github.com/zenblofe)、[Kim Yang](https://github.com/KimYangOfCat)

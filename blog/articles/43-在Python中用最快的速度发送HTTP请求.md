@@ -337,9 +337,9 @@ Python 赢得了这场速度的游戏！
 
 ---
 
-> * 原文地址：[Send HTTP Requests As Fast As Possible in Python](https://python.plainenglish.io/send-http-requests-as-fast-as-possible-in-python-304134d46604)
-> * 原文作者：[Andrew Zhu](https://medium.com/@xhinker)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md](https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md)
-> * 译者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)
-> * 校对者：[jaredliw](https://github.com/jaredliw)、[KimYangOfCat](https://github.com/KimYangOfCat)
+ * 原文地址：[Send HTTP Requests As Fast As Possible in Python](https://python.plainenglish.io/send-http-requests-as-fast-as-possible-in-python-304134d46604)
+ * 原文作者：[Andrew Zhu](https://medium.com/@xhinker)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md](https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md)
+ * 译者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)
+ * 校对者：[jaredliw](https://github.com/jaredliw)、[KimYangOfCat](https://github.com/KimYangOfCat)

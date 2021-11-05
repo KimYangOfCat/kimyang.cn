@@ -143,9 +143,10 @@ def test_get_order_valid(self, input_patch):
 
 本篇的重点是：**找到一种合适的方法将测试囊括到项目中**。我没有具体的给出实现它们的方法或何时实现，只要它们能阻止你的代码在下一次提交后进入排水沟就算成功了。再见！
 
-> * 原文地址：[Untested Python Code is Already Broken](https://python.plainenglish.io/untested-python-code-is-already-broken-934cb40b547b)
-> * 原文作者：[Matthew Hull](https://medium.com/@tigenzero)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md](https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md)
-> * 译者：[jaredliw](https://github.com/jaredliw)
-> * 校对者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)、[Kim Yang](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[Untested Python Code is Already Broken](https://python.plainenglish.io/untested-python-code-is-already-broken-934cb40b547b)
+ * 原文作者：[Matthew Hull](https://medium.com/@tigenzero)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md](https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md)
+ * 译者：[jaredliw](https://github.com/jaredliw)
+ * 校对者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)、[Kim Yang](https://github.com/KimYangOfCat)

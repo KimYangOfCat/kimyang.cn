@@ -487,9 +487,10 @@ Fetch API 说明文档将 CORS 和 `fetch` API 的交互以及浏览器所采用
 - [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) on MDN Web Docs
 - [Quentin’s](https://stackoverflow.com/users/19068/quentin) great [summary of CORS](https://stackoverflow.com/a/35553666) on StackOverflow
 
-> - 原文地址：[Deep dive in CORS: History, how it works, and best practices](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
-> - 原文作者：[Ilija Eftimov](https://ieftimov.com/)
-> - 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> - 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md](https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md)
-> - 译者：[snowyYU](https://github.com/snowyYU)
-> - 校对者：[Kimhooo](https://github.com/Kimhooo)、[Chorer](https://github.com/Chorer)
+---
+ - 原文地址：[Deep dive in CORS: History, how it works, and best practices](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
+ - 原文作者：[Ilija Eftimov](https://ieftimov.com/)
+ - 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ - 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md](https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md)
+ - 译者：[snowyYU](https://github.com/snowyYU)
+ - 校对者：[Kimhooo](https://github.com/Kimhooo)、[Chorer](https://github.com/Chorer)

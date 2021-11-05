@@ -149,9 +149,10 @@ steps:
 
 感谢你的阅读！
 
-> * 原文地址：[5 Strategies to Reduce Frontend Build Time with CI/CD](https://blog.bitsrc.io/5-strategies-to-reduce-frontend-build-time-with-ci-cd-3ce429304d1a)
-> * 原文作者：[Bhagya Vithana](https://medium.com/@bhagya-16)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md)
-> * 译者：[Zz招锦](https://github.com/zenblo)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)
+---
+ * 原文地址：[5 Strategies to Reduce Frontend Build Time with CI/CD](https://blog.bitsrc.io/5-strategies-to-reduce-frontend-build-time-with-ci-cd-3ce429304d1a)
+ * 原文作者：[Bhagya Vithana](https://medium.com/@bhagya-16)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md)
+ * 译者：[Zz招锦](https://github.com/zenblo)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)

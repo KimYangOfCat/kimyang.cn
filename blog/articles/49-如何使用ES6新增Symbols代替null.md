@@ -131,9 +131,10 @@ const notSettled = Symbol(`not-settled`)
 
 让我知道你对这种用法的看法：它是 `null` 的一个很好的替代吗？每个人都应该总是使用一个 `Option` 吗？
 
-> * 原文地址：[Replace null with ES6 Symbols](https://javascript.plainenglish.io/replace-null-with-es6-symbols-c0e77d74542e)
-> * 原文作者：[Robin Pokorny](https://medium.com/@robinpokorny)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md](https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md)
-> * 译者：[Z招锦](https://github.com/zenblofe)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)
+---
+ * 原文地址：[Replace null with ES6 Symbols](https://javascript.plainenglish.io/replace-null-with-es6-symbols-c0e77d74542e)
+ * 原文作者：[Robin Pokorny](https://medium.com/@robinpokorny)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md](https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md)
+ * 译者：[Z招锦](https://github.com/zenblofe)
+ * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)

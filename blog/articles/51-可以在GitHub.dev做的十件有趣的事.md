@@ -79,9 +79,10 @@ VS Code 是世界一流的 Markdown 编辑器，因此，您可以开始使用 g
 
 虽然 GitHub.dev 已经有大量用法，但它仍处于早期阶段，因此随着生态系统的不断创新，这是一个值得关注的领域。例如，我很高兴看到这样一个激动人心的时刻🙌 ，那就是[实时协作](https://aka.ms/vsls)、[课堂作业](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom) 和 [在线演讲](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) 可以很快成为能在浏览器中执行的并建立在 GitHub 存储库之上的场景示例💯 
 
-> * 原文地址：[10 Fun Things You Can Do With GitHub.dev](https://dev.to/lostintangent/10-awesome-things-you-can-do-with-github-dev-5fm7)
-> * 原文作者：[Jonathan Carter](https://dev.to/lostintangent)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/10-awesome-things-you-can-do-with-github-dev.md](https://github.com/xitu/gold-miner/blob/master/article/2021/10-awesome-things-you-can-do-with-github-dev.md)
-> * 译者：[greycodee](https://github.com/greycodee)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[airfri](https://github.com/airfri)
+---
+ * 原文地址：[10 Fun Things You Can Do With GitHub.dev](https://dev.to/lostintangent/10-awesome-things-you-can-do-with-github-dev-5fm7)
+ * 原文作者：[Jonathan Carter](https://dev.to/lostintangent)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/10-awesome-things-you-can-do-with-github-dev.md](https://github.com/xitu/gold-miner/blob/master/article/2021/10-awesome-things-you-can-do-with-github-dev.md)
+ * 译者：[greycodee](https://github.com/greycodee)
+ * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[airfri](https://github.com/airfri)

@@ -199,9 +199,10 @@ button.btn-primary {
 
 就这些了，大家！感谢你阅读这篇文章。
 
-> * 原文地址：[Selector Nesting Has Come to CSS](https://dev.to/akashshyam/selector-nesting-has-come-to-css-532i)
-> * 原文作者：[Akash Shyam](https://dev.to/akashshyam)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md](https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md)
-> * 译者：[jaredliw](https://github.com/jaredliw)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[nia3y](https://github.com/nia3y)
+---
+ * 原文地址：[Selector Nesting Has Come to CSS](https://dev.to/akashshyam/selector-nesting-has-come-to-css-532i)
+ * 原文作者：[Akash Shyam](https://dev.to/akashshyam)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md](https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md)
+ * 译者：[jaredliw](https://github.com/jaredliw)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[nia3y](https://github.com/nia3y)

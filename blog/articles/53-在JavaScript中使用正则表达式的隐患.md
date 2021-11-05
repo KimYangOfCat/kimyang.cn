@@ -134,9 +134,10 @@ console.log(result); // 0
 
 感谢您的阅读！
 
-> * 原文地址：[Threats of Using Regular Expressions in JavaScript](https://blog.bitsrc.io/threats-of-using-regular-expressions-in-javascript-28ddccf5224c)
-> * 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md)
-> * 译者：[jaredliw](https://github.com/jaredliw)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[greycodee](https://github.com/greycodee)
+---
+ * 原文地址：[Threats of Using Regular Expressions in JavaScript](https://blog.bitsrc.io/threats-of-using-regular-expressions-in-javascript-28ddccf5224c)
+ * 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md)
+ * 译者：[jaredliw](https://github.com/jaredliw)
+ * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[greycodee](https://github.com/greycodee)

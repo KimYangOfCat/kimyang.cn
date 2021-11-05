@@ -118,9 +118,10 @@ PouchDB 是一个袖珍型数据库，使应用程序可以**在离线时**将�
 
 感谢你阅读这篇文章。
 
-> * 原文地址：[Trending Storage Options for React Native Developers](https://javascript.plainenglish.io/trending-storage-options-for-react-native-developers-8671fbffb686)
-> * 原文作者：[Vithushan Jey](https://medium.com/@vithushjeytharma)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md](https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md)
-> - 译者：[KimYangOfCat](https://github.com/KimYangOfCat)
-> - 校对者：[jaredliw](https://github.com/jaredliw)、[greycodee](https://github.com/greycodee)
+---
+ * 原文地址：[Trending Storage Options for React Native Developers](https://javascript.plainenglish.io/trending-storage-options-for-react-native-developers-8671fbffb686)
+ * 原文作者：[Vithushan Jey](https://medium.com/@vithushjeytharma)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md](https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md)
+ - 译者：[KimYangOfCat](https://github.com/KimYangOfCat)
+ - 校对者：[jaredliw](https://github.com/jaredliw)、[greycodee](https://github.com/greycodee)

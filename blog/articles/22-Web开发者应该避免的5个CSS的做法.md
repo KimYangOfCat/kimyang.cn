@@ -240,9 +240,10 @@ categories: [🌏 翻译校对]
 
 希望在阅读本文后，你能够学会如何避免这些简单的错误并接受我的建议。感谢阅读！
 
-> * 原文地址：[5 CSS Practices To Avoid as a Web Developer](https://betterprogramming.pub/5-css-practices-to-avoid-as-a-web-developer-1b7553c05131)
-> * 原文作者：[Alexey Shepelev](https://medium.com/@alexey-shepelev)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
-> * 校对者：[KimYang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)
+---
+ * 原文地址：[5 CSS Practices To Avoid as a Web Developer](https://betterprogramming.pub/5-css-practices-to-avoid-as-a-web-developer-1b7553c05131)
+ * 原文作者：[Alexey Shepelev](https://medium.com/@alexey-shepelev)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+ * 校对者：[KimYang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)

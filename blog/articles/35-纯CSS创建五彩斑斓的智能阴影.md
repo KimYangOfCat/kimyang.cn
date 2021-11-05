@@ -152,9 +152,10 @@ categories: [🌏 翻译校对]
 
 如果我想将这样的阴影应用到一个不只是带有背景图像的空元素上怎么办？如果我有一个像 **Button** 或 **ComboBox** 这样的 HTML 元素想要应用这种阴影效果怎么办？一种解决方案是依靠 JavaScript 在 DOM 中复制适当的元素，将它们放置在前景元素下方，应用过滤器，然后就可以了。虽然可行，但考虑到该过程的复杂程度，实在是有些不寒而栗。可惜 JavaScript 没有等效的 [renderTargetBitmap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.imaging.rendertargetbitmap?view=net-5.0) 这种能够把我们的视觉效果渲染成位图，然后你可以做任何你想做的事的 API…… 🥶
 
-> * 原文地址：[Creating Colorful, Smart Shadows](https://www.kirupa.com/html5/creating_colorful_smart_shadows.htm)
-> * 原文作者：[kirupa](https://www.kirupa.com/me/index.htm)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
-> * 校对者：[CarlosChenN](https://github.com/CarlosChenN)、[Kim Yang](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[Creating Colorful, Smart Shadows](https://www.kirupa.com/html5/creating_colorful_smart_shadows.htm)
+ * 原文作者：[kirupa](https://www.kirupa.com/me/index.htm)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+ * 校对者：[CarlosChenN](https://github.com/CarlosChenN)、[Kim Yang](https://github.com/KimYangOfCat)

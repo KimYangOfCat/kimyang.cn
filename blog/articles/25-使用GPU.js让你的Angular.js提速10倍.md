@@ -308,9 +308,10 @@ export class AppComponent {
 
 感谢你阅读本文！
 
-> * 原文地址：[Speed Up Your Angular Projects by 10x With GPU.js](https://betterprogramming.pub/speed-up-your-angular-projects-by-10x-with-gpu-js-92c4b2bad4e3)
-> * 原文作者：[Chameera Dulanga](https://medium.com/@chameeradulanga)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/speed-up-your-angular-projects-by-10x-with-gpu-js.md](https://github.com/xitu/gold-miner/blob/master/article/2021/speed-up-your-angular-projects-by-10x-with-gpu-js.md)
-> * 译者：[samyu2000](https://github.com/samyu2000)
-> * 校对者：[PassionPenguin](https://github.com/PassionPenguin), [Kim Yang](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[Speed Up Your Angular Projects by 10x With GPU.js](https://betterprogramming.pub/speed-up-your-angular-projects-by-10x-with-gpu-js-92c4b2bad4e3)
+ * 原文作者：[Chameera Dulanga](https://medium.com/@chameeradulanga)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/speed-up-your-angular-projects-by-10x-with-gpu-js.md](https://github.com/xitu/gold-miner/blob/master/article/2021/speed-up-your-angular-projects-by-10x-with-gpu-js.md)
+ * 译者：[samyu2000](https://github.com/samyu2000)
+ * 校对者：[PassionPenguin](https://github.com/PassionPenguin), [Kim Yang](https://github.com/KimYangOfCat)

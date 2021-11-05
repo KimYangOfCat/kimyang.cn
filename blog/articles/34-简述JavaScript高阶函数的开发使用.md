@@ -193,14 +193,13 @@ const resultantArray = existingArray.reduce((total,element,index.array)=> {
     // 返回某些东西
 }, initialValue);
 ```
+感谢你的阅读！
 
 ---
-
-感谢你的阅读！
-> * 原文地址：[All You Need to Know About Higher-Order Functions in JavaScript](https://javascript.plainenglish.io/all-you-need-to-know-about-higher-order-functions-in-javascript-19d30c8cc8e5)
-> * 原文作者：[Rahul](https://medium.com/@rahulism)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/all-you-need-to-know-about-higher-order-functions-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/all-you-need-to-know-about-higher-order-functions-in-javascript.md)
-> * 译者：[Zz招锦](https://github.com/zenblo)
-> * 校对者：[chzh9311](https://github.com/chzh9311)、[Kim Yang](https://github.com/KimYangOfCat)
+ * 原文地址：[All You Need to Know About Higher-Order Functions in JavaScript](https://javascript.plainenglish.io/all-you-need-to-know-about-higher-order-functions-in-javascript-19d30c8cc8e5)
+ * 原文作者：[Rahul](https://medium.com/@rahulism)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/all-you-need-to-know-about-higher-order-functions-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/all-you-need-to-know-about-higher-order-functions-in-javascript.md)
+ * 译者：[Zz招锦](https://github.com/zenblo)
+ * 校对者：[chzh9311](https://github.com/chzh9311)、[Kim Yang](https://github.com/KimYangOfCat)
 

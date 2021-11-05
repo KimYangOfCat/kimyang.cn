@@ -155,9 +155,10 @@ Chrome DevTools 使用 [Chrome DevTools 协议 (CDP)](https://chromedevtools.git
 
 > Chromium issue: [1199787](https://crbug.com/1199787)
 
-> * 原文地址：[What's New In DevTools (Chrome 92)](https://developer.chrome.com/blog/new-in-devtools-92/)
-> * 原文作者：[Jecelyn Yeen](https://jec.fyi/)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md](https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md)
-> * 译者：[Usualminds](https://github.com/Usualminds)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[finalwhy](https://github.com/finalwhy)
+---
+ * 原文地址：[What's New In DevTools (Chrome 92)](https://developer.chrome.com/blog/new-in-devtools-92/)
+ * 原文作者：[Jecelyn Yeen](https://jec.fyi/)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md](https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md)
+ * 译者：[Usualminds](https://github.com/Usualminds)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[finalwhy](https://github.com/finalwhy)

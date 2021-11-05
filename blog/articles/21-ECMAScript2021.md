@@ -137,9 +137,10 @@ console.log(budget); // 会打印正常数字：
 * [https://dev.to/faithfulojebiyi/new-features-in-ecmascript-2021-with-code-examples-302h](https://dev.to/faithfulojebiyi/new-features-in-ecmascript-2021-with-code-examples-302h)
 * [https://2ality.com/2020/09/ecmascript-2021.html](https://2ality.com/2020/09/ecmascript-2021.html)
 
-> * 原文地址：[Everything about the latest ECMAScript release | ECMAScript 2021](https://levelup.gitconnected.com/everything-about-the-latest-ecmascript-release-ecmascript-2021-c011e817f41a)
-> * 原文作者：[Kritika Sharma](https://medium.com/@kritikasharmablog)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/everything-about-the-latest-ecmascript-release-ecmascript-2021.md](https://github.com/xitu/gold-miner/blob/master/article/2021/everything-about-the-latest-ecmascript-release-ecmascript-2021.md)
-> * 译者：[霜羽 Hoarfroster](https://github.com/Hoarfroster)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Tong-H](https://github.com/Tong-H)
+---
+ * 原文地址：[Everything about the latest ECMAScript release | ECMAScript 2021](https://levelup.gitconnected.com/everything-about-the-latest-ecmascript-release-ecmascript-2021-c011e817f41a)
+ * 原文作者：[Kritika Sharma](https://medium.com/@kritikasharmablog)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/everything-about-the-latest-ecmascript-release-ecmascript-2021.md](https://github.com/xitu/gold-miner/blob/master/article/2021/everything-about-the-latest-ecmascript-release-ecmascript-2021.md)
+ * 译者：[霜羽 Hoarfroster](https://github.com/Hoarfroster)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Tong-H](https://github.com/Tong-H)

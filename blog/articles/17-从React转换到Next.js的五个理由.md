@@ -143,9 +143,10 @@ React 是[最流行的框架](https://www.codeinwp.com/blog/angular-vs-vue-vs-re
 
 感谢你的阅读！
 
-> * 原文地址：[5 Reasons to Switch from React to Next.js](https://javascript.plainenglish.io/5-reasons-to-switch-from-react-to-next-js-f776413693d0)
-> * 原文作者：[anuragkanoria](https://medium.com/@anuragkanoria)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md)
-> * 译者：[Zz招锦](https://github.com/zenblo)
-> * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Cyberhan123](https://github.com/Cyberhan123)
+---
+ * 原文地址：[5 Reasons to Switch from React to Next.js](https://javascript.plainenglish.io/5-reasons-to-switch-from-react-to-next-js-f776413693d0)
+ * 原文作者：[anuragkanoria](https://medium.com/@anuragkanoria)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md)
+ * 译者：[Zz招锦](https://github.com/zenblo)
+ * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Cyberhan123](https://github.com/Cyberhan123)

@@ -309,10 +309,10 @@ stringz.toArray('👍🏽🍆🌮');
 
 欲了解更多关于 Stringz 的信息，请访问 [Stringz 的 Github 仓库](https://github.com/sallar/stringz)。
 
-
-> * 原文地址：[5 String Manipulation Libraries for JavaScript](https://blog.bitsrc.io/5-string-manipulation-libraries-for-javascript-9ca5da8b4eb8)
-> * 原文作者：[Mike Chen](https://medium.com/@gitgit6)
-> * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-> * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md)
-> * 译者：[jaredliw](https://github.com/jaredliw)
-> * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)
+---
+ * 原文地址：[5 String Manipulation Libraries for JavaScript](https://blog.bitsrc.io/5-string-manipulation-libraries-for-javascript-9ca5da8b4eb8)
+ * 原文作者：[Mike Chen](https://medium.com/@gitgit6)
+ * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+ * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md)
+ * 译者：[jaredliw](https://github.com/jaredliw)
+ * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)
