@@ -1,5 +1,5 @@
 # Blog 🤔 
-我在这里用文字记录了我所有折腾过的内容，您可以通过在线博客（[Blog](https://kimyang.cn) | [github pages](https://kimyangofcat.github.io/Blog/)）获得更好的阅读体验。
+我在这里用文字记录了我所有折腾过的内容，您可以通过在线博客（[Blog](https://kimyang.cn)（已删除部分敏感文章） | [github pages](https://kimyangofcat.github.io/Blog/) ）获得更好的阅读体验。
 
 同时您也可关注我的微信公众号来获得实时文章更新通知。
 ![二维码](https://pic-bed-1256389522.cos.ap-chengdu.myqcloud.com/info/binarycode.png)
