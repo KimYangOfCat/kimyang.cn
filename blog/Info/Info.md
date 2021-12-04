@@ -4,11 +4,11 @@ date: 2019-06-01
 sticky: 1
 ---
 <Boxx :changeTime='6000'/>
-我是 KimYang，一只喜欢仰望星空的程序猿!
+我是 KimYang，追求做技术与艺术的创新者。喜欢技术、商业、产品、设计等一切引人深入思考的内容，目前主要发展方向是前端工程师，目标是全栈工程师！
 
    - 🛠  "I now develop Web applications";
    - 🤔  "I focus on GUI and anything about user interface"; 
-   - 🔗  "I used C++, JavaScript, Python,Swift, etc";
+   - 🔗  "I used JavaScript, C++, Python, etc";
    - 🦀  "I am currently learning CSPostgraduate and other interesting techniques";
    - 📱  "I am using MBP/Mi Mix3 as develop tools "
 

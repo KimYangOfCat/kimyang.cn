@@ -27,6 +27,7 @@ jobs:
       - name: npm install and build
         run: |
           npm install
+          rm -rf ./blog/onlygithub
           npm run build
         env:
           CI: true
