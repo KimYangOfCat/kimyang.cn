@@ -28,7 +28,7 @@ module.exports = {
         startYear: 2019,
          // 备案
         record: '蜀ICP备2021014312号',
-        recordLink: 'https://icp.chinaz.com/home/info?host=kimyang.cn',
+        recordLink: 'https://beian.miit.gov.cn/',
         authorAvatar: '/avatar.jpg',
         noFoundPageByTencent: false,//关闭404
         codeTheme: 'tomorrow',
