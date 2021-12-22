@@ -7,7 +7,7 @@ module.exports=[
         text: '项目合集', items: [
             { text: '贪吃蛇游戏', link: 'https://snake.kimyang.cn/'},
             { text: '打地鼠游戏', link: 'https://mole.kimyang.cn/'},
-            { text: '408 笔记', link: 'https://408.kimyang.cn/'},
+            // { text: '408 笔记', link: 'https://408.kimyang.cn/'},
             // { text: '数学笔记', link: 'https://math.kimyang.cn/'},
         ], icon: 'reco-category'
     },
