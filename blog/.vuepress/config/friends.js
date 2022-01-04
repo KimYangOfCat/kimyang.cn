@@ -23,12 +23,13 @@ module.exports=[
         logo: "/images/friends/Arabaku.jpg",
         link: 'https://fix.moe/'
     },
-    {
-        title: 'Steve Fan',
-        desc: ' Steve Fan',
-        logo: "/images/friends/fanjiawen.png",
-        link: 'https://godjiawen.github.io/'
-    },{
+    // { //示例
+    //     title: 'Kim’s Blog', //站点名称
+    //     desc: ' 一个关于编程的博客', //站点描述
+    //     logo: "\images\friends\friends.png", //站点logo
+    //     link: 'https://kimyang.cn' //站点直链
+    // },
+{
         title: '点击添加友链',
         desc: '友链空位多多，欢迎添加！',
         logo: "/images/friends/friends.png",

@@ -4,21 +4,26 @@ date: 2019-06-01
 sticky: 1
 ---
 <Boxx :changeTime='6000'/>
-我是 KimYang，追求做技术与艺术的创新者。喜欢技术、商业、产品、设计等一切引人深入思考的内容，目前主要发展方向是前端工程师，目标是全栈工程师！
 
-   - 🛠  "I now develop Web applications";
-   - 🤔  "I focus on GUI and anything about user interface"; 
-   - 🔗  "I used JavaScript, C++, Python, etc";
-   - 🦀  "I am currently learning CSPostgraduate and other interesting techniques";
-   - 📱  "I am using MBP/Mi Mix3 as develop tools "
+我是 KimYang，追求做技术与艺术的创新者。目前热爱并积极参与开源技术。业余时间喜欢阅读商业、产品、设计等与互联网相关的内容。
 
 <!-- more -->
+
+## 个人爱好
++ 读书
++ 摄影
+
+## 近期书单
+- [《HTML5秘籍》](https://book.douban.com/subject/26342322/)
+- [《深入解析 CSS》](https://book.douban.com/subject/35021471/)
+- [《你不知道的 JavaScript》](https://book.douban.com/subject/26351021/)
+- [《我的第一本算法书》](https://book.douban.com/subject/30357170/)
 
 ## 交换友链
 
 想加友链的朋友，可以直接通过 PR 的方式提交信息，合适的基本都加嗷！[传送门在此](https://github.com/KimYangOfCat/Blog/tree/master/blog/.vuepress/config/friends.js)
 
-### 格式
+### 友链格式
 
 ```
 地址：https://kimyang.cn(必须)
