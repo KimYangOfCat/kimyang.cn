@@ -29,7 +29,7 @@ module.exports=[
     //     logo: "\images\friends\friends.png", //站点logo
     //     link: 'https://kimyang.cn' //站点直链
     // },
-{
+    {
         title: '点击添加友链',
         desc: '友链空位多多，欢迎添加！',
         logo: "/images/friends/friends.png",

@@ -18,11 +18,11 @@ jobs:
         with:
           ssh-key: ${{ secrets.SSH }}
           submodules: true
-      # 安装使用 node:10
-      - name: use Node.js 10
+      # 安装使用 node:12
+      - name: use Node.js 12
         uses: actions/setup-node@v1
         with:
-          node-version: 10
+          node-version: 12
       # 运行命令，npm install && npm run build
       - name: npm install and build
         run: |
