@@ -19,7 +19,7 @@ jobs:
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-          TARGET_REPO: KimYangOfCat/Blog
+          TARGET_REPO: KimYangOfCat/kimyang.cn
           TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: yarn && export BASE_BLOG=/Blog/&& yarn build
+          BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: blog/.vuepress/dist/
