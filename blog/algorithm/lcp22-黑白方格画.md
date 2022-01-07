@@ -6,8 +6,6 @@ categories: [📝 算法题解]
 ---
 #  [LCP22.黑白方格画](https://leetcode-cn.com/problems/ccw6C7/)
 
-**小目标：百篇题解之二，破百开源成库**。关注我（[Github](https://github.com/KimYangOfCat)、[力扣](https://leetcode-cn.com/u/kimyang/)），即可获取最新题解。
-
 ## 题目描述
 
 小扣注意到秋日市集上有一个创作黑白方格画的摊位。摊主给每个顾客提供一个固定在墙上的白色画板，画板不能转动。画板上有 `n * n` 的网格。绘画规则为，小扣可以选择任意多行以及任意多列的格子涂成黑色，所选行数、列数均可为 0。
