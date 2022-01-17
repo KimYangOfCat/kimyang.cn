@@ -1,7 +1,7 @@
 {
-  "name": "Blog-Src",
+  "name": "kimyang.cn",
   "version": "1.0.0",
-  "description": "Blog using vuepress",
+  "description": "Kim's Blog",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

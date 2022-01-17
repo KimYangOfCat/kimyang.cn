@@ -55,7 +55,7 @@ module.exports = {
             socialLinks: [     // 信息栏展示社交账号
                 { link: 'mailto:Kim.Yang.HG@outlook.com', icon: 'reco-mail' },
                 { link: 'https://github.com/KimYangOfCat', icon: 'reco-github' },
-                { link: 'https://mp.weixin.qq.com/s/kSfjVbzlP46oB-Ux-MPWzA', icon: 'reco-wechat' },
+                // { link: 'https://mp.weixin.qq.com/s/kSfjVbzlP46oB-Ux-MPWzA', icon: 'reco-wechat' },
                 { link: 'https://space.bilibili.com/240836280', icon: 'reco-bilibili' },
                 { link: 'https://www.zhihu.com/people/kim_yang', icon: 'reco-zhihu' },
                 { link: 'https://weibo.com/6373489690/profile?topnav=1&wvr=6&is_all=1', icon: 'reco-weibo' },

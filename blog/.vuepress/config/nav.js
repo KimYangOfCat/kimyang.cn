@@ -1,10 +1,14 @@
 module.exports=[
     { text: '首页', link: '/', icon: 'reco-home' },
-    { text: 'TC39', link: '/tc39-work/', icon: 'reco-message' },
-    { text: '算法题解', link: '/algorithm/', icon: 'reco-message' },
+    // { text: '面试题解', items: [
+    //     { text: 'TC39', link: '/tc39-work/',},
+    // ],icon: 'reco-category' },
+    { text: '算法题解', items: [
+        { text: 'LeetCode', link: '/algorithm/'},
+    ], icon: 'reco-category' },
     {
         // 合并
-        text: '项目合集', items: [
+        text: '开源项目', items: [
             { text: '贪吃蛇游戏', link: 'https://snake.kimyang.cn/'},
             { text: '打地鼠游戏', link: 'https://mole.kimyang.cn/'},
             // { text: '408 笔记', link: 'https://408.kimyang.cn/'},

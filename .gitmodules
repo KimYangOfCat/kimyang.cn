@@ -1,4 +1,0 @@
-[submodule "blog/tc39-work"]
-	path = blog/tc39-work
-	url = git@github.com:KimYangOfCat/tc39-work.git
-	branch = zh
