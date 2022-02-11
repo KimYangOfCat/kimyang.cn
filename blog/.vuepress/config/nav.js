@@ -4,7 +4,8 @@ module.exports=[
     //     { text: 'TC39', link: '/tc39-work/',},
     // ],icon: 'reco-category' },
     { text: '算法题解', items: [
-        { text: 'LeetCode', link: '/algorithm/'},
+        { text: 'LeetCode', link: '/algorithm/leetcode/35-搜索插入位置'},
+        { text: '算法总结', link: '/algorithm/summary/'},
     ], icon: 'reco-category' },
     {
         // 合并

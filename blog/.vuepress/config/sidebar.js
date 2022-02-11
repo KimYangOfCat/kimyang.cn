@@ -1,11 +1,11 @@
 module.exports= {
-    '/algorithm/': getAlgorithmSidebar(),
+    '/algorithm/leetcode/': getAlgorithmSidebar(),
+    '/algorithm/summary/': getAlgorithmSummarySidebar(),
     '/tc39-work/':getTC39WorkSidebar(),
 }
 
 function getAlgorithmSidebar() {
     return [
-        '/algorithm/',
         '/algorithm/leetcode/35-搜索插入位置',
         '/algorithm/leetcode/38-外观数列',
         '/algorithm/leetcode/53-最大子序和',
@@ -17,6 +17,12 @@ function getAlgorithmSidebar() {
         '/algorithm/leetcode/1832-判断句子是否为全字母句',
         '/algorithm/leetcode/1833-雪糕的最大数量',
         '/algorithm/leetcode/lcp22-黑白方格画',
+    ]
+}
+function getAlgorithmSummarySidebar() {
+    return [
+        '/algorithm/summary/',
+        '/algorithm/summary/the-diff-of-loop-iterate',
     ]
 }
 function getTC39WorkSidebar(){
