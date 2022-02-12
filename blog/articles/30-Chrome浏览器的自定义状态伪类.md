@@ -1,7 +1,7 @@
 ---
 title: "Chrome 浏览器的自定义状态伪类"
 date: 2021-06-04
-tags: [游览器,前端]
+tags: [游览器, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -15,35 +15,35 @@ Web 平台上的“自定义”功能越来越多，比如自定义属性（`--m
 
 ### 用户操作
 
-| 类型 | 描述 |
-| --- | --- |
-| `:hover` | 鼠标光标悬停在元素上 |
-| `:active` | 该元素被用户激活 |
-| `:focus` | 该元素获得焦点 |
+| 类型            | 描述                       |
+| --------------- | -------------------------- |
+| `:hover`        | 鼠标光标悬停在元素上       |
+| `:active`       | 该元素被用户激活           |
+| `:focus`        | 该元素获得焦点             |
 | `:focus-within` | 该元素或者后代元素获得焦点 |
 
 ### 定位
 
-| 类型 | 描述 |
-| --- | --- |
-| `:visited` | 该链接之前被用户访问过 |
-| `:target` | 该元素被页面的 URL 片段指定 |
+| 类型       | 描述                        |
+| ---------- | --------------------------- |
+| `:visited` | 该链接之前被用户访问过      |
+| `:target`  | 该元素被页面的 URL 片段指定 |
 
 ### 输入
 
-| 类型 | 描述 |
-| --- | --- |
-| `:disabled` | 表单元素被禁用 |
-| `:placeholder-shown` | input 元素正在展示 placeholder 文本 |
-| `:checked` | 复选框或单选按钮被选中 |
-| `:invalid` | 表单元素的值不合法 |
-| `:out-of-range` | input 元素的值[超出指定范围](https://twitter.com/mgechev/status/1384726124522098688) |
-| `:-webkit-autofill` | input 元素的值被浏览器自动填充  |
+| 类型                 | 描述                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| `:disabled`          | 表单元素被禁用                                                                       |
+| `:placeholder-shown` | input 元素正在展示 placeholder 文本                                                  |
+| `:checked`           | 复选框或单选按钮被选中                                                               |
+| `:invalid`           | 表单元素的值不合法                                                                   |
+| `:out-of-range`      | input 元素的值[超出指定范围](https://twitter.com/mgechev/status/1384726124522098688) |
+| `:-webkit-autofill`  | input 元素的值被浏览器自动填充                                                       |
 
 ### 其他状态
 
-| 类型 | 描述 |
-| --- | --- |
+| 类型       | 描述                 |
+| ---------- | -------------------- |
 | `:defined` | 该自定义元素已被注册 |
 
 > **注：** 为简洁起见，有些伪类被省略了，并且有些伪类的描述没有包括所有可能的用例。
@@ -115,9 +115,10 @@ labeled-checkbox:--checked {
 [过去三年来](https://github.com/WICG/webcomponents/issues/738)，浏览器厂商一直在讨论如何通过自定义伪类来暴露自定义元素的内部状态。Google 的[自定义状态伪类](https://wicg.github.io/custom-state-pseudo-class/)规范目前托管在 WICG 名下，仍然处于一个非官方的状态。该功能由 W3C 技术架构组（TAG）[进行设计审查](https://github.com/w3ctag/design-reviews/issues/428)并[移交给 CSS 工作组](https://github.com/w3c/csswg-drafts/issues/4805)。在 Chrome 的“出货意向”讨论中，[Mounir Lamouri 写道](https://groups.google.com/a/chromium.org/g/blink-dev/c/dJibhmzE73o/m/VT-NceIhAAAJ)：
 
 ---
- * 原文地址：[Custom State Pseudo-Classes in Chrome](https://css-tricks.com/custom-state-pseudo-classes-in-chrome/)
- * 原文作者：[Šime Vidas](https://css-tricks.com/author/simevidas/)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md](https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md)
- * 译者：[iceytea](https://github.com/iceytea)
- * 校对者：[darkyzhou](https://github.com/darkyzhou)、[Chor](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)
+
+- 原文地址：[Custom State Pseudo-Classes in Chrome](https://css-tricks.com/custom-state-pseudo-classes-in-chrome/)
+- 原文作者：[Šime Vidas](https://css-tricks.com/author/simevidas/)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md](https://github.com/xitu/gold-miner/blob/master/article/2021/custom-state-pseudo-classes-in-chrome.md)
+- 译者：[iceytea](https://github.com/iceytea)
+- 校对者：[darkyzhou](https://github.com/darkyzhou)、[Chor](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)

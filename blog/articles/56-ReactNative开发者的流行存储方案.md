@@ -108,7 +108,7 @@ Realm 是一个**直接在手机**、平板电脑或可穿戴设备中运行的�
 
 PouchDB 是一个袖珍型数据库，使应用程序可以**在离线时**将数据存储在本地，然后在应用程序重新上线时将其与 CouchDB 和兼容的服务器同步，无论用户下次在何处登录，用户的数据都可以保持同步。。 实际上，PouchDB 是专门为网络而设计的。而且现在开发者社区已经创建了第三方库来支持 React Native。
 
-[**GitHub - seigel/pouchdb-react-native:  支持异步存储的 PouchDB**](https://github.com/seigel/pouchdb-react-native)
+[**GitHub - seigel/pouchdb-react-native: 支持异步存储的 PouchDB**](https://github.com/seigel/pouchdb-react-native)
 
 [**GitHub - craftzdog/pouchdb-react-native: 🐨 - PouchDB 是一个袖珍的数据库，包含一些支持在 React Native 上运行的补丁。**](https://github.com/craftzdog/pouchdb-react-native)
 
@@ -119,9 +119,11 @@ PouchDB 是一个袖珍型数据库，使应用程序可以**在离线时**将�
 感谢你阅读这篇文章。
 
 ---
- * 原文地址：[Trending Storage Options for React Native Developers](https://javascript.plainenglish.io/trending-storage-options-for-react-native-developers-8671fbffb686)
- * 原文作者：[Vithushan Jey](https://medium.com/@vithushjeytharma)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md](https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md)
- - 译者：[KimYangOfCat](https://github.com/KimYangOfCat)
- - 校对者：[jaredliw](https://github.com/jaredliw)、[greycodee](https://github.com/greycodee)
+
+- 原文地址：[Trending Storage Options for React Native Developers](https://javascript.plainenglish.io/trending-storage-options-for-react-native-developers-8671fbffb686)
+- 原文作者：[Vithushan Jey](https://medium.com/@vithushjeytharma)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md](https://github.com/xitu/gold-miner/blob/master/article/2021/trending-storage-options-for-react-native-developers.md)
+
+* 译者：[KimYangOfCat](https://github.com/KimYangOfCat)
+* 校对者：[jaredliw](https://github.com/jaredliw)、[greycodee](https://github.com/greycodee)

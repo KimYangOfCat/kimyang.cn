@@ -8,7 +8,9 @@ categories: [🌏 翻译校对]
 ![](https://picbed.kimyang.cn/202109050840752.png)
 
 作为 JavaScript 开发人员，我们通常不需要亲自与编译器打交道。但知晓 JavaScript 引擎的基础知识，以及了解它是如何处理我们各自不同的 JS 代码并将其转化为机器能理解的东西，也是很好的！🥳
+
 <!-- more -->
+
 > **注意：** 这篇文章主要基于 Node.js 和以 Chromium 为基础的浏览器使用的 V8 引擎。
 
 ---
@@ -19,7 +21,7 @@ HTML 解析器在你的代码中寻找 `script` 标签以及其对应的来源�
 
 ---
 
-字节流解码器根据已解码的的字节流创建 token。比如，`0066` 解码为 `f`，`0075` 变` u`，`006e` 变 `n`，`0063` 变 `c`，`0074` 变 `t`，`0069` 变 `i`，`006f` 变 `o`，006e` 变为 `n` 和一个空格。看上去好像是你写了 function！这在 JavaScript 中是一个保留关键字，一个 token 被创建并发送给解析器（以及预解析器，这并没有涵盖在动图里但稍后会解释）。其余字节流的处理也一样。
+字节流解码器根据已解码的的字节流创建 token。比如，`0066` 解码为 `f`，`0075` 变` u`，`006e` 变 `n`，`0063` 变 `c`，`0074` 变 `t`，`0069` 变 `i`，`006f` 变 `o`，006e`变为`n` 和一个空格。看上去好像是你写了 function！这在 JavaScript 中是一个保留关键字，一个 token 被创建并发送给解析器（以及预解析器，这并没有涵盖在动图里但稍后会解释）。其余字节流的处理也一样。
 
 ![](https://picbed.kimyang.cn/202109050841540.gif)
 
@@ -74,9 +76,10 @@ JavaScript 是动态类型的语言，这代表数据类型可以不断改变。
 感谢阅读，祝你有美好的一天！❤
 
 ---
- * 原文地址：[JavaScript Visualized: The JavaScript Engine](https://javascript.plainenglish.io/javascript-visualized-the-javascript-engine-1e3fc5d5310d)
- * 原文作者：[Harsh Patel](https://medium.com/@harsh-patel)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md)
- * 译者：[没事儿](https://github.com/Tong-H)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat) [Usualminds](https://github.com/Usualminds)
+
+- 原文地址：[JavaScript Visualized: The JavaScript Engine](https://javascript.plainenglish.io/javascript-visualized-the-javascript-engine-1e3fc5d5310d)
+- 原文作者：[Harsh Patel](https://medium.com/@harsh-patel)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-visualized-the-javascript-engine.md)
+- 译者：[没事儿](https://github.com/Tong-H)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat) [Usualminds](https://github.com/Usualminds)

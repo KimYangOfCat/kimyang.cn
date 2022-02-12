@@ -1,7 +1,7 @@
 ---
 title: "使用 Web Workers 来加速 JavaScript 应用"
 date: 2021-05-25
-tags: [JavaScript,前端]
+tags: [JavaScript, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -21,7 +21,7 @@ Web Workers 是一种可以调用浏览器在后台执行大量且耗时任务�
 const prime = (num) => {
   for (let i = 0; i <= num; i++) {
     let flag = 0;
-  
+
     // 从 2 开始循环到用户输入的数字
     for (let j = 2; j < i; j++) {
         if (i % j == 0) {
@@ -29,7 +29,7 @@ const prime = (num) => {
             break;
         }
     }
-  
+
     // 如果 number 大于 1 且不能被其他数字整除
     if (i > 1 && flag == 0) {
         console.log(i);
@@ -133,22 +133,22 @@ const Start_Animation = () => {
 
 ```JavaScript
 //worker.js 文件
-self.onmessage = event => { 
-  const num = event.data; 
-  const result = prime(num); 
-  self.postMessage(result); 
+self.onmessage = event => {
+  const num = event.data;
+  const result = prime(num);
+  self.postMessage(result);
   self.close();
 };
 
 //main_scrpit.js
-let worker = new Worker(“./worker.js”); 
+let worker = new Worker(“./worker.js”);
 
-const Run_Calculation = () => { 
-  const num = 50000; 
+const Run_Calculation = () => {
+  const num = 50000;
   worker.postMessage(num);
-}; 
+};
 
-worker.onmessage = event => { 
+worker.onmessage = event => {
   const num = event.data;
 };
 ```
@@ -187,14 +187,15 @@ Web Workers 是一种通过启动新线程来加速应用程序的简单方法�
 
 在这篇文章中，我谈到来我自己认为你需要了解的关于 Web Workers 多线程的最重要的几点。
 
-一旦你理解了 Web Workers 的工作原理，就很容易确定是否在你的项目中使用它。因此，我邀请你体验一下 Web Workers 的实际用法，并在评论区分享你的想法。 
+一旦你理解了 Web Workers 的工作原理，就很容易确定是否在你的项目中使用它。因此，我邀请你体验一下 Web Workers 的实际用法，并在评论区分享你的想法。
 
 感谢阅读！！！
 
 ---
- * 原文地址：[Using Web Workers to Speed-Up JavaScript Applications](https://blog.bitsrc.io/using-web-workers-to-speed-up-javascript-applications-5c567f209bdb)
- * 原文作者：[Bhagya](https://medium.com/@bhagya-16)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/using-web-workers-to-speed-up-javascript-applications.md](https://github.com/xitu/gold-miner/blob/master/article/2021/using-web-workers-to-speed-up-javascript-applications.md)
- * 译者：[Usualminds](https://github.com/Usualminds)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)，[Kimhooo](https://github.com/Kimhooo)
+
+- 原文地址：[Using Web Workers to Speed-Up JavaScript Applications](https://blog.bitsrc.io/using-web-workers-to-speed-up-javascript-applications-5c567f209bdb)
+- 原文作者：[Bhagya](https://medium.com/@bhagya-16)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/using-web-workers-to-speed-up-javascript-applications.md](https://github.com/xitu/gold-miner/blob/master/article/2021/using-web-workers-to-speed-up-javascript-applications.md)
+- 译者：[Usualminds](https://github.com/Usualminds)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)，[Kimhooo](https://github.com/Kimhooo)

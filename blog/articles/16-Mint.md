@@ -1,7 +1,7 @@
 ---
 title: "将 JavaScript 放到一边 —— 用 Mint 这门强大的语言来创建一个 Web 应用"
 date: 2021-05-02
-tags: [Mint,前端]
+tags: [Mint, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -31,8 +31,8 @@ categories: [🌏 翻译校对]
 
 [Mint 官网](https://www.mint-lang.com/)很友好地展示了 Mint 包含的所有功能。包括来语言特性和 Web 开发框架特点。这里有很多有趣的特性可供选择使用，但是我发现以下两个特性特别棒：
 
-* 更少的外部依赖，因为它自身内置了很多功能
-* 更贴近 JavaScript 的语义化编程
+- 更少的外部依赖，因为它自身内置了很多功能
+- 更贴近 JavaScript 的语义化编程
 
 ## 内置状态管理
 
@@ -81,7 +81,7 @@ Mint 提供了一套非常简单的全局状态管理方案，类似 Redux，但
 
 ![](https://picbed.kimyang.cn/202109050828157.png)
 
-Mint 实际上提供了[几种不同的方式](https://www.mint-lang.com/guide/reference/javascript-interop)与 JavaScript 进行交互，这里我们只是展示了最常用的方法：通过单引号包裹的方式内联 JavaScript 代码。这是奏效的，因为  Mint 可以编译为 JavaScript。当你使用 Mint 构建应用程序时，所有的代码最终都会被编译为 JavaScript。
+Mint 实际上提供了[几种不同的方式](https://www.mint-lang.com/guide/reference/javascript-interop)与 JavaScript 进行交互，这里我们只是展示了最常用的方法：通过单引号包裹的方式内联 JavaScript 代码。这是奏效的，因为 Mint 可以编译为 JavaScript。当你使用 Mint 构建应用程序时，所有的代码最终都会被编译为 JavaScript。
 
 尽管使用内联的方法快捷简便，但它需要进行类型推断，这并不是完全可行的，有的类型可能无法推断出来。在 Mint 中可以通过使用[decode expressions](https://www.mint-lang.com/guide/reference/javascript-interop/decode-expression) 将 JavaScript 对象转化为有明确类型的值，这种方法是类型安全的。
 
@@ -94,9 +94,10 @@ Mint 实际上提供了[几种不同的方式](https://www.mint-lang.com/guide/r
 官方的 [mint-ui](https://ui.mint-lang.com/) 组件库才刚刚发布，这个语言似乎正在受到大家的关注。我希望 Mint 在 2021 年能更上一层楼。
 
 ---
- * 原文地址：[Leave JavaScript Aside — Mint Is a Great Language for Building Web Apps](https://betterprogramming.pub/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps-3ce5a6873d48)
- * 原文作者：[Chris Vibert](https://medium.com/@cp.vibert)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md](https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md)
- * 译者：[Usualminds](https://github.com/Usualminds)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[PassionPenguin](https://github.com/PassionPenguin)
+
+- 原文地址：[Leave JavaScript Aside — Mint Is a Great Language for Building Web Apps](https://betterprogramming.pub/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps-3ce5a6873d48)
+- 原文作者：[Chris Vibert](https://medium.com/@cp.vibert)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md](https://github.com/xitu/gold-miner/blob/master/article/2021/leave-javascript-aside-mint-is-a-great-language-for-building-web-apps.md)
+- 译者：[Usualminds](https://github.com/Usualminds)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[PassionPenguin](https://github.com/PassionPenguin)

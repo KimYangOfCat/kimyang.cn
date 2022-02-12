@@ -4,10 +4,11 @@ date: 2021-08-11
 tags: [Sass]
 categories: [🌏 翻译校对]
 ---
+
 `!default` 是一个 Sass 标志，表明对一个变量进行 **条件赋值** —— 只有在变量未定义或为 `null` 时才赋值。例如以下代码片段：
 
 ```scss
-$variable: 'test' !default;
+$variable: "test" !default;
 ```
 
 对于 Sass 编译器来说，这一行表示：
@@ -17,8 +18,8 @@ $variable: 'test' !default;
 这里有一个反例，说明了 `!default` 标志的条件赋值行为的另一种情况：
 
 ```scss
-$variable: 'hello world';
-$variable: 'test' !default;
+$variable: "hello world";
+$variable: "test" !default;
 // $variable 仍然为 `hello world`
 ```
 
@@ -26,26 +27,25 @@ $variable: 'test' !default;
 
 ## 样式库和 `@use...with`
 
-Sass 中的 `!default` 主要是为了方便样式库的使用，并方便地将它们包含到下游应用程序或项目中。通过将一些变量指定为 `!default`，样式库可以允许导入的应用程序自定义或调整这些变量值，而不需要再完全地 fork 一份样式库。换句话说，`!default` 的变量本质上是作为修改样式库代码行为的 *参数*。
-
+Sass 中的 `!default` 主要是为了方便样式库的使用，并方便地将它们包含到下游应用程序或项目中。通过将一些变量指定为 `!default`，样式库可以允许导入的应用程序自定义或调整这些变量值，而不需要再完全地 fork 一份样式库。换句话说，`!default` 的变量本质上是作为修改样式库代码行为的 _参数_。
 
 Sass 有一个专门用于此目的的特殊语法，它将样式表与相关的变量组合在一起：
 
 ```scss
 // style.scss
-@use 'library' with (
-  $foo: 'hello',
-  $bar: 'world'
+@use "library" with (
+  $foo: "hello",
+  $bar: "world"
 );
 ```
 
-这个语句的功能 *几乎* 相同于变量赋值后跟一个 `@import`，如下所示:
+这个语句的功能 _几乎_ 相同于变量赋值后跟一个 `@import`，如下所示:
 
 ```scss
 // style.scss - 一种不太常用的导入 `library.scss` 配置的方式
-$foo: 'hello';
-$bar: 'world';
-@import 'library';
+$foo: "hello";
+$bar: "world";
+@import "library";
 ```
 
 这里重要的区别以及原因是，关于覆盖的**范围**， `@use...with` 是可自取的。 `with` 代码块让 Sass 编译器和任何阅读源代码的人都清楚地知道，这些覆盖仅仅适用于在 `library.scss` 中定义和使用的变量。使用这种方法可以保持全局作用域的整洁，并有助于减少不同库之间的变量命名冲突。
@@ -57,9 +57,8 @@ $bar: 'world';
 $color-primary: royalblue !default;
 $color-secondary: salmon !default;
 
-
 // style.scss
-@use 'library' with (
+@use "library" with (
   $color-primary: seagreen,
   $color-secondary: lemonchiffon
 );
@@ -77,11 +76,11 @@ Bootstrap 使用 `!default` 标志设置每一项变量，来导出它的[整个
 // library.scss
 $disable-font-cdn: false !default;
 @if not $disable-font-cdn {
-    @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
 }
 
 // style.scss
-@use 'library' with (
+@use "library" with (
   $disable-font-cdn: true
 );
 // 没有额外的 http 请求
@@ -99,7 +98,7 @@ $disable-font-cdn: false !default;
 
 [查看演示](https://codepen.io/nathanbabcock/project/editor/AYYygg)
 
-`!default` 的特性标志也可以用来创建调试工具，以便在开发过程中使用。在本例中，可视化调试工具为间距标记创建颜色编码的覆盖。该基础是一组根据“T恤尺寸”（即“xs”或“最小码”到“xl”/“超大码”）升格定义的间距标记。从这个单一的标记集合，Sass `@each` 循环生成实用程序类的每个组合，将特定标志应用于每边（分别为上、右、下和左，或同时应用所有四个）的 padding 或 margin。
+`!default` 的特性标志也可以用来创建调试工具，以便在开发过程中使用。在本例中，可视化调试工具为间距标记创建颜色编码的覆盖。该基础是一组根据“T 恤尺寸”（即“xs”或“最小码”到“xl”/“超大码”）升格定义的间距标记。从这个单一的标记集合，Sass `@each` 循环生成实用程序类的每个组合，将特定标志应用于每边（分别为上、右、下和左，或同时应用所有四个）的 padding 或 margin。
 
 因为这些选择器都是在嵌套循环中动态构造的，并且只有一个 `!default` 标志可以将渲染行为从标准（margin 加 padding）切换到彩色调试视图（相同的尺寸使用相同大小的透明边框）。这种颜色编码的视图可能看起来非常类似于设计师移交给开发的可交付成果和线框图——特别是如果你已经对设计和开发们共享了相同的间距值。将视觉调试视图与模型并排可以快速直观地发现差异，以及调试更复杂的样式问题，如[margin 塌陷](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)行为。
 
@@ -109,15 +108,16 @@ $disable-font-cdn: false !default;
 
 这些只是 Sass `!default` 的几个例子。当你将该技术应用于自己的项目时，请参考这些文档资源和使用示例。
 
-* [`!default` 文档](https://sass-lang.com/documentation/variables#default-values)
-* [`@use with` 文档](https://sass-lang.com/documentation/at-rules/use#configuration)
-* [Bootstrap 中的变量默认值](https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults)
-* [一个 Sass `default` 使用案例](https://thoughtbot.com/blog/sass-default) (thoughtbot)
+- [`!default` 文档](https://sass-lang.com/documentation/variables#default-values)
+- [`@use with` 文档](https://sass-lang.com/documentation/at-rules/use#configuration)
+- [Bootstrap 中的变量默认值](https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults)
+- [一个 Sass `default` 使用案例](https://thoughtbot.com/blog/sass-default) (thoughtbot)
 
 ---
- * 原文地址：[Creating Stylesheet Feature Flags With Sass !default](https://css-tricks.com/creating-stylesheet-feature-flags-with-sass-default/)
- * 原文作者：[Nathan Babcock](https://css-tricks.com/author/nathanbabcock/)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating-stylesheet-feature-flags-with-sass-default.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating-stylesheet-feature-flags-with-sass-default.md)
- * 译者：[Gesj-yean](https://github.com/Gesj-yean)
- * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat) [nia3y](https://github.com/nia3y)
+
+- 原文地址：[Creating Stylesheet Feature Flags With Sass !default](https://css-tricks.com/creating-stylesheet-feature-flags-with-sass-default/)
+- 原文作者：[Nathan Babcock](https://css-tricks.com/author/nathanbabcock/)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating-stylesheet-feature-flags-with-sass-default.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating-stylesheet-feature-flags-with-sass-default.md)
+- 译者：[Gesj-yean](https://github.com/Gesj-yean)
+- 校对者：[KimYangOfCat](https://github.com/KimYangOfCat) [nia3y](https://github.com/nia3y)

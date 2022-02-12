@@ -9,29 +9,31 @@ publish: true
 ![](https://picbed.kimyang.cn/202109072225030.jpeg)
 
 正则表达式（RegEx）被广泛地运用于 Web 开发中，用作模式匹配及验证等用途。然而，在实际使用中它们会带来一些安全和性能上的风险，并向攻击者敞开大门。
+
 <!-- more -->
+
 因此，在这篇文章中，我将讨论使用正则表达式前所需注意的两个基本问题。
 
 ## 灾难性回溯
 
 正则表达式的算法有两种：
 
-* **确定性有限状态自动机（DFA）** —— 对于给定字符串，每个字符只检查一次。
-* **非确定性有限状态自动机（NFA）** —— 多次检查同一个字符，直到找到最佳匹配。
+- **确定性有限状态自动机（DFA）** —— 对于给定字符串，每个字符只检查一次。
+- **非确定性有限状态自动机（NFA）** —— 多次检查同一个字符，直到找到最佳匹配。
 
 JavaScript 的 RegEx 引擎使用的是 NFA 算法，这会导致灾难性回溯。
 
 为了更好地理解这个问题，让我们考虑以下的 RegEx：
 
 ```js
-/(g|i+)+t/
+/(g|i+)+t/;
 ```
 
-这个 RegEx 看起来很简单。但是，请别低估它让你付出的代价😯。首先，让我们了解这个 RegEx 背后的含义：
+这个 RegEx 看起来很简单。但是，请别低估它让你付出的代价 😯。首先，让我们了解这个 RegEx 背后的含义：
 
-* **`(g|i+)`** —— 这个组检查给定字符串是否由 `g` 或至少一个 `i` 开头。
-* 接下来的 `+` 将匹配前面的组一次或多次。
-* 字符串应由字母 `t` 结尾。
+- **`(g|i+)`** —— 这个组检查给定字符串是否由 `g` 或至少一个 `i` 开头。
+- 接下来的 `+` 将匹配前面的组一次或多次。
+- 字符串应由字母 `t` 结尾。
 
 根据上方的 RegEx，以下的文本被判定为匹配：
 
@@ -74,7 +76,7 @@ igggt
 我将使用 Moment.js 库来演示这一点，因为在低于 2.15.2 的 Moment.js 的版本中存在一个著名的 ReDoS 漏洞。
 
 ```js
-var moment = require('moment');
+var moment = require("moment");
 moment.locale("be");
 moment().format("D                               MMN MMMM");
 ```
@@ -104,7 +106,7 @@ moment().format("D                               MMN MMMM");
 你能通过使用 [safe-regex](https://www.npmjs.com/package/safe-regex)、[rxxr2](https://www.cs.bham.ac.uk/~hxt/research/rxxr2/) 等工具来编写无漏洞的 RegEx。它们将检查你的 RegEx 是否存在漏洞并返回其合法性。
 
 ```js
-var safe = require('safe-regex');
+var safe = require("safe-regex");
 
 var regex = /(g|i+)+t/;
 console.log(safe(regex)); // false
@@ -117,10 +119,10 @@ console.log(safe(regex)); // false
 由于 Node.js 默认的 RegEx 引擎容易受到 ReDoS 攻击，我们可以避免使用它，并以其他引擎作为替代，例如：Google 的 [re2](https://www.npmjs.com/package/re2) 引擎。它确保 RegEx 可以安全地抵御 ReDoS 攻击，用法也与 Node.js 默认的 RegEx 引擎相似。
 
 ```js
-var RE2 = require('re2');
+var RE2 = require("re2");
 
 var re = new RE2(/(g|i+)+t/);
-var result = 'giiiiiiiiiiiiiiiiiiit'.search(re);
+var result = "giiiiiiiiiiiiiiiiiiit".search(re);
 console.log(result); // 0
 ```
 
@@ -135,9 +137,10 @@ console.log(result); // 0
 感谢您的阅读！
 
 ---
- * 原文地址：[Threats of Using Regular Expressions in JavaScript](https://blog.bitsrc.io/threats-of-using-regular-expressions-in-javascript-28ddccf5224c)
- * 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[greycodee](https://github.com/greycodee)
+
+- 原文地址：[Threats of Using Regular Expressions in JavaScript](https://blog.bitsrc.io/threats-of-using-regular-expressions-in-javascript-28ddccf5224c)
+- 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/threats-of-using-regular-expressions-in-javascript.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[greycodee](https://github.com/greycodee)

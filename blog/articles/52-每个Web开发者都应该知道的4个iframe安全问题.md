@@ -1,7 +1,7 @@
 ---
 title: "每个 Web 开发人员都应该知道的 4 个 iframe 安全问题"
 date: 2021-09-6
-tags: [HTML,游览器]
+tags: [HTML, 游览器]
 categories: [🌏 翻译校对]
 publish: true
 ---
@@ -9,8 +9,8 @@ publish: true
 ![](https://picbed.kimyang.cn/202109072224349.jpeg)
 
 iframe 是 Web 开发中最古老、最简单的内容嵌入技术之一，时至今日仍被使用。然而，在实践中使用 iframe 可能会带来一些安全隐患，向攻击者敞开大门。
-<!-- more -->
----
+
+## <!-- more -->
 
 因此，在这篇文章中，我将讨论使用 iframe 前需要注意的 4 个安全风险问题。
 
@@ -20,7 +20,7 @@ iframe 是 Web 开发中最古老、最简单的内容嵌入技术之一，时�
 
 iframe 使用多个标签在网页上展示 HTML 文档并将用户重定向到其他的网站。此行为允许第三方将恶意的可执行程序、病毒或蠕虫植入你的 web 程序中，并在用户的设备上运行。
 
-我们可以通过扫描 Web 服务器发送的 HTML 来找出 iframe 的注入位置。你需要做的只是在你的浏览器中打开一个页面，然后启用 `view source` 功能来查看 HTML。由于这些 iframe 通常指向原生 IP 地址，因此你应该搜索  `<iframe>` 标签，而不是域名。
+我们可以通过扫描 Web 服务器发送的 HTML 来找出 iframe 的注入位置。你需要做的只是在你的浏览器中打开一个页面，然后启用 `view source` 功能来查看 HTML。由于这些 iframe 通常指向原生 IP 地址，因此你应该搜索 `<iframe>` 标签，而不是域名。
 
 举例来说，让我们看看以下的代码：
 
@@ -47,7 +47,12 @@ document.write(unescape(‘3c696672616d65207372633d27687474703a2f2f696e666f73656
 同样，这看起来也是合法的，因为攻击者使用了 `GPL` 和 `wp` 并将语言设为 `JavaScript`。这些数字和字母似乎是十六进制的，所以接下来我们可以使用十六进制解码器来将其解码，最终结果如下：
 
 ```html
-<iframe src='https://www.infosecinstitute.com/' width='1' height='1' style='visibility: hidden;'></iframe>
+<iframe
+  src="https://www.infosecinstitute.com/"
+  width="1"
+  height="1"
+  style="visibility: hidden;"
+></iframe>
 ```
 
 ---
@@ -76,8 +81,8 @@ XFS 攻击者说服用户访问由他所控制的网页，并通过 iframe 引�
 
 有两种主要策略可以保护自己免受点击劫持：
 
-* 客户端中最流行的方法是 Frame Busting，但这并不是最好的解决方法，因为 iframe 只是被忽略了而已。
-* 服务端中的最好办法是使用 `X-Frame-Options`。安全专家强烈地建议从服务端解决点击劫持的问题。
+- 客户端中最流行的方法是 Frame Busting，但这并不是最好的解决方法，因为 iframe 只是被忽略了而已。
+- 服务端中的最好办法是使用 `X-Frame-Options`。安全专家强烈地建议从服务端解决点击劫持的问题。
 
 ## 4. iframe 网络钓鱼
 
@@ -122,9 +127,10 @@ iframe 能提高用户的互动性。但是，当你使用 iframe 的时候，�
 谢谢您的阅读！
 
 ---
- * 原文地址：[4 Security Concerns with iframes Every Web Developer Should Know](https://blog.bitsrc.io/4-security-concerns-with-iframes-every-web-developer-should-know-24c73e6a33e4)
- * 原文作者：[Piumi Liyana Gunawardhana](https://medium.com/@piumi-16)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md](https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[Usualminds](https://github.com/Usualminds)、[KimYangOfCat](https://github.com/KimYangOfCat)
+
+- 原文地址：[4 Security Concerns with iframes Every Web Developer Should Know](https://blog.bitsrc.io/4-security-concerns-with-iframes-every-web-developer-should-know-24c73e6a33e4)
+- 原文作者：[Piumi Liyana Gunawardhana](https://medium.com/@piumi-16)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md](https://github.com/xitu/gold-miner/blob/master/article/2021/4-security-concerns-with-iframes-every-web-developer-should-know.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[Usualminds](https://github.com/Usualminds)、[KimYangOfCat](https://github.com/KimYangOfCat)

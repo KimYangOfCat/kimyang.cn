@@ -1,11 +1,12 @@
 ---
 title: "Chrome 92 DevTools 的新功能"
 date: 2021-06-24
-tags: [前端,Chrome]
+tags: [前端, Chrome]
 categories: [🌏 翻译校对]
 ---
 
 ![](https://picbed.kimyang.cn/202109050837118.jpg)
+
 <!-- more -->
 
 ## CSS 网格编辑器
@@ -18,7 +19,7 @@ categories: [🌏 翻译校对]
 
 > Chromium issue: [1203241](https://crbug.com/1203241)
 
-## 控制台支持 `const` 常量重复声明 
+## 控制台支持 `const` 常量重复声明
 
 除了支持现有的 [`let` 和 `class` 重复声明](/blog/new-in-devtools-80/#redeclarations)外，控制器现在也支持了 `const` 常量的重复声明。无法重复声明常量对 web 开发者来说是一个令人头疼的问题，因为他们经常需要通过控制台来调试 JavaScript 代码。
 
@@ -26,14 +27,14 @@ categories: [🌏 翻译校对]
 
 可以参考下面的例子。在**不同的 REPL 脚本**中支持 `const` 常量的重复声明（参考变量 `a`）。需要注意的是，以下场景是不予支持的：
 
-* 页面脚本中的 `const` 重复声明，在 REPL 脚本中是不允许的
-* 同一个 REPL 脚本中的 `const` 变量，也是不允许重复声明的（参考变量 `b`）
+- 页面脚本中的 `const` 重复声明，在 REPL 脚本中是不允许的
+- 同一个 REPL 脚本中的 `const` 变量，也是不允许重复声明的（参考变量 `b`）
 
 ![const 变量重复声明](https://picbed.kimyang.cn/202109050838058.png)
 
 > Chromium issue: [1076427](https://crbug.com/1076427)
 
-## 源代码查看器 
+## 源代码查看器
 
 你可以在屏幕上查看页面元素的排列顺序，这可以更好地进行可访问性检查。
 
@@ -55,7 +56,7 @@ HTML 文档中内容的顺序对于搜索引擎优化和提升可访问性至关
 
 > Chromium issue: [1192084](https://crbug.com/1192084)
 
-## 增强的 CORS 调试支持 
+## 增强的 CORS 调试支持
 
 跨域资源共享（CORS）错误会展示在“问题”选项卡中。造成 CORS 错误的原因有很大。你可以单击展开每个问题来了解可能的原因和解决方法。
 
@@ -65,7 +66,7 @@ HTML 文档中内容的顺序对于搜索引擎优化和提升可访问性至关
 
 ## Network 面板更新
 
-### 重命名 XHR 标签为 Fetch/XHR 
+### 重命名 XHR 标签为 Fetch/XHR
 
 XHR 标签现在被重命名为 **Fetch/XHR**。这个变更更明确地说明来该过滤器同时包含了 [`XMLHttpRequest`](https://xhr.spec.whatwg.org/) 和 [Fetch API](https://fetch.spec.whatwg.org/) 两种类型的网络请求。
 
@@ -141,7 +142,7 @@ Chrome DevTools 使用 [Chrome DevTools 协议 (CDP)](https://chromedevtools.git
 
 > Chromium issues: [1204004](https://crbug.com/1204004), [1204466](https://crbug.com/1204466)
 
-## \[实验阶段\] Puppeteer Recorder 
+## \[实验阶段\] Puppeteer Recorder
 
 如果要启用该实验性质功能，请开启 **Settings** \> **Experiments** 下的 **Recorder** 选项。
 
@@ -156,9 +157,10 @@ Chrome DevTools 使用 [Chrome DevTools 协议 (CDP)](https://chromedevtools.git
 > Chromium issue: [1199787](https://crbug.com/1199787)
 
 ---
- * 原文地址：[What's New In DevTools (Chrome 92)](https://developer.chrome.com/blog/new-in-devtools-92/)
- * 原文作者：[Jecelyn Yeen](https://jec.fyi/)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md](https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md)
- * 译者：[Usualminds](https://github.com/Usualminds)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[finalwhy](https://github.com/finalwhy)
+
+- 原文地址：[What's New In DevTools (Chrome 92)](https://developer.chrome.com/blog/new-in-devtools-92/)
+- 原文作者：[Jecelyn Yeen](https://jec.fyi/)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md](https://github.com/xitu/gold-miner/blob/master/article/2021/new-in-devtools-92.md)
+- 译者：[Usualminds](https://github.com/Usualminds)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)、[finalwhy](https://github.com/finalwhy)

@@ -7,7 +7,9 @@ publish: true
 ---
 
 ![](https://picbed.kimyang.cn/202109050848241.jpeg)
+
 <!-- more -->
+
 当我在做业余项目库时，我需要表示一个缺失的值。在过去，我习惯在设置中使用 `nullable` 方法，而当我想要更多的控制时，则使用 `Option` 方法。
 
 在这种情况下，我觉得两者都不合适，所以我想出了一个不同的方法，并在本文中分享出来。
@@ -69,11 +71,11 @@ const None = Symbol(`None`)
 
 让我们来看下有哪些好处：
 
-* 它是一个简单的值，不需要封装
-* 其他的都被当作数据来处理
-* 这是一个私有的 `None`，不能在别处重新创建
-* 它在我们的代码之外没有任何意义
-* 标签使调试变得更容易
+- 它是一个简单的值，不需要封装
+- 其他的都被当作数据来处理
+- 这是一个私有的 `None`，不能在别处重新创建
+- 它在我们的代码之外没有任何意义
+- 标签使调试变得更容易
 
 特别是第一点允许使用 `None` 作为 `null`。请看一些使用示例：
 
@@ -132,9 +134,10 @@ const notSettled = Symbol(`not-settled`)
 让我知道你对这种用法的看法：它是 `null` 的一个很好的替代吗？每个人都应该总是使用一个 `Option` 吗？
 
 ---
- * 原文地址：[Replace null with ES6 Symbols](https://javascript.plainenglish.io/replace-null-with-es6-symbols-c0e77d74542e)
- * 原文作者：[Robin Pokorny](https://medium.com/@robinpokorny)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md](https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md)
- * 译者：[Z招锦](https://github.com/zenblofe)
- * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)
+
+- 原文地址：[Replace null with ES6 Symbols](https://javascript.plainenglish.io/replace-null-with-es6-symbols-c0e77d74542e)
+- 原文作者：[Robin Pokorny](https://medium.com/@robinpokorny)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md](https://github.com/xitu/gold-miner/blob/master/article/2021/replace-null-with-es6-symbols.md)
+- 译者：[Z 招锦](https://github.com/zenblofe)
+- 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)

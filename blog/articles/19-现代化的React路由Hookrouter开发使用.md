@@ -1,7 +1,7 @@
 ---
 title: "现代化的 React 路由 Hookrouter 开发使用"
 date: 2021-05-17
-tags: [React,前端]
+tags: [React, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -29,9 +29,9 @@ import Home from './components/Home';
 import {BrowserRouter as Router,Route} from'react-router-dom';
 
 function App() {
-  
+
   return (
-    
+
     <Router>
     <div className="App">
 
@@ -39,7 +39,7 @@ function App() {
       <Route path = '/'  component = {Home}/>
       <Route path = '/about' component = {About}/>
       <Route path = '/shop' component = {Shop}/>
-             
+
     </div>
    </Router>
   );
@@ -97,9 +97,9 @@ import Error from './components/Error';
 import {BrowserRouter as Router, Switch,Route} from'react-router-dom';
 
 function App() {
-  
+
   return (
-    
+
     <Router>
     <div className="App">
 
@@ -111,8 +111,8 @@ function App() {
       <Route><Error/> </Route>
       </Switch>
 
-     
-      
+
+
     </div>
    </Router>
   );
@@ -166,7 +166,7 @@ function Nav() {
         <div>
             <nav>
                    <ul className='nav-links'>
-                      
+
                       <Link className='Link' to='/'>
                         <li>HOME</li>
                       </Link>
@@ -178,7 +178,7 @@ function Nav() {
                       </Link>
 
                   </ul>
-                
+
             </nav>
         </div>
     )
@@ -199,7 +199,7 @@ function Nav() {
             <div>
                 <nav>
                         <ul className='nav-links'>
-                          
+
                           <A className='Link' href='/'>
                             <li>HOME</li>
                           </A>
@@ -209,13 +209,13 @@ function Nav() {
                           <A className='Link' href='/shop'>
                             <li>SHOP</li>
                           </A>
-    
+
                         </ul>
                 </nav>
             </div>
         )
     }
-    
+
 export default Nav
 ```
 
@@ -252,7 +252,7 @@ const routes = {
 使用 Hookrouter 依赖包的 `navigate(url, [replace], [queryParams])` 函数，可以用来将用户发送到一个提供的绝对或相对 URL 定义的特定页面。例如，要导航到关于页面，可以使用下面的代码片段。
 
 ```js
-navigate(‘/about’) 
+navigate(‘/about’)
 ```
 
 `navigate()` 默认是一个向前的导航。因此，将在浏览历史中创建一个新的条目，用户可以点击浏览器中的后退按钮，回到前一页。
@@ -262,7 +262,7 @@ navigate(‘/about’)
 Hookrouter 借助于 `useRedirect()` hook 来处理重定向问题。它需要一个源路由和一个目标路由作为参数。
 
 ```js
-useRedirect('/', '/greeting');
+useRedirect("/", "/greeting");
 ```
 
 每当 `/` 路径被匹配，`useRedirect()` 将自动将用户重定向到 `/greeting` 路径。
@@ -296,9 +296,10 @@ useRedirect('/', '/greeting');
 谢谢你的阅读！
 
 ---
- * 原文地址：[Hookrouter: A Modern Approach to React Routing](https://blog.bitsrc.io/hookrouter-a-modern-approach-to-react-routing-b6e36f7d49d9)
- * 原文作者：[Isuri Devindi](https://medium.com/@isuridevindi)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md](https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md)
- * 译者：[Zz招锦](https://github.com/zenblo)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[PassionPenguin](https://github.com/PassionPenguin)
+
+- 原文地址：[Hookrouter: A Modern Approach to React Routing](https://blog.bitsrc.io/hookrouter-a-modern-approach-to-react-routing-b6e36f7d49d9)
+- 原文作者：[Isuri Devindi](https://medium.com/@isuridevindi)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md](https://github.com/xitu/gold-miner/blob/master/article/2021/hookrouter-a-modern-approach-to-react-routing.md)
+- 译者：[Zz 招锦](https://github.com/zenblo)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[PassionPenguin](https://github.com/PassionPenguin)

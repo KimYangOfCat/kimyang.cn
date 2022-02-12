@@ -1,7 +1,7 @@
 ---
 title: "JavaScript 类型化数组"
 date: 2021-05-18
-tags: [JavaScript,前端]
+tags: [JavaScript, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -43,9 +43,9 @@ categories: [🌏 翻译校对]
 
 如前所述，普通的 JavaScript 数组已通过 JavaScript 引擎进行了优化，你没必要为了提升性能而使用类型化数组，因为这不会给你带来太多升级。但是有些特性使类型化数组不同于普通数组，这才可能是你选择它们的原因。
 
-* 让你能够处理原始二进制数据
-* 由于它们处理的数据类型是有限的，因此与普通数组相比，你的引擎更易优化类型化数组，因为普通数组的优化其实是一个非常复杂的过程。
-* 不能保证普通数组永远都能得到优化，因为你的引擎可能因各种原因决定不进行优化。
+- 让你能够处理原始二进制数据
+- 由于它们处理的数据类型是有限的，因此与普通数组相比，你的引擎更易优化类型化数组，因为普通数组的优化其实是一个非常复杂的过程。
+- 不能保证普通数组永远都能得到优化，因为你的引擎可能因各种原因决定不进行优化。
 
 ## 在 Web 开发中的用途
 
@@ -55,12 +55,12 @@ categories: [🌏 翻译校对]
 
 ```js
 const xhr = new XMLHttpRequest();
-xhr.open('GET', exampleUrl);
-xhr.responseType = 'arraybuffer';
+xhr.open("GET", exampleUrl);
+xhr.responseType = "arraybuffer";
 
 xhr.onload = function () {
-    const arrayBuffer = xhr.response;
-    // 处理数据
+  const arrayBuffer = xhr.response;
+  // 处理数据
 };
 
 xhr.send();
@@ -72,10 +72,10 @@ xhr.send();
 
 ```js
 fetch(url)
-.then(response => response.arrayBuffer())
-.then(arrayBuffer => {
-   // 处理数据
-});
+  .then((response) => response.arrayBuffer())
+  .then((arrayBuffer) => {
+    // 处理数据
+  });
 ```
 
 ### HTML Canvas
@@ -85,8 +85,8 @@ HTML5 Canvas 元素使你可以渲染动态的 2D 形状和位图图像。该元
 canvas 的 2D Context 使你可以将位图数据作为 `Uint8ClampedArray` 的实例进行检索。让我们看一下 Axel 博士提供的示例代码：
 
 ```js
-const canvas = document.getElementById('my_canvas');
-const context = canvas.getContext('2d');
+const canvas = document.getElementById("my_canvas");
+const context = canvas.getContext("2d");
 const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
 const uint8ClampedArray = imageData.data;
 ```
@@ -107,14 +107,14 @@ socket.binaryType = "arraybuffer";
 
 // 监听 message
 socket.addEventListener("message", function (event) {
-    const view = new DataView(event.data);
-    // 处理接收数据
+  const view = new DataView(event.data);
+  // 处理接收数据
 });
 
 // 发送二进制数据
-socket.addEventListener('open', function (event) {
-    const typedArray = new Uint16Array(7);
-    socket.send(typedArray.buffer);
+socket.addEventListener("open", function (event) {
+  const typedArray = new Uint16Array(7);
+  socket.send(typedArray.buffer);
 });
 ```
 
@@ -126,13 +126,14 @@ socket.addEventListener('open', function (event) {
 
 ## 资源
 
-* [JavaScript 类型化数组 - MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Typed_arrays)
-* [Exploring JS by Dr. Axel](https://exploringjs.com/es6/ch_typed-arrays.html)
+- [JavaScript 类型化数组 - MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Typed_arrays)
+- [Exploring JS by Dr. Axel](https://exploringjs.com/es6/ch_typed-arrays.html)
 
 ---
- * 原文地址：[JavaScript Typed Arrays](https://blog.bitsrc.io/javascript-typed-arrays-ccfa5ae8838d)
- * 原文作者：[Mahdhi Rezvi](https://medium.com/@mahdhirezvi)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md)
- * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)
+
+- 原文地址：[JavaScript Typed Arrays](https://blog.bitsrc.io/javascript-typed-arrays-ccfa5ae8838d)
+- 原文作者：[Mahdhi Rezvi](https://medium.com/@mahdhirezvi)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md](https://github.com/xitu/gold-miner/blob/master/article/2021/javascript-typed-arrays.md)
+- 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)

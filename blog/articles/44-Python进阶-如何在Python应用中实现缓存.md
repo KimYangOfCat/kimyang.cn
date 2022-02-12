@@ -15,6 +15,7 @@ publish: true
 本篇文章主要探讨缓存在 Python 中是如何运作的。
 
 ![](https://picbed.kimyang.cn/202109050845891.png)
+
 <!-- more -->
 
 这对 Python 开发者来说是一个进阶的话题。如果你正在使用 Python 或打算使用它，那么你非常适合阅读本篇文章。
@@ -325,9 +326,9 @@ blog = client.get('blog')
 
 缓存是每个 Python 程序员和数据科学家都需要理解的重要概念。
 
- * 原文地址：[Advanced Python: How To Implement Caching In Python Application](https://medium.com/fintechexplained/advanced-python-how-to-implement-caching-in-python-application-9d0a4136b845)
- * 原文作者：[Farhad Malik](https://medium.com/@farhadmalik)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/advanced-python-how-to-implement-caching-in-python-application.md](https://github.com/xitu/gold-miner/blob/master/article/2021/advanced-python-how-to-implement-caching-in-python-application.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[greycodee](https://github.com/greycodee)
+- 原文地址：[Advanced Python: How To Implement Caching In Python Application](https://medium.com/fintechexplained/advanced-python-how-to-implement-caching-in-python-application-9d0a4136b845)
+- 原文作者：[Farhad Malik](https://medium.com/@farhadmalik)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/advanced-python-how-to-implement-caching-in-python-application.md](https://github.com/xitu/gold-miner/blob/master/article/2021/advanced-python-how-to-implement-caching-in-python-application.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[greycodee](https://github.com/greycodee)

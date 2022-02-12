@@ -8,7 +8,9 @@ categories: [🌏 翻译校对]
 ![](https://picbed.kimyang.cn/202109050837274.jpeg)
 
 如今的 web 框架，类似 React 和 Vue 在创建现代 web 应用方面非常受欢迎，这是有原因的。这些框架帮助把代码片段变成可复用的组件，通过使用声明式性的标记使组件易于根据数据更新。
+
 <!-- more -->
+
 但几乎所有的这类框架运行时都需要重量型的程序库，这代表着性能上的消耗。而且这类界面语言不够强势，且因为原生 js 的限制而更繁琐。
 
 不管怎样，针对这个问题的解决方案可以让你使用更简洁的代码获得更好的性能
@@ -27,7 +29,7 @@ Solid 可以被看成是运行时的框架，但由于它常常用于优化代�
 
 比如，相比于着重利用编译的两个框架 Svelte 和 Solid ，React 和 vue 的设计更常用于运行时。
 
-* React 使用被编译后的 JSX，但这只是基于调用`createElement` 的基础语法糖。
+- React 使用被编译后的 JSX，但这只是基于调用`createElement` 的基础语法糖。
 
 根据 BundlePhobia 计算，React 和 vue 的包大小分别是 39.4kb GZip 和 22.9kb GZip。
 
@@ -112,9 +114,10 @@ export default function App() {
 我希望从这篇文章中你能够有收获，感谢阅读。
 
 ---
- * 原文地址：[A Case for Compile to JavaScript Interface Frameworks](https://javascript.plainenglish.io/a-case-for-compile-to-javascript-interface-frameworks-a684b361884f)
- * 原文作者：[AsyncBanana](https://medium.com/@asyncbanana)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/a-case-for-compile-to-javascript-interface-frameworks.md](https://github.com/xitu/gold-miner/blob/master/article/2021/a-case-for-compile-to-javascript-interface-frameworks.md)
- * 译者：[没事儿](https://github.com/Tong-H)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat) [PassionPenguin](https://github.com/PassionPenguin)
+
+- 原文地址：[A Case for Compile to JavaScript Interface Frameworks](https://javascript.plainenglish.io/a-case-for-compile-to-javascript-interface-frameworks-a684b361884f)
+- 原文作者：[AsyncBanana](https://medium.com/@asyncbanana)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/a-case-for-compile-to-javascript-interface-frameworks.md](https://github.com/xitu/gold-miner/blob/master/article/2021/a-case-for-compile-to-javascript-interface-frameworks.md)
+- 译者：[没事儿](https://github.com/Tong-H)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat) [PassionPenguin](https://github.com/PassionPenguin)

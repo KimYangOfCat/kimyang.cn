@@ -5,10 +5,15 @@ draft: false
 tags: [MongoDB]
 categories: [🎁 开发体验]
 ---
+
 [MongoDB](https://www.mongodb.com/) 是一个基于分布式文件存储的数据库，是目前前端开发中使用较多的非关系数据库之一。
+
 <!-- more -->
+
 ## 下载
+
 ### 官网下载
+
 [官网下载地址](https://www.mongodb.com/download-center/enterprise)，如下图，选择你所需要的 MongoDB 版本就好
 
 ![官网下载选择界面](https://picbed.kimyang.cn/202109050822677.jpg)
@@ -19,11 +24,11 @@ categories: [🎁 开发体验]
 
 其中 bin 文件夹下存放的都是 mongoDB 的命令，接下来我们三步配置
 
-* 构建目录结构：在 mongoDB 文件夹下新建 `data` 文件夹；然后在 `data` 文件夹下新建 `db`、`logs` 和 `etc` 三个文件夹分别用于存放数据、输出日志和环境配置；然后在 `logs` 文件夹下建立 `mongodb.log` 文件，在 `etc` 下新建 `mongo.conf`
+- 构建目录结构：在 mongoDB 文件夹下新建 `data` 文件夹；然后在 `data` 文件夹下新建 `db`、`logs` 和 `etc` 三个文件夹分别用于存放数据、输出日志和环境配置；然后在 `logs` 文件夹下建立 `mongodb.log` 文件，在 `etc` 下新建 `mongo.conf`
 
 ![修改后的文件结构](https://picbed.kimyang.cn/202109050823758.jpg)
 
-* 编辑 `mongo.conf` ：
+- 编辑 `mongo.conf` ：
 
 ```bash
 #数据库路径(找到你自己刚才新建的 db 文件夹的绝对路径)
@@ -42,17 +47,17 @@ fork=false
 port=27017
 ```
 
-* 配置环境变量：
+- 配置环境变量：
 
-在这里我使用的 `zsh` 终端，所以仅言明 `zsh` 的配置方法:
-    * 打开并编辑 `.zshrc` 文件：`vim ~/.zshrc`, 添加内容如下：
-    
+在这里我使用的 `zsh` 终端，所以仅言明 `zsh` 的配置方法: \* 打开并编辑 `.zshrc` 文件：`vim ~/.zshrc`, 添加内容如下：
+
 ```bash
     # mongodb
     export PATH=/Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/bin:${PATH}
     #记得把上边路径换成你自己的 bin 文件夹的绝对路径
 ```
-* 重启 `zsh` 服务 `source ~/.zshrc`
+
+- 重启 `zsh` 服务 `source ~/.zshrc`
 
 至此 mongodb 配置完毕，来尝试启动一下吧！
 
@@ -76,6 +81,7 @@ mongod --config  /Users/zhangsan/Documents/mongodb-macos-x86_64-4.2.0/data/etc/m
 ---
 
 ### Homebrew 下载
+
 使用 macOS 上最好用的包管理工具 [Homebrew](https://brew.sh/) 下载。
 
 **一行命令下载 Homebrew：**

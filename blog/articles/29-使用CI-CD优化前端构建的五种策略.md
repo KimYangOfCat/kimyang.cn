@@ -1,10 +1,9 @@
 ---
 title: "使用 CI/CD 优化前端构建的五种策略"
 date: 2021-06-02
-tags: [CI/CD,前端]
+tags: [CI/CD, 前端]
 categories: [🌏 翻译校对]
 ---
-
 
 ![](https://picbed.kimyang.cn/202109050835496.jpeg)
 
@@ -25,21 +24,23 @@ npm install parallel-webpack —-save-dev
 为了更好地了解 Parallel-Webpack 的配置，我们来看个简单的示例。
 
 ```js
-var path = require('path');
-module.exports = [{
-  entry: './firstjob.js',
-  output: {
-    path: path.resolve(__dirname, './dist'),
-   filename: 'task1.bundle.js'
-  }
-}, 
-{
-  entry: './secondjob.js',
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'task2.bundle.js'
-  }
-}];
+var path = require("path");
+module.exports = [
+  {
+    entry: "./firstjob.js",
+    output: {
+      path: path.resolve(__dirname, "./dist"),
+      filename: "task1.bundle.js",
+    },
+  },
+  {
+    entry: "./secondjob.js",
+    output: {
+      path: path.resolve(__dirname, "./dist"),
+      filename: "task2.bundle.js",
+    },
+  },
+];
 ```
 
 上面的配置包括两个独立的构建任务，分别是 `firstjob` 和 `secondjob`。Parallel-Webpack 会同时运行这两个构建任务，你会发现 `task1.bundle.js` 和 `task2.bundle.js` 同时被构建。
@@ -48,7 +49,7 @@ module.exports = [{
 
 ### 控制并行性
 
-有时，你可能想限制 Parallel-Webpack 可用的 CPU 核心数量。在这种情况下，你可以使用 `parallel-webpack -p=2` 命令指定可用的 CPU  核心数量。
+有时，你可能想限制 Parallel-Webpack 可用的 CPU 核心数量。在这种情况下，你可以使用 `parallel-webpack -p=2` 命令指定可用的 CPU 核心数量。
 
 ### 运行观察者
 
@@ -95,7 +96,7 @@ Webpack 使用加载器将其他类型的文件转化为有效模块。然后，
 在 Webpack 配置中，你可以通过 `include` 选项轻松指定文件目录。
 
 ```js
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   //...
@@ -103,8 +104,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, 'src'),
-        loader: 'css-loader',
+        include: path.resolve(__dirname, "src"),
+        loader: "css-loader",
       },
     ],
   },
@@ -126,16 +127,16 @@ module.exports = {
 **示例代码**
 
 ```yml
-variables: 
-npm_config_cache: $(Pipeline.Workspace)/.npm 
+variables:
+npm_config_cache: $(Pipeline.Workspace)/.npm
 
-steps: 
-— task: Cache@2 
-  inputs: 
-    key: ‘npm | “$(Agent.OS)” | package-lock.json’ 
-    restoreKeys: | 
-      npm | “$(Agent.OS)” 
-    path: $(npm_config_cache) 
+steps:
+— task: Cache@2
+  inputs:
+    key: ‘npm | “$(Agent.OS)” | package-lock.json’
+    restoreKeys: |
+      npm | “$(Agent.OS)”
+    path: $(npm_config_cache)
   displayName: Cache npm
 
 — script: npm ci
@@ -150,9 +151,10 @@ steps:
 感谢你的阅读！
 
 ---
- * 原文地址：[5 Strategies to Reduce Frontend Build Time with CI/CD](https://blog.bitsrc.io/5-strategies-to-reduce-frontend-build-time-with-ci-cd-3ce429304d1a)
- * 原文作者：[Bhagya Vithana](https://medium.com/@bhagya-16)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md)
- * 译者：[Zz招锦](https://github.com/zenblo)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)
+
+- 原文地址：[5 Strategies to Reduce Frontend Build Time with CI/CD](https://blog.bitsrc.io/5-strategies-to-reduce-frontend-build-time-with-ci-cd-3ce429304d1a)
+- 原文作者：[Bhagya Vithana](https://medium.com/@bhagya-16)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-strategies-to-reduce-frontend-build-time-with-ci-cd.md)
+- 译者：[Zz 招锦](https://github.com/zenblo)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Kimhooo](https://github.com/Kimhooo)

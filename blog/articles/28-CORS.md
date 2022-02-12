@@ -1,12 +1,14 @@
 ---
 title: "深入理解 CORS：发展史、工作原理和最佳实践"
 date: 2021-06-01
-tags: [Web 安全,前端]
+tags: [Web 安全, 前端]
 categories: [🌏 翻译校对]
 ---
 
 了解同源策略和 CORS 的历史和演变，深入了解 CORS 和各种跨域访问的类型，并学习（一些）最佳实践。
+
 <!-- more -->
+
 ## 译者注：
 
 - 本篇中使用的浏览器为 FireFox 浏览器，代码演示结果和 Chrome 浏览器等略有差别。
@@ -168,13 +170,13 @@ $ crystal run server.cr
 好啦，我们的服务已经成功运行了，现在从浏览器的控制台向 `localhost:4000` 发起一个 `POST /greet` 请求吧。我们使用 `fetch` 方法发起请求：
 
 ```javascript
-fetch('http://localhost:4000/greet', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ name: 'Ilija' }),
+fetch("http://localhost:4000/greet", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ name: "Ilija" }),
 })
   .then((resp) => resp.text())
-  .then(console.log)
+  .then(console.log);
 ```
 
 执行此段代码后，我们收到了来自服务的问候：
@@ -242,15 +244,15 @@ Kemal.run
 现在我们可以发起请求头带有 `Content-type: text/plain` 的请求了:
 
 ```javascript
-fetch('http://localhost:4000/greet', {
-  method: 'POST',
+fetch("http://localhost:4000/greet", {
+  method: "POST",
   headers: {
-    'Content-Type': 'text/plain',
+    "Content-Type": "text/plain",
   },
-  body: 'Ilija',
+  body: "Ilija",
 })
   .then((resp) => resp.text())
-  .then(console.log)
+  .then(console.log);
 ```
 
 看吧，这次就没有预检请求了，不过浏览器的 CORS 策略仍在拦截响应：
@@ -276,13 +278,13 @@ fetch('http://localhost:4000/greet', {
 现在看一下上文举例的复杂请求：
 
 ```javascript
-fetch('http://localhost:4000/greet', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ name: 'Ilija' }),
+fetch("http://localhost:4000/greet", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ name: "Ilija" }),
 })
   .then((resp) => resp.text())
-  .then(console.log)
+  .then(console.log);
 ```
 
 从上文我们已经知道，当发起这个请求时，我们的浏览器会先根据预检请求的响应来检查服务器是否可以处理跨域请求。为了能正确地响应这个跨域请求，我们首先要将 `OPTIONS /greet` 端点加入我们的服务中。在这服务的响应头中, 新加入的端点会告知浏览器：来自源 `https://www.google.com` 并且带有 `Content-type: application/json` 头部的 `POST /greet` 请求可以被接收。
@@ -403,15 +405,15 @@ end
 请求中的 credetials 模式出自 [Fetch API](https://fetch.spec.whatwg.org/) 文档，其起源可追溯到原始 XMLHttpRequest 对象：
 
 ```javascript
-var client = new XMLHttpRequest()
-client.open('GET', './')
-client.withCredentials = true
+var client = new XMLHttpRequest();
+client.open("GET", "./");
+client.withCredentials = true;
 ```
 
 从 `fetch` 方法的文档中我们了解到， XML 中的 `withCredentials` 属性在 `fetch` 方法的调用中是作为一个可选的参数使用的：
 
 ```javascript
-fetch('./', { credentials: 'include' }).then(/* ... */)
+fetch("./", { credentials: "include" }).then(/* ... */);
 ```
 
 可选的 `credentials` 属性值为 `omit`、`same-origin` 和 `include`。后端服务可以根据请求中不同的 `credentials` 属性值，决定浏览器怎样显示响应（通过 `Access-Control-Allow-Credentials` 响应头）。
@@ -488,9 +490,10 @@ Fetch API 说明文档将 CORS 和 `fetch` API 的交互以及浏览器所采用
 - [Quentin’s](https://stackoverflow.com/users/19068/quentin) great [summary of CORS](https://stackoverflow.com/a/35553666) on StackOverflow
 
 ---
- - 原文地址：[Deep dive in CORS: History, how it works, and best practices](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
- - 原文作者：[Ilija Eftimov](https://ieftimov.com/)
- - 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- - 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md](https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md)
- - 译者：[snowyYU](https://github.com/snowyYU)
- - 校对者：[Kimhooo](https://github.com/Kimhooo)、[Chorer](https://github.com/Chorer)
+
+- 原文地址：[Deep dive in CORS: History, how it works, and best practices](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
+- 原文作者：[Ilija Eftimov](https://ieftimov.com/)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md](https://github.com/xitu/gold-miner/blob/master/article/2021/deep-dive-cors-history-how-it-works-best-practices.md)
+- 译者：[snowyYU](https://github.com/snowyYU)
+- 校对者：[Kimhooo](https://github.com/Kimhooo)、[Chorer](https://github.com/Chorer)

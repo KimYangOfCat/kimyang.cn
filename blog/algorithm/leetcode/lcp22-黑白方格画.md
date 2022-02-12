@@ -1,10 +1,11 @@
 ---
 title: "「LCP22.黑白方格画」题解"
 date: 2021-04-08
-tags: [LeetCode,Algorithm]
+tags: [LeetCode, Algorithm]
 categories: [📝 算法题解]
 ---
-#  [LCP22.黑白方格画](https://leetcode-cn.com/problems/ccw6C7/)
+
+# [LCP22.黑白方格画](https://leetcode-cn.com/problems/ccw6C7/)
 
 ## 题目描述
 
@@ -40,7 +41,7 @@ categories: [📝 算法题解]
 >
 > 输出：`1`
 >
-> 解释：共有 2*2=4 个格子，仅有一种涂色方案。
+> 解释：共有 2\*2=4 个格子，仅有一种涂色方案。
 
 **限制：**
 
@@ -49,12 +50,12 @@ categories: [📝 算法题解]
 
 **相关信息**：
 
-+ 难度：简单
-+ 标签：无
+- 难度：简单
+- 标签：无
 
 ## 题解
 
-本题所求为不同的方案数，这个方案数由两部分得出，可行的行列选择方案数以及每个行列的选择方案的组合数。这个可行的意思就是你所选择的行列数涂抹的格子数恰好等于 k，即 k=n * row + n * col - col * row
+本题所求为不同的方案数，这个方案数由两部分得出，可行的行列选择方案数以及每个行列的选择方案的组合数。这个可行的意思就是你所选择的行列数涂抹的格子数恰好等于 k，即 k=n _ row + n _ col - col \* row
 
 ### 方法一：阶乘+组合+双循环
 
@@ -63,73 +64,76 @@ categories: [📝 算法题解]
 执行用时：72 ms, 在所有 JavaScript 提交中击败了 92.94% 的用户
 内存消耗：37.7 MB, 在所有 JavaScript 提交中击败了 54.12%的用户
 */
-var paintingPlan = function(n, k) {
-    //判断边界
-     if(k===n*n||k===0)return 1;//两个if顺序不可乱
-    if(k<n||k>n*n)return 0;
-    function factorial_recursion(n){
-        //递归阶乘，这里的阶乘函数有一定局限性，可能溢出，但是本题给的范围不会超出的。
-        return n<1?1:n*factorial_recursion(n-1);
+var paintingPlan = function (n, k) {
+  //判断边界
+  if (k === n * n || k === 0) return 1; //两个if顺序不可乱
+  if (k < n || k > n * n) return 0;
+  function factorial_recursion(n) {
+    //递归阶乘，这里的阶乘函数有一定局限性，可能溢出，但是本题给的范围不会超出的。
+    return n < 1 ? 1 : n * factorial_recursion(n - 1);
+  }
+  function C(n, m) {
+    //组合数
+    return (
+      factorial_recursion(n) /
+      (factorial_recursion(m) * factorial_recursion(n - m))
+    );
+  }
+  let out = 0;
+  for (let i = 0; i <= n; i++) {
+    for (let j = 0; j <= n; j++) {
+      if (n * i + (n - i) * j === k) {
+        //判断所选行列数是否满足k
+        out += C(n, i) * C(n, j); //统计方案数
+      }
     }
-    function C(n,m){
-        //组合数
-        return factorial_recursion(n)/(factorial_recursion(m)*factorial_recursion(n-m));
-    }
-    let out=0;
-    for(let i=0;i<=n;i++){
-        for(let j=0;j<=n;j++){
-            if(n*i+(n-i)*j===k){
-                //判断所选行列数是否满足k
-                out+=C(n,i)*C(n,j);//统计方案数
-            }
-        }
-    }
-    return out;
+  }
+  return out;
 };
-
 ```
 
 ### 方法二：阶乘+组合+单循环
 
-前面方法的双循环可以通过反向计算所选的行列数值是否符合要求，来变为单循环，减少空间和时间消耗。简单来说就是由 k=n * row + n * col - col * row 公式，在给定 k 和col的基础上，可以计算出 row = (k-n*col)/(n-col)，可以通过判断row是否合法来减少一层循环。
+前面方法的双循环可以通过反向计算所选的行列数值是否符合要求，来变为单循环，减少空间和时间消耗。简单来说就是由 k=n _ row + n _ col - col * row 公式，在给定 k 和 col 的基础上，可以计算出 row = (k-n*col)/(n-col)，可以通过判断 row 是否合法来减少一层循环。
 
 ```javascript
 /*
 执行用时：76 ms, 在所有 JavaScript 提交中击败了87.06%的用户
 内存消耗：37.6 MB, 在所有 JavaScript 提交中击败了63.53%的用户
 */
-var paintingPlan = function(n, k) {
-    //判断边界
-     if(k===n*n||k===0)return 1;//两个if顺序不可乱
-    if(k<n||k>n*n)return 0;
-    function factorial_recursion(n){
-        //递归阶乘
-        return n<1?1:n*factorial_recursion(n-1);
-    }
+var paintingPlan = function (n, k) {
+  //判断边界
+  if (k === n * n || k === 0) return 1; //两个if顺序不可乱
+  if (k < n || k > n * n) return 0;
+  function factorial_recursion(n) {
+    //递归阶乘
+    return n < 1 ? 1 : n * factorial_recursion(n - 1);
+  }
 
-    function C(n,m){
-        //组合数
-        return factorial_recursion(n)/(factorial_recursion(m)*factorial_recursion(n-m));
-
+  function C(n, m) {
+    //组合数
+    return (
+      factorial_recursion(n) /
+      (factorial_recursion(m) * factorial_recursion(n - m))
+    );
+  }
+  let out = 0;
+  for (let col = 0; col <= n; col++) {
+    const row = (k - col * n) / (n - col);
+    if (row >= 0 && row % 1 === 0) {
+      //判断row 是否为非负整数
+      out += C(n, col) * C(n, row); //统计方案数
     }
-    let out=0;
-    for(let col=0;col<=n;col++){
-         const row = (k - col * n) / (n - col);
-         if(row>=0&&row%1===0){
-                //判断row 是否为非负整数
-                out+=C(n,col)*C(n,row);//统计方案数
-            }
-        
-    }
-    return out;
+  }
+  return out;
 };
 ```
 
 ### 方法三：利用阶乘数组
 
-由于题目给定的n的范围是 1 <= n <= 6，比较小，所以有同学将0-6的所有阶乘都计算出来了，如： [1, 1, 2, 6, 24, 120, 720]；然后在计算组合数的时候，便使用这个数组来替换计算阶乘的过程，达到提升运行效率的目的。但是这中方法的健壮性不强，一旦题目范围更改，整个方法都将失效，故并不推荐。
+由于题目给定的 n 的范围是 1 <= n <= 6，比较小，所以有同学将 0-6 的所有阶乘都计算出来了，如： [1, 1, 2, 6, 24, 120, 720]；然后在计算组合数的时候，便使用这个数组来替换计算阶乘的过程，达到提升运行效率的目的。但是这中方法的健壮性不强，一旦题目范围更改，整个方法都将失效，故并不推荐。
 
-``` javascript
+```javascript
 /*
 执行用时：88 ms, 在所有 JavaScript 提交中击败了36.47%的用户
 内存消耗：37.8 MB, 在所有 JavaScript 提交中击败了35.29%的用户
@@ -145,7 +149,7 @@ var paintingPlan = function (n, k) {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       if (n * j + n * i - j * i === k)
-      //替换了阶乘计算，但是组合数仍然需要计算
+        //替换了阶乘计算，但是组合数仍然需要计算
         count +=
           ((arr[n] / (arr[j] * arr[n - j])) * arr[n]) / (arr[i] * arr[n - i]);
     }
@@ -172,6 +176,6 @@ var paintingPlan = function (n, k) {
 };
 ```
 
-------------这两段代码来自[题解：2020.10.20 - 黑白方格画](https://leetcode-cn.com/problems/ccw6C7/solution/20201020-hei-bai-fang-ge-hua-by-vincent-157/), 感谢～ 
+------------这两段代码来自[题解：2020.10.20 - 黑白方格画](https://leetcode-cn.com/problems/ccw6C7/solution/20201020-hei-bai-fang-ge-hua-by-vincent-157/), 感谢～
 
 以上就是本题的所有题解啦，感谢你能看到这里，如果本文对你有所帮助的话，别忘了给一个点赞三连嗷～

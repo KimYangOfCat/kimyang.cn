@@ -1,11 +1,11 @@
 ---
 title: "webpack5 已出，还研究webpack4.x有什么用？"
 date: 2021-04-10
-tags: [webpack,前端]
+tags: [webpack, 前端]
 categories: [📗 学习笔记]
 ---
 
-虽然在本文写作的时候，webpack5已经发布，但是由于学习的资料是 webpack4.x 版本，所以此处总结的用法也是webpack4.x 中的配置方法，在webpack5中，可能有所不同，但是其中基本的概念还是不变的，故对于初学者来说，本文仍旧值得一读。<!-- more -->
+虽然在本文写作的时候，webpack5 已经发布，但是由于学习的资料是 webpack4.x 版本，所以此处总结的用法也是 webpack4.x 中的配置方法，在 webpack5 中，可能有所不同，但是其中基本的概念还是不变的，故对于初学者来说，本文仍旧值得一读。<!-- more -->
 
 ## 一、 基本概念
 
@@ -13,41 +13,41 @@ categories: [📗 学习笔记]
 
 [webpack](https://webpack.js.org/) 是一个前端资源构建工具，一个前端资源打包器。
 
-> 本质上，*webpack* 是一个现代 JavaScript 应用程序的*静态模块打包器(module bundler)*。当 webpack 处理应用程序时，它会递归地构建一个*依赖关系图(dependency graph)*，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 *bundle*。
+> 本质上，_webpack_ 是一个现代 JavaScript 应用程序的*静态模块打包器(module bundler)*。当 webpack 处理应用程序时，它会递归地构建一个*依赖关系图(dependency graph)*，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 _bundle_。
 > ----------来自官网的定义。
 
 ### 2. webpack 的五个核心概念：
 
-+ Entry：入口，指示Webpack以哪个文件为入口起点开始打包，分析构建内部依赖图。
-+ Output：出口，指示 webpack 打包后的资源的 bundles 输出到哪里去，以及如何命名。
-+ Loader：加载器，让 webpack 能够去处理那些 webpack 默认不支持的文件，比如样式文件、图片文件等等（Webpack 本身默认只支持JS以及JSON文件）。
-+ Plugin：插件，可以执行范围更广阔的任务，包括打包优化，压缩代码以及重新定义环境变量等等。
-+ Mode：模式，Webpack 默认支持 development 和 production 两种模式，分别对应开发环境和生产环境。
-  + development：方便代码在本地调试运行的环境，会将 DefinePlugin 中 process.env.NODE_ENV 的值设置为development。同时会默认启用 NamedChunksPlugin 和 NamedModulesPlugin。
-  + production：能优化上线的代码，会将 DefinePlugin 中的 process.env.NODE_ENV 的值设置为 production。可启用 FlagDependencyUsagePlugin，FlaglncludeChunksPlugin，OccurrenceOrderPlugin，SideEffectsFlagPlugin 和 TerserPlugin
+- Entry：入口，指示 Webpack 以哪个文件为入口起点开始打包，分析构建内部依赖图。
+- Output：出口，指示 webpack 打包后的资源的 bundles 输出到哪里去，以及如何命名。
+- Loader：加载器，让 webpack 能够去处理那些 webpack 默认不支持的文件，比如样式文件、图片文件等等（Webpack 本身默认只支持 JS 以及 JSON 文件）。
+- Plugin：插件，可以执行范围更广阔的任务，包括打包优化，压缩代码以及重新定义环境变量等等。
+- Mode：模式，Webpack 默认支持 development 和 production 两种模式，分别对应开发环境和生产环境。
+  - development：方便代码在本地调试运行的环境，会将 DefinePlugin 中 process.env.NODE_ENV 的值设置为 development。同时会默认启用 NamedChunksPlugin 和 NamedModulesPlugin。
+  - production：能优化上线的代码，会将 DefinePlugin 中的 process.env.NODE_ENV 的值设置为 production。可启用 FlagDependencyUsagePlugin，FlaglncludeChunksPlugin，OccurrenceOrderPlugin，SideEffectsFlagPlugin 和 TerserPlugin
 
 ## 二、开启 Webpack 之旅的准备
 
-###  1. 安装方式
+### 1. 安装方式
 
-首先要确保本地有node环境，如果没有，请百度一下安装方法。
+首先要确保本地有 node 环境，如果没有，请百度一下安装方法。
 
 1. 使用 npm 初始化 package.json：`npm init`
 
-2. 下载安装webpack：
-   
+2. 下载安装 webpack：
+
    需要同时安装 webpack 和 webpack-cli：
    全局安装：`npm i webpack webpack-cli -g`
    本地安装：`npm i webpack webpack-cli -D`
-   以上命令默认安装最新版本，也就是webpack5，但是本文接下来的配置都是基于webpack4.x，所以建议安装时手动指定版本号。
+   以上命令默认安装最新版本，也就是 webpack5，但是本文接下来的配置都是基于 webpack4.x，所以建议安装时手动指定版本号。
 
 ### 2. 使用方式
 
-* 直接使用命令行指令，
-  例如： `webpack ./src/index.js -o ./build/built.js --mode=production` 
-  其含义是 webpack会以 ./src/index.js 为入口文件开始打包，打包后输出到 ./build/built.js 整体打包环境，是生产环境。
+- 直接使用命令行指令，
+  例如： `webpack ./src/index.js -o ./build/built.js --mode=production`
+  其含义是 webpack 会以 ./src/index.js 为入口文件开始打包，打包后输出到 ./build/built.js 整体打包环境，是生产环境。
   总结：这种方式不适合项目管理，配置一多，命令就变得复杂，且每次启动都需要输入这样复杂命令，比较麻烦。同时它也不能发挥 webpack 全部的功能。
-* 使用配置文件：
+- 使用配置文件：
   webpack 默认使用项目文件夹的根目录下的 webpack.config.js 作为配置文件，在此配置文件中能更加详细地定义更多功能。 详细配置方法，请看第三部分内容。
 
 ## 三、Webpack 的配置方法：
@@ -56,27 +56,27 @@ webpack.config.js 文件主要是对外暴露出一个配置对象， 其中配�
 
 ### 基本内容配置
 
-基本内容的目标是实现webpack的基本功能，即对项目中的所有资源都能正确进行打包，例如CSS样式、HTML、图片资源等等。其主要设置到的配置项有entry、output、moudle、plugin以及mode ，分别对应五个基本概念。也就是说不管是开发环境还是生产环境都必然有着一部分的配置项。
+基本内容的目标是实现 webpack 的基本功能，即对项目中的所有资源都能正确进行打包，例如 CSS 样式、HTML、图片资源等等。其主要设置到的配置项有 entry、output、moudle、plugin 以及 mode ，分别对应五个基本概念。也就是说不管是开发环境还是生产环境都必然有着一部分的配置项。
 
 ### 开发环境配置
 
-在完成上边的基本配置后，你可能还需要设置一些专门针对开发环境的基础配置，这就需要 详细设定 devServer，其中有许多可设置属性，比如主机地址 host、端口号port等等内容。下文是一个开发环境的配置模板，有详细注释解释了相关配置：
+在完成上边的基本配置后，你可能还需要设置一些专门针对开发环境的基础配置，这就需要 详细设定 devServer，其中有许多可设置属性，比如主机地址 host、端口号 port 等等内容。下文是一个开发环境的配置模板，有详细注释解释了相关配置：
 
 ```javascript
 //webpack.config.js
 // resolve用来拼接绝对路径的方法
-const { resolve } = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin') // 引用plugin
+const { resolve } = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin"); // 引用plugin
 
 module.exports = {
   // webpack配置
-  entry: './src/js/index.js', // 入口起点
+  entry: "./src/js/index.js", // 入口起点
   output: {
     // 输出
     // 输出文件名
-    filename: 'js/build.js',
+    filename: "js/build.js",
     // __dirname是nodejs的变量，代表当前文件的目录绝对路径
-    path: resolve(__dirname, 'build'), // 输出路径，所有资源打包都会输出到这个文件夹下
+    path: resolve(__dirname, "build"), // 输出路径，所有资源打包都会输出到这个文件夹下
   },
   // loader配置
   module: {
@@ -90,48 +90,48 @@ module.exports = {
         use: [
           // use数组中loader执行顺序：从右到左，从下到上，依次执行(先执行css-loader)
           // style-loader：创建style标签，将js中的样式资源插入进去，添加到head中生效
-          'style-loader',
+          "style-loader",
           // css-loader：将css文件变成commonjs模块加载到js中，里面内容是样式字符串
-          'css-loader',
+          "css-loader",
           // less-loader：将less文件编译成css文件，需要下载less-loader和less
-          'less-loader'
+          "less-loader",
         ],
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         // url-loader：处理图片资源，问题：默认处理不了html中的img图片
         test: /\.(jpg|png|gif)$/,
-         // 需要下载 url-loader file-loader
-        loader: 'url-loader',
+        // 需要下载 url-loader file-loader
+        loader: "url-loader",
         options: {
           // 图片大小小于8kb，就会被base64处理，优点：减少请求数量（减轻服务器压力），缺点：图片体积会更大（文件请求速度更慢）
           // base64在客户端本地解码所以会减少服务器压力，如果图片过大还采用base64编码会导致cpu调用率上升，网页加载时变卡
           limit: 8 * 1024,
           // 给图片重命名，[hash:10]：取图片的hash的前10位，[ext]：取文件原来扩展名
-          name: '[hash:10].[ext]',
+          name: "[hash:10].[ext]",
           // 问题：因为url-loader默认使用es6模块化解析，而html-loader引入图片是conmonjs，解析时会出问题：[object Module]
           // 解决：关闭url-loader的es6模块化，使用commonjs解析
           esModule: false,
-          outputPath: 'imgs',
+          outputPath: "imgs",
         },
       },
       {
         test: /\.html$/,
         // 处理html文件的img图片（负责引入img，从而能被url-loader进行处理）
-        loader: 'html-loader',
+        loader: "html-loader",
       },
       // 打包其他资源(除了html/js/css资源以外的资源)
       {
         // 排除html|js|css|less|jpg|png|gif文件
         exclude: /\.(html|js|css|less|jpg|png|gif)/,
         // file-loader：处理其他文件
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[hash:10].[ext]',
-          outputPath: 'media',
+          name: "[hash:10].[ext]",
+          outputPath: "media",
         },
       },
     ],
@@ -142,17 +142,17 @@ module.exports = {
     // 需要有结构的HTML文件可以加一个template
     new HtmlWebpackPlugin({
       // 复制这个./src/index.html文件，并自动引入打包输出的所有资源（JS/CSS）
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
   ],
-   // 模式
-  mode: 'development', // 开发模式
+  // 模式
+  mode: "development", // 开发模式
   // 开发服务器 devServer：用来自动化，不用每次修改后都重新输入webpack打包一遍（自动编译，自动打开浏览器，自动刷新浏览器）
   // 特点：只会在内存中编译打包，不会有任何输出（不会像之前那样在外面看到打包输出的build包，而是在内存中，关闭后会自动删除）
   // 启动devServer指令为：npx webpack-dev-server
   devServer: {
     // 项目构建后路径
-    contentBase: resolve(__dirname, 'build'),
+    contentBase: resolve(__dirname, "build"),
     // 启动gzip压缩
     compress: true,
     // 端口号
@@ -160,23 +160,23 @@ module.exports = {
     // 自动打开浏览器
     open: true,
   },
-}
+};
 ```
 
 ### 生产环境的配置
 
-生产环境可能考虑得更多的是，文件提取方式、CSS兼容处理、代码压缩、js语法检查以及js兼容处理等等问题，其主要是通过引入各种各样的插件来解决上面考虑的所有问题。
+生产环境可能考虑得更多的是，文件提取方式、CSS 兼容处理、代码压缩、js 语法检查以及 js 兼容处理等等问题，其主要是通过引入各种各样的插件来解决上面考虑的所有问题。
 
 下面是一个基本的生产环境下的配置模板：
 
 ```js
-const { resolve } = require('path')
-const MiniCssExtractorPlugin = require('mini-css-extract-plugin')
-const OptimiziCssAssetsWebpackPlugin = require('optimizi-css-assets-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { resolve } = require("path");
+const MiniCssExtractorPlugin = require("mini-css-extract-plugin");
+const OptimiziCssAssetsWebpackPlugin = require("optimizi-css-assets-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // 定义node.js的环境变量，决定使用browserslist的哪个环境
-process.env.NODE_ENV = 'production'
+process.env.NODE_ENV = "production";
 
 // 复用loader的写法
 const commonCssLoader = [
@@ -186,7 +186,7 @@ const commonCssLoader = [
   // 经过css-loader处理后，样式文件是在js文件中的
   // 问题：1.js文件体积会很大2.需要先加载js再动态创建style标签，样式渲染速度就慢，会出现闪屏现象
   // 解决：用MiniCssExtractPlugin.loader替代style-loader
-  'css-loader',
+  "css-loader",
   /*
     postcss-loader：css兼容性处理：postcss --> 需要安装：postcss-loader postcss-preset-env
     postcss需要通过package.json中browserslist里面的配置加载指定的css兼容性样式
@@ -207,22 +207,22 @@ const commonCssLoader = [
     },
   */
   {
-    loader: 'postcss-loader',
+    loader: "postcss-loader",
     options: {
-      ident: 'postcss', // 基本写法
+      ident: "postcss", // 基本写法
       plugins: () => [
         // postcss的插件
-        require('postcss-preset-env')(),
+        require("postcss-preset-env")(),
       ],
     },
   },
-]
+];
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: "./src/js/index.js",
   output: {
-    filename: 'js/built.js',
-    path: resolve(__dirname, 'build'),
+    filename: "js/built.js",
+    path: resolve(__dirname, "build"),
   },
   module: {
     rules: [
@@ -232,7 +232,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: [...commonCssLoader, 'less-loader'],
+        use: [...commonCssLoader, "less-loader"],
       },
       /*
         正常来讲，一个文件只能被一个loader处理
@@ -255,8 +255,8 @@ module.exports = {
         */
         test: /\.js$/,
         exclude: /node_modules/, // 忽略node_modules
-        enforce: 'pre', // 优先执行
-        loader: 'eslint-loader',
+        enforce: "pre", // 优先执行
+        loader: "eslint-loader",
         options: {
           // 自动修复
           fix: true,
@@ -274,20 +274,21 @@ module.exports = {
         // 第三种方式：按需加载
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         options: {
           // 预设：指示babel做怎样的兼容性处理
           presets: [
-             '@babel/preset-env', // 基本预设
+            "@babel/preset-env", // 基本预设
             {
-              useBuiltIns: 'usage', //按需加载
+              useBuiltIns: "usage", //按需加载
               corejs: { version: 3 }, // 指定core-js版本
-              targets: { // 指定兼容到什么版本的浏览器
-                chrome: '60',
-                firefox: '50',
-                ie: '9',
-                safari: '10',
-                edge: '17'
+              targets: {
+                // 指定兼容到什么版本的浏览器
+                chrome: "60",
+                firefox: "50",
+                ie: "9",
+                safari: "10",
+                edge: "17",
               },
             },
           ],
@@ -296,25 +297,25 @@ module.exports = {
       {
         // 图片处理
         test: /\.(jpg|png|gif)/,
-        loader: 'url-loader',
+        loader: "url-loader",
         options: {
           limit: 8 * 1024,
-          name: '[hash:10].[ext]',
-          outputPath: 'imgs',
+          name: "[hash:10].[ext]",
+          outputPath: "imgs",
           esModule: false, // 关闭url-loader默认使用的es6模块化解析
         },
       },
       // html中的图片处理
       {
         test: /\.html$/,
-        loader: 'html-loader',
+        loader: "html-loader",
       },
       // 处理其他文件
       {
         exclude: /\.(js|css|less|html|jpg|png|gif)/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          outputPath: 'media',
+          outputPath: "media",
         },
       },
     ],
@@ -322,16 +323,16 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       // 对输出的css文件进行重命名
-      filename: 'css/built.css',
+      filename: "css/built.css",
     }),
     // 压缩css
     new OptimiziCssAssetsWebpackPlugin(),
     // HtmlWebpackPlugin：html文件的打包和压缩处理
     // 通过这个插件会自动将单独打包的样式文件通过link标签引入
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
       // 压缩html代码
-       minify: {
+      minify: {
         // 移除空格
         collapseWhitespace: true,
         // 移除注释
@@ -340,11 +341,6 @@ module.exports = {
     }),
   ],
   // 生产环境下会自动压缩js代码
-  mode: 'production',
-}
+  mode: "production",
+};
 ```
-
-
-
-
-

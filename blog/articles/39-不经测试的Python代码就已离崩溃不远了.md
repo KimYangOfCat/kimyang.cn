@@ -1,11 +1,12 @@
 ---
 title: "不经测试的 Python 代码就已离崩溃不远了"
 date: 2021-08-20
-tags: [Python,测试]
+tags: [Python, 测试]
 categories: [🌏 翻译校对]
 ---
 
 ![](https://picbed.kimyang.cn/202109050842373.jpeg)
+
 <!-- more -->
 
 我的第一位导师极其的令人难以置信。他向我展示了编码、日志记录、文档编制的最佳实践和其带来的收益。但有一件事他一直无法灌输给我，那就是测试。他的测试代码方式很复杂，包括说先写测试程序，然后编码实现！他的方式与我的编码风格对立，这让我觉得："**如果我在写函数前就写好了测试，那么我还不如不写测试。**”…… 这样想让我感觉好多了。
@@ -16,11 +17,11 @@ categories: [🌏 翻译校对]
 
 讨论的课题：
 
-* 单元测试
-* 继承
-* Mocking 和 patch
-* Makefile
-* 什么时候进行测试？
+- 单元测试
+- 继承
+- Mocking 和 patch
+- Makefile
+- 什么时候进行测试？
 
 由于这需要一些代码，我已经创建了一个 [Github Project](https://github.com/Tigenzero/medium_test_with_order_taker) 来帮助我们开始这个话题。获取它最简单的方法是通过 Github Desktop 克隆它，或将其下载为 ZIP 文件。文件夹中包含 `order_up.py`、一个 `Makefile` 和一个 `Pipfile`，还有一个 `Solutions` 文件夹，但我们暂时先不管它。
 
@@ -42,9 +43,9 @@ import order_up
 class TestOrderUp(unittest.TestCase):
     def test_get_order_one_item(self):
         order = ["fries"]
-        
+
         result = order_up.get_order(order)
-        
+
         self.assertEqual(order, result)
 ```
 
@@ -74,17 +75,17 @@ class TestOrderUp(unittest.TestCase):
 # 确保这些函数在类中缩进。
 def test_get_order_duplicate_in_list(self):
     order = ["fries", "fries", "fries", "burger"]
-    
+
     result = order_up.get_order(order)
-    
+
     self.assertEqual(order, result)
 
 def test_get_order_not_on_menu(self):
     order = ["banana", "cereal", "cookie"]
     expected_result = ["cookie"]
-    
+
     result = order_up.get_order(order)
-    
+
     self.assertEqual(expected_result, result)
 ```
 
@@ -98,9 +99,9 @@ def test_get_order_not_on_menu(self):
 @patch("builtins.input", return_value="yes")
 def test_is_order_complete_yes(self, input_patch):
     self.assertEqual(builtins.input, input_patch)
-    
+
     result = order_up.is_order_complete()
-    
+
     self.assertFalse(result)
 ```
 
@@ -144,9 +145,10 @@ def test_get_order_valid(self, input_patch):
 本篇的重点是：**找到一种合适的方法将测试囊括到项目中**。我没有具体的给出实现它们的方法或何时实现，只要它们能阻止你的代码在下一次提交后进入排水沟就算成功了。再见！
 
 ---
- * 原文地址：[Untested Python Code is Already Broken](https://python.plainenglish.io/untested-python-code-is-already-broken-934cb40b547b)
- * 原文作者：[Matthew Hull](https://medium.com/@tigenzero)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md](https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)、[Kim Yang](https://github.com/KimYangOfCat)
+
+- 原文地址：[Untested Python Code is Already Broken](https://python.plainenglish.io/untested-python-code-is-already-broken-934cb40b547b)
+- 原文作者：[Matthew Hull](https://medium.com/@tigenzero)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md](https://github.com/xitu/gold-miner/blob/master/article/2021/untested-python-code-is-already-broken.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)、[Kim Yang](https://github.com/KimYangOfCat)

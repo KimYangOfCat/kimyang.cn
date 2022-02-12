@@ -8,7 +8,9 @@ categories: [🌏 翻译校对]
 几天前，我在 Home Depot（也就是大孩子的[玩具反斗城](http://en.wikipedia.org/wiki/Toys_R_Us)）处发现，他们有一个巨大的显示器来展示所有这些彩色的供销售的电灯泡！其中一项是一组在电视后面的智能灯泡。它们会在电视的后面投影近似于电视在播出的内容的彩色阴影，与以下内容 [类似](https://www.philips-hue.com/en-us/p/hue-play-hdmi-sync-box-/046677555221)：
 
 ![](https://picbed.kimyang.cn/202109050839877.png)
+
 <!-- more -->
+
 注意电视后面发生的事情。屏幕中所显示的颜色会被灯泡投影为电视机身后面的彩色阴影。随着屏幕上的颜色发生变化，投射在背景中的颜色也会发生变化。真的很酷，对吧？
 
 自然，看到这个之后，我的第一个想法是，我们是否可以使用 Web 技术创建一个足够智能以模仿前景色的彩色阴影。事实证明，我们完全可以只使用 CSS 构建出这个案例。在本文中，我们将了解如何创建这种效果。
@@ -28,9 +30,8 @@ categories: [🌏 翻译校对]
 用来展示我们寿司图片的 HTML 其实没什么特别的：
 
 ```html
-
 <div class="parent">
-    <div class="colorfulShadow sushi"></div>
+  <div class="colorfulShadow sushi"></div>
 </div>
 ```
 
@@ -38,12 +39,12 @@ categories: [🌏 翻译校对]
 
 ```css
 .sushi {
-    margin: 100px;
-    width: 150px;
-    height: 150px;
-    background-image: url("https://www.kirupa.com/icon/1f363.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  margin: 100px;
+  width: 150px;
+  height: 150px;
+  background-image: url("https://www.kirupa.com/icon/1f363.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 ```
 
@@ -63,18 +64,18 @@ categories: [🌏 翻译校对]
 
 ```css
 .colorfulShadow {
-    position: relative;
+  position: relative;
 }
 
 .colorfulShadow::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    background-position: center center;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50)) blur(20px);
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  background-position: center center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)) blur(20px);
+  z-index: -1;
 }
 ```
 
@@ -82,14 +83,14 @@ categories: [🌏 翻译校对]
 
 ```css
 .colorfulShadow::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    background-position: center center;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50)) blur(20px);
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  background-position: center center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)) blur(20px);
+  z-index: -1;
 }
 ```
 
@@ -97,14 +98,14 @@ categories: [🌏 翻译校对]
 
 ```css
 .colorfulShadow::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    background-position: center center;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50)) blur(20px);
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  background-position: center center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)) blur(20px);
+  z-index: -1;
 }
 ```
 
@@ -116,31 +117,31 @@ categories: [🌏 翻译校对]
 
 ```css
 .colorfulShadow {
-    position: relative;
+  position: relative;
 }
 
 .colorfulShadow::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    background-position: center center;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.50)) blur(20px);
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  background-position: center center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)) blur(20px);
+  z-index: -1;
 
-    /* animation time! */
-    animation: oscillate 1s cubic-bezier(.17, .67, .45, 1.32) infinite alternate;
+  /* animation time! */
+  animation: oscillate 1s cubic-bezier(0.17, 0.67, 0.45, 1.32) infinite alternate;
 }
 
 @keyframes oscillate {
-    from {
-        transform: scale(1, 1);
-    }
+  from {
+    transform: scale(1, 1);
+  }
 
-    to {
-        transform: scale(1.3, 1.3);
-    }
+  to {
+    transform: scale(1.3, 1.3);
+  }
 }
 ```
 
@@ -153,9 +154,10 @@ categories: [🌏 翻译校对]
 如果我想将这样的阴影应用到一个不只是带有背景图像的空元素上怎么办？如果我有一个像 **Button** 或 **ComboBox** 这样的 HTML 元素想要应用这种阴影效果怎么办？一种解决方案是依靠 JavaScript 在 DOM 中复制适当的元素，将它们放置在前景元素下方，应用过滤器，然后就可以了。虽然可行，但考虑到该过程的复杂程度，实在是有些不寒而栗。可惜 JavaScript 没有等效的 [renderTargetBitmap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.imaging.rendertargetbitmap?view=net-5.0) 这种能够把我们的视觉效果渲染成位图，然后你可以做任何你想做的事的 API…… 🥶
 
 ---
- * 原文地址：[Creating Colorful, Smart Shadows](https://www.kirupa.com/html5/creating_colorful_smart_shadows.htm)
- * 原文作者：[kirupa](https://www.kirupa.com/me/index.htm)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md)
- * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
- * 校对者：[CarlosChenN](https://github.com/CarlosChenN)、[Kim Yang](https://github.com/KimYangOfCat)
+
+- 原文地址：[Creating Colorful, Smart Shadows](https://www.kirupa.com/html5/creating_colorful_smart_shadows.htm)
+- 原文作者：[kirupa](https://www.kirupa.com/me/index.htm)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md](https://github.com/xitu/gold-miner/blob/master/article/2021/creating_colorful_smart_shadows.md)
+- 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+- 校对者：[CarlosChenN](https://github.com/CarlosChenN)、[Kim Yang](https://github.com/KimYangOfCat)

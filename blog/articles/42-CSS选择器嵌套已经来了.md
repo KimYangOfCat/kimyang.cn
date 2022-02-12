@@ -6,6 +6,7 @@ categories: [🌏 翻译校对]
 ---
 
 之前 CSS 有了变量，现在也支持嵌套了！似乎在 Sass 和 Less 这样的预处理器中的功能正在慢慢地被引入到 CSS 中。这有点类似于 JavaScript 和 TypeScript 之间发生的事情。如果你有留意过的话，当前的一些 JavaScript 功能在几年前并不存在，但在 TypeScript 中有此实现。
+
 <!-- more -->
 
 我并不是说这是一件坏事，实际上它非常棒！这减少了对 CSS/JavaScript 预处理器的需求。
@@ -22,7 +23,7 @@ categories: [🌏 翻译校对]
 button.btn {
   color: blue;
   background: white;
-  transition: .2s all ease-in;
+  transition: 0.2s all ease-in;
   /* 更多关于 button 的样式。 */
 }
 
@@ -32,15 +33,15 @@ button.btn:hover {
 }
 
 button.btn:focus {
-   /* 添加更多样式。 */
+  /* 添加更多样式。 */
 }
 
 button.btn-group {
-  /* 一些样式。 */ 
+  /* 一些样式。 */
 }
 
 button.btn-primary {
-  /* 我保证，这是最后一个了。 */ 
+  /* 我保证，这是最后一个了。 */
 }
 ```
 
@@ -50,7 +51,7 @@ button.btn-primary {
 .btn {
   color: blue;
   background: white;
-  transition: .2s all ease-in;
+  transition: 0.2s all ease-in;
 
   &:hover {
     color: white;
@@ -58,15 +59,15 @@ button.btn-primary {
   }
 
   &:focus {
-   /* 添加更多样式。 */
+    /* 添加更多样式。 */
   }
 
   &-group {
-    /* 一些样式。 */ 
+    /* 一些样式。 */
   }
 
   &-primary {
-    /* 你知道我在说什么，对吧？ */ 
+    /* 你知道我在说什么，对吧？ */
   }
 }
 ```
@@ -82,11 +83,11 @@ button.btn-primary {
     margin: 10px 20px;
 
     &:hover {
-      /* 一些花哨的动画。 */ 
+      /* 一些花哨的动画。 */
     }
 
     & .overlay {
-       /* 嵌套选择器中总有一个“&”。 */
+      /* 嵌套选择器中总有一个“&”。 */
     }
   }
 }
@@ -98,15 +99,15 @@ button.btn-primary {
 
 ```css
 .section {
-    /* etc…… */
+  /* etc…… */
 }
 
 .section {
-    /* etc…… */
+  /* etc…… */
 
-    .blog {
-        /* 我们想引用 .section 内的 blog 容器。 */
-    }
+  .blog {
+    /* 我们想引用 .section 内的 blog 容器。 */
+  }
 }
 ```
 
@@ -114,14 +115,14 @@ button.btn-primary {
 
 ```css
 .main {
-    /* etc…… */
+  /* etc…… */
 
-    .blog {
-        @nest .section & {
-            /* “&”指的是 .blog */
-            background: red;
-        }
+  .blog {
+    @nest .section & {
+      /* “&”指的是 .blog */
+      background: red;
     }
+  }
 }
 ```
 
@@ -131,7 +132,7 @@ button.btn-primary {
 
 ```css
 .section {
-  @media(/* 一些媒体查询 */) {
+  @media (/* 一些媒体查询 */) {
     /* 样式…… */
   }
 }
@@ -140,14 +141,14 @@ button.btn-primary {
 但是，这在 CSS 里略有不同。在 CSS 中，样式必须用 “&” 括起来。
 
 ```css
-  @media(/* 一些媒体查询 */) {
-    & {
-      /* 样式…… */
-    }
+@media (/* 一些媒体查询 */) {
+  & {
+    /* 样式…… */
   }
+}
 ```
 
-* 一般情况下的代码
+- 一般情况下的代码
 
 ```css
 .table.xyz > th.y > p.abc {
@@ -160,7 +161,7 @@ button.btn-primary {
 }
 ```
 
-* 嵌套的力量 💪💪💪
+- 嵌套的力量 💪💪💪
 
 ```css
 .table.xyz > th.y > p.abc {
@@ -200,9 +201,10 @@ button.btn-primary {
 就这些了，大家！感谢你阅读这篇文章。
 
 ---
- * 原文地址：[Selector Nesting Has Come to CSS](https://dev.to/akashshyam/selector-nesting-has-come-to-css-532i)
- * 原文作者：[Akash Shyam](https://dev.to/akashshyam)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md](https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[nia3y](https://github.com/nia3y)
+
+- 原文地址：[Selector Nesting Has Come to CSS](https://dev.to/akashshyam/selector-nesting-has-come-to-css-532i)
+- 原文作者：[Akash Shyam](https://dev.to/akashshyam)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md](https://github.com/xitu/gold-miner/blob/master/article/2021/selector-nesting-has-come-to-css.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[nia3y](https://github.com/nia3y)

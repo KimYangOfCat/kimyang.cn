@@ -1,7 +1,7 @@
 ---
 title: "Web 开发者应该避免的 5 个 CSS 的做法"
 date: 2021-05-20
-tags: [CSS,前端]
+tags: [CSS, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -59,12 +59,12 @@ categories: [🌏 翻译校对]
 
 另外，如果你在这些元素上使用 `inline-*` 值，它们将按以下方式更改：
 
-* `inline`、`inline-block` -> `block`
-* `inline-flex` -> `flex`
-* `inline-grid` -> `grid`
-* `inline-table` -> `table`
+- `inline`、`inline-block` -> `block`
+- `inline-flex` -> `flex`
+- `inline-grid` -> `grid`
+- `inline-table` -> `table`
 
-因此，对于 `position` 为 `fixed` 或 `absolute` 的元素，你只需在要使用 flex 布局或者 grid 布局的时候设置  `display`。
+因此，对于 `position` 为 `fixed` 或 `absolute` 的元素，你只需在要使用 flex 布局或者 grid 布局的时候设置 `display`。
 
 不要这样写：
 
@@ -209,10 +209,10 @@ categories: [🌏 翻译校对]
 
 这意味着所有子项的 `display` 都会被默认设置为 `block`。
 
-* `inline`、`inline-block` -> `block`
-* `inline-flex` -> `flex`
-* `inline-grid` -> `grid`
-* `inline-table` -> `table`
+- `inline`、`inline-block` -> `block`
+- `inline-flex` -> `flex`
+- `inline-grid` -> `grid`
+- `inline-table` -> `table`
 
 因此，无需在 `flex` 项目中添加 `display：block`，浏览器将为你完成此操作。
 
@@ -241,9 +241,10 @@ categories: [🌏 翻译校对]
 希望在阅读本文后，你能够学会如何避免这些简单的错误并接受我的建议。感谢阅读！
 
 ---
- * 原文地址：[5 CSS Practices To Avoid as a Web Developer](https://betterprogramming.pub/5-css-practices-to-avoid-as-a-web-developer-1b7553c05131)
- * 原文作者：[Alexey Shepelev](https://medium.com/@alexey-shepelev)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md)
- * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
- * 校对者：[KimYang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)
+
+- 原文地址：[5 CSS Practices To Avoid as a Web Developer](https://betterprogramming.pub/5-css-practices-to-avoid-as-a-web-developer-1b7553c05131)
+- 原文作者：[Alexey Shepelev](https://medium.com/@alexey-shepelev)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-css-practices-to-avoid-as-a-web-developer.md)
+- 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+- 校对者：[KimYang](https://github.com/KimYangOfCat)、[Chorer](https://github.com/Chorer)

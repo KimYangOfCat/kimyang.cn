@@ -3,6 +3,7 @@ title: 关于我
 date: 2019-06-01
 sticky: 1
 ---
+
 <Boxx :changeTime='6000'/>
 
 我是 KimYang，追求做技术与艺术的创新者。目前热爱并积极参与开源技术。业余时间喜欢阅读商业、产品、设计等与互联网相关的内容。
@@ -10,11 +11,13 @@ sticky: 1
 <!-- more -->
 
 ## 个人爱好
-+ 读书
-+ 摄影
+
+- 读书
+- 摄影
 
 ## 近期书单
-- [《HTML5秘籍》](https://book.douban.com/subject/26342322/)
+
+- [《HTML5 秘籍》](https://book.douban.com/subject/26342322/)
 - [《深入解析 CSS》](https://book.douban.com/subject/35021471/)
 - [《你不知道的 JavaScript》](https://book.douban.com/subject/26351021/)
 - [《我的第一本算法书》](https://book.douban.com/subject/30357170/)

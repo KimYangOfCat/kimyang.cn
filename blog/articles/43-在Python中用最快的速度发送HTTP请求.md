@@ -1,12 +1,14 @@
 ---
 title: "在 Python 中用最快的速度发送 HTTP 请求"
 date: 2021-08-25
-tags: [Python,HTTP]
+tags: [Python, HTTP]
 categories: [🌏 翻译校对]
 ---
 
 使用 `requests` 包可以轻松发送单个 HTTP 请求。但如果我想要异步地发送上百个甚至上百万个 HTTP 请求呢？这篇文章是一篇探索笔记，旨在找到发送多个 HTTP 请求的最快方式。
+
 <!-- more -->
+
 代码在云端的带有 Python 3.7 的 Linux(Ubuntu) VM 主机中运行。所有都代码存放在 Gist 中，都可以复制和运行。
 
 ## 方法 #1 : 使用同步
@@ -29,7 +31,7 @@ def download_link(url:str) -> None:
 def download_all(urls:list) -> None:
     for url in urls:
         download_link(url)
-        
+
 url_list = ["https://www.google.com/","https://www.bing.com"]*50
 start = time.time()
 download_all(url_list)
@@ -225,7 +227,7 @@ my_conn = aiohttp.TCPConnector(limit=10)
 
 ```Python
 import asyncio
-import time 
+import time
 import aiohttp
 from aiohttp.client import ClientSession
 
@@ -337,9 +339,9 @@ Python 赢得了这场速度的游戏！
 
 ---
 
- * 原文地址：[Send HTTP Requests As Fast As Possible in Python](https://python.plainenglish.io/send-http-requests-as-fast-as-possible-in-python-304134d46604)
- * 原文作者：[Andrew Zhu](https://medium.com/@xhinker)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md](https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md)
- * 译者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)
- * 校对者：[jaredliw](https://github.com/jaredliw)、[KimYangOfCat](https://github.com/KimYangOfCat)
+- 原文地址：[Send HTTP Requests As Fast As Possible in Python](https://python.plainenglish.io/send-http-requests-as-fast-as-possible-in-python-304134d46604)
+- 原文作者：[Andrew Zhu](https://medium.com/@xhinker)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md](https://github.com/xitu/gold-miner/blob/master/article/2021/send-http-requests-as-fast-as-possible-in-python.md)
+- 译者：[ItzMiracleOwO](https://github.com/ItzMiracleOwO)
+- 校对者：[jaredliw](https://github.com/jaredliw)、[KimYangOfCat](https://github.com/KimYangOfCat)

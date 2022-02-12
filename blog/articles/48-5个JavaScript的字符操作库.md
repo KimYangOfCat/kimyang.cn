@@ -7,12 +7,14 @@ publish: true
 ---
 
 ![](https://picbed.kimyang.cn/202109050847971.jpeg)
+
 <!-- more -->
+
 处理字符串可能是一项繁琐的任务，因为我们需要考虑许多不同的用例。举例来说，像将字符串转为驼峰格式这样简单的任务就需要好几行代码来实现。
 
 ```js
 function camelize(str) {
-  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
+  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
     if (+match === 0) return ""; // 或 if (/\s+/.test(match)) 来匹配空白字符
     return index === 0 ? match.toLowerCase() : match.toUpperCase();
   });
@@ -39,43 +41,43 @@ npm i string
 
 ### 值得注意的方法
 
-* `between(left, right)` —— 提取 `left` 和 `right` 字符串之间的所有字符。
+- `between(left, right)` —— 提取 `left` 和 `right` 字符串之间的所有字符。
 
 这个方法可以用于提取 HTML 标签之间的元素。
 
 ```js
-var S = require('string');
-S('<a>This is a link</a>').between('<a>', '</a>').s 
+var S = require("string");
+S("<a>This is a link</a>").between("<a>", "</a>").s;
 // => 'This is a link'
 ```
 
-* `camelize()` —— 去除所有的下划线和破折号，并将字符串转为驼峰格式。
+- `camelize()` —— 去除所有的下划线和破折号，并将字符串转为驼峰格式。
 
 这个方法可以用来解决这篇文章开头时的问题。
 
 ```js
-var S = require('string');
-S('---Foo---bAr---').camelize().s; 
+var S = require("string");
+S("---Foo---bAr---").camelize().s;
 // => 'fooBar'
 ```
 
-* `humanize()` —— 将输入转为人性化的形式。
+- `humanize()` —— 将输入转为人性化的形式。
 
 从无到有地实现这个函数必定需要相当多行的代码。
 
 ```js
-var S = require('string');
-S('   capitalize dash-CamelCase_underscore trim  ').humanize().s
+var S = require("string");
+S("   capitalize dash-CamelCase_underscore trim  ").humanize().s;
 // => 'Capitalize dash camel case underscore trim'
 ```
 
-* `stripPunctuation()` —— 去除给定字符串的所有标点符号。
+- `stripPunctuation()` —— 去除给定字符串的所有标点符号。
 
 如果你从头开始实现这个函数，那么你很可能会错过某个标点符号。
 
 ```js
-var S = require('string');
-S('My, st[ring] *full* of %punct)').stripPunctuation().s; 
+var S = require("string");
+S("My, st[ring] *full* of %punct)").stripPunctuation().s;
 // => 'My string full of punct'
 ```
 
@@ -93,77 +95,77 @@ npm i voca
 
 ### 值得注意的方法
 
-* `camelCase(String data)`
+- `camelCase(String data)`
 
 将 `data` 转为驼峰格式。
 
 ```js
-var v = require('voca');
-v.camelCase('foo Bar');
+var v = require("voca");
+v.camelCase("foo Bar");
 // => 'fooBar'
 
-v.camelCase('FooBar');
+v.camelCase("FooBar");
 // => 'fooBar'
 
-v.camelCase('---Foo---bAr---');
+v.camelCase("---Foo---bAr---");
 // => 'fooBar'
 ```
 
-* `latinise(String data)`
+- `latinise(String data)`
 
 通过删除变音符号来拉丁化 `data`。
 
 ```js
-var v = require('voca');
-v.latinise('cafe\u0301'); // or 'café'
+var v = require("voca");
+v.latinise("cafe\u0301"); // or 'café'
 // => 'cafe'
 
-v.latinise('août décembre');
+v.latinise("août décembre");
 // => 'aout decembre'
 
-v.latinise('как прекрасен этот мир');
+v.latinise("как прекрасен этот мир");
 // => 'kak prekrasen etot mir'
 ```
 
-* `isAlphaDigit(String data)`
+- `isAlphaDigit(String data)`
 
 检查 `data` 是否只包含字母和数字字符（文数字字符串）。
 
 ```js
-var v = require('voca');
-v.isAlphaDigit('year2020');
+var v = require("voca");
+v.isAlphaDigit("year2020");
 // => true
 
-v.isAlphaDigit('1448');
+v.isAlphaDigit("1448");
 // => true
 
-v.isAlphaDigit('40-20');
+v.isAlphaDigit("40-20");
 // => false
 ```
 
-* `countWords(String data)`
+- `countWords(String data)`
 
 计算 `data` 中的单词数。
 
 ```js
-var v = require('voca');
-v.countWords('gravity can cross dimensions');
+var v = require("voca");
+v.countWords("gravity can cross dimensions");
 // => 4
 
-v.countWords('GravityCanCrossDimensions');
+v.countWords("GravityCanCrossDimensions");
 // => 4
 
-v.countWords('Gravity - can cross dimensions!');
+v.countWords("Gravity - can cross dimensions!");
 // => 4
 ```
 
-* `escapeRegExp(String data)`
+- `escapeRegExp(String data)`
 
 转义正则表达式中的特殊字符 —— `- [ ] / { } ( ) * + ? . \ ^ $ |`。
 
 ```js
-var v = require('voca');
-v.escapeRegExp('(hours)[minutes]{seconds}');
+var v = require("voca");
+v.escapeRegExp("(hours)[minutes]{seconds}");
 // => '\(hours\)\[minutes\]\{seconds\}'
 ```
 
@@ -173,11 +175,11 @@ v.escapeRegExp('(hours)[minutes]{seconds}');
 
 这是一个小巧且快速的 JavaScript 库。它能帮助你检测链接、URL、电邮地址等，并将它们转为可点击的 HTML 锚链接。
 
-* 高敏感度，低误报率。
-* 根据完整的 IANA（互联网号码分配局）列表验证 URL 和电邮地址。
-* 验证端口号（如有）。
-* 验证 IP 地址（如有）。
-* 可检测非拉丁字母的 URL。
+- 高敏感度，低误报率。
+- 根据完整的 IANA（互联网号码分配局）列表验证 URL 和电邮地址。
+- 验证端口号（如有）。
+- 验证 IP 地址（如有）。
+- 可检测非拉丁字母的 URL。
 
 ### 安装方式
 
@@ -188,11 +190,11 @@ npm i anchorme
 ### 用法
 
 ```js
-import anchorme from "anchorme"; 
-// 或 
+import anchorme from "anchorme";
+// 或
 // var anchorme = require("anchorme").default;
 
-const input = "some text with a link.com"; 
+const input = "some text with a link.com";
 const resultA = anchorme(input);
 // => 'some text with a <a href="http://link.com">link.com</a>'
 ```
@@ -213,35 +215,35 @@ npm install underscore.string
 
 ### 值得注意的方法
 
-* `numberFormat(number)` —— 格式化数字。
+- `numberFormat(number)` —— 格式化数字。
 
 将数字格式化为带有小数点和万位分隔符的字符串。
 
 ```js
 var _ = require("underscore.string");
 
-_.numberFormat(1000, 3)
+_.numberFormat(1000, 3);
 // => "1,000.000"
 
-_.numberFormat(123456789.123, 5, '.', ',');
+_.numberFormat(123456789.123, 5, ".", ",");
 // => "123,456,789.12300"
 ```
 
-* `levenshtein(string1, string2)` —— 计算两个字符串的莱文斯坦距离。
+- `levenshtein(string1, string2)` —— 计算两个字符串的莱文斯坦距离。
 
 你可以在[此处](https://dzone.com/articles/the-levenshtein-algorithm-1)了解更多有关莱文斯坦距离算法的信息。
 
 ```js
 var _ = require("underscore.string");
 
-_.levenshtein('kitten', 'kittah');
+_.levenshtein("kitten", "kittah");
 // => 2
 ```
 
-* `chop(string, step)` —— 将指定字符串切成多段。
+- `chop(string, step)` —— 将指定字符串切成多段。
 
 ```js
-_.chop('whitespace', 3);
+_.chop("whitespace", 3);
 // => ['whi','tes','pac','e']
 ```
 
@@ -268,51 +270,52 @@ npm install stringz
 
 ### 值得注意的方法
 
-* `limit(string, limit, padString, padPosition)`
+- `limit(string, limit, padString, padPosition)`
 
 将字符串长度限制在给定长度内。
 
 ```js
-const stringz = require('stringz');
+const stringz = require("stringz");
 
 // 截断：
-stringz.limit('Life’s like a box of chocolates.', 20); 
+stringz.limit("Life’s like a box of chocolates.", 20);
 // => "Life's like a box of"
 
 // 填充：
-stringz.limit('Everybody loves emojis!', 26, '💩'); 
+stringz.limit("Everybody loves emojis!", 26, "💩");
 // => "Everybody loves emojis!💩💩💩"
-stringz.limit('What are you looking at?', 30, '+', 'left'); 
+stringz.limit("What are you looking at?", 30, "+", "left");
 // => "++++++What are you looking at?"
 
 // 可识别 unicode
-stringz.limit('🤔🤔🤔', 2); 
+stringz.limit("🤔🤔🤔", 2);
 // => "🤔🤔"
-stringz.limit('👍🏽👍🏽', 4, '👍🏽'); 
+stringz.limit("👍🏽👍🏽", 4, "👍🏽");
 // => "👍🏽👍🏽👍🏽👍🏽"
 ```
 
-* `toArray(string)`
+- `toArray(string)`
 
 将字符串转为数组：
 
 ```js
-const stringz = require('stringz');
+const stringz = require("stringz");
 
-stringz.toArray('abc');
+stringz.toArray("abc");
 // ['a','b','c']
 
 // 可识别 unicode
-stringz.toArray('👍🏽🍆🌮');
+stringz.toArray("👍🏽🍆🌮");
 // ['👍🏽', '🍆', '🌮']
 ```
 
 欲了解更多关于 Stringz 的信息，请访问 [Stringz 的 Github 仓库](https://github.com/sallar/stringz)。
 
 ---
- * 原文地址：[5 String Manipulation Libraries for JavaScript](https://blog.bitsrc.io/5-string-manipulation-libraries-for-javascript-9ca5da8b4eb8)
- * 原文作者：[Mike Chen](https://medium.com/@gitgit6)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)
+
+- 原文地址：[5 String Manipulation Libraries for JavaScript](https://blog.bitsrc.io/5-string-manipulation-libraries-for-javascript-9ca5da8b4eb8)
+- 原文作者：[Mike Chen](https://medium.com/@gitgit6)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-string-manipulation-libraries-for-javascript.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)

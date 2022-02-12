@@ -10,6 +10,7 @@ categories: [🌏 翻译校对]
 如果你想给专业开发人员留下深刻印象，你会怎么做？这很简单：用简易的策略和尽量少的代码来解决一个复杂的难题。随着 ES6 引入了箭头函数功能，我们可以创建看起来优雅又简单的单行代码。
 
 在本文中，您将学习 11 种罕见但功能强大的单行代码。那么，准备好，让我们从第一个开始吧！
+
 <!-- more -->
 
 ## 1. 获取字符串中的字符数
@@ -19,7 +20,7 @@ categories: [🌏 翻译校对]
 ![](https://picbed.kimyang.cn/202109050843469.png)
 
 ```js
-const characterCount = (str, char) => str.split(char).length - 1
+const characterCount = (str, char) => str.split(char).length - 1;
 ```
 
 这个想法非常简单。我们使用传递的参数 `char` 拆分字符串并获得返回数组的长度。在每一次分割字符串时，结果都会比分割符多 1。减去 1，我们就有了一个 `characterCount` 的单行代码。
@@ -33,7 +34,8 @@ const characterCount = (str, char) => str.split(char).length - 1
 ![](https://picbed.kimyang.cn/202109050843123.png)
 
 ```js
-const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object
+const isEmpty = (obj) =>
+  Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
 ```
 
 在这一行中，我们检查对象的键的长度是否等于 0，以及传递的参数是否为对象。
@@ -45,7 +47,8 @@ const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === 
 ![](https://picbed.kimyang.cn/202109050843684.png)
 
 ```js
-const wait = async (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+const wait = async (milliseconds) =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds));
 ```
 
 在 `wait` 这个单行代码中，我们创建一个 Promise 对象并在给定的时间后使用 `setTimeout` 函数完成它。
@@ -59,7 +62,8 @@ const wait = async (milliseconds) => new Promise((resolve) => setTimeout(resolve
 ![](https://picbed.kimyang.cn/202109050844934.png)
 
 ```js
-const daysBetween = (date1, date2) => Math.ceil(Math.abs(date1 - date2) / (1000 * 60 * 60 * 24))
+const daysBetween = (date1, date2) =>
+  Math.ceil(Math.abs(date1 - date2) / (1000 * 60 * 60 * 24));
 ```
 
 这个单行代码背后的逻辑很容易理解。当两个日期相减时，差值以毫秒为单位返回。要将毫秒转换为天，我们必须将其除以毫秒、秒、分钟和小时。
@@ -73,7 +77,7 @@ const daysBetween = (date1, date2) => Math.ceil(Math.abs(date1 - date2) / (1000 
 ![](https://picbed.kimyang.cn/202109050844703.png)
 
 ```js
-const redirect = url => location.href = url
+const redirect = (url) => (location.href = url);
 ```
 
 `location` 是全局 `window` 对象中的一个方法，设置 `href` 属性的行为与用户单击链接的行为相同。
@@ -85,7 +89,9 @@ const redirect = url => location.href = url
 ![](https://picbed.kimyang.cn/202109050844994.png)
 
 ```js
-const touchSupported = () => ('ontouchstart' in window || DocumentTouch && document instanceof DocumentTouch)
+const touchSupported = () =>
+  "ontouchstart" in window ||
+  (DocumentTouch && document instanceof DocumentTouch);
 ```
 
 在这一行中，我们在检查 `document` 是否支持 `touchstart` 事件。
@@ -99,10 +105,10 @@ const touchSupported = () => ('ontouchstart' in window || DocumentTouch && docum
 ![](https://picbed.kimyang.cn/202109050844114.png)
 
 ```js
-const insertHTMLAfter = (html, el) => el.insertAdjacentHTML('afterend', html)
+const insertHTMLAfter = (html, el) => el.insertAdjacentHTML("afterend", html);
 ```
 
-## 8.  打乱数组
+## 8. 打乱数组
 
 在开发中，打乱一组数据是你随时可能遇到的常见情况，不幸的是，JavaScript 中没有内置这种方法。
 
@@ -111,7 +117,7 @@ const insertHTMLAfter = (html, el) => el.insertAdjacentHTML('afterend', html)
 ![](https://picbed.kimyang.cn/202109050844705.png)
 
 ```js
-const shuffle = arr => arr.sort(() => 0.5 - Math.random())
+const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 ```
 
 它利用了数组的 `sort` 方法，通过在前一个元素的之前或之后插入下一个元素来进行随机排序。
@@ -123,7 +129,7 @@ const shuffle = arr => arr.sort(() => 0.5 - Math.random())
 ![](https://picbed.kimyang.cn/202109050844142.png)
 
 ```js
-const getSelectedText = () => window.getSelection().toString()
+const getSelectedText = () => window.getSelection().toString();
 ```
 
 ## 10. 获取一个随机布尔值
@@ -133,7 +139,7 @@ const getSelectedText = () => window.getSelection().toString()
 ![](https://picbed.kimyang.cn/202109050844129.png)
 
 ```js
-const getRandomBoolean = () => Math.random() >= 0.5
+const getRandomBoolean = () => Math.random() >= 0.5;
 ```
 
 上面的代码有 50/50 的机会返回 `true` 或 `false`，因为生成的随机数大于 0.5 的概率等于小于 0.5 的概率。
@@ -147,7 +153,7 @@ const getRandomBoolean = () => Math.random() >= 0.5
 ![](https://picbed.kimyang.cn/202109050844041.png)
 
 ```js
-const average = (arr) => arr.reduce((a, b) => a + b) / arr.length
+const average = (arr) => arr.reduce((a, b) => a + b) / arr.length;
 ```
 
 在 `average` 这个单行代码中，我们使用 `reduce` 以便能只用一行就获取到数组的总和，而不是使用循环。然后，我们将其除以数组长度，这就是数组的平均值。
@@ -159,9 +165,10 @@ const average = (arr) => arr.reduce((a, b) => a + b) / arr.length
 感谢你的阅读。如果你喜欢这篇文章，记得点赞。如果你对这篇文章有什么想说的，请留言。下一篇文章见。
 
 ---
- * 原文地址：[11 Rare JavaScript One-Liners That Will Amaze You](https://betterprogramming.pub/11-rare-javascript-one-liners-that-will-amaze-you-331659832301)
- * 原文作者：[Can Durmus](https://medium.com/@candurmuss)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md](https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md)
- * 译者：[jaredliw](https://github.com/jaredliw)
- * 校对者：[Z招锦](https://github.com/zenblofe)、[Kim Yang](https://github.com/KimYangOfCat)
+
+- 原文地址：[11 Rare JavaScript One-Liners That Will Amaze You](https://betterprogramming.pub/11-rare-javascript-one-liners-that-will-amaze-you-331659832301)
+- 原文作者：[Can Durmus](https://medium.com/@candurmuss)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md](https://github.com/xitu/gold-miner/blob/master/article/2021/11-rare-javascript-one-liners-that-will-amaze-you.md)
+- 译者：[jaredliw](https://github.com/jaredliw)
+- 校对者：[Z 招锦](https://github.com/zenblofe)、[Kim Yang](https://github.com/KimYangOfCat)

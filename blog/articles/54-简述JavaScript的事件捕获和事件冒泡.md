@@ -22,9 +22,9 @@ JavaScript 事件冒泡是为了捕捉和处理 DOM 内部传播的事件。但�
 
 JavaScript 事件分为三个阶段：
 
-* **捕获阶段**：事件从父元素开始向目标元素传播，从 `Window` 对象开始传播。
-* **目标阶段**：该事件到达目标元素或开始该事件的元素。
-* **冒泡阶段**：这时与捕获阶段相反，事件向父元素传播，直到 `Window` 对象。
+- **捕获阶段**：事件从父元素开始向目标元素传播，从 `Window` 对象开始传播。
+- **目标阶段**：该事件到达目标元素或开始该事件的元素。
+- **冒泡阶段**：这时与捕获阶段相反，事件向父元素传播，直到 `Window` 对象。
 
 下图将让你进一步了解事件传播的生命周期：
 
@@ -45,7 +45,7 @@ JavaScript 事件分为三个阶段：
 我们可以使用 `addEventListener()` 方法的 `useCapture` 参数来注册捕捉阶段的事件。
 
 ```js
-target.addEventListener(type, listener, useCapture)
+target.addEventListener(type, listener, useCapture);
 ```
 
 你可以使用下面的代码来测试上述示例，并获得事件捕获的实践经验。
@@ -59,7 +59,7 @@ document.addEventListener("click", () => {
     console.log('Document');
   },true);
 
-document.querySelector(".div2").addEventListener("click", () => { 
+document.querySelector(".div2").addEventListener("click", () => {
     console.log('DIV 2');
   },true);
 
@@ -99,7 +99,7 @@ document.addEventListener("click", () => {
     console.log('Document');
   }); // 已注册为冒泡
 
-document.querySelector(".div2").addEventListener("click", () => { 
+document.querySelector(".div2").addEventListener("click", () => {
     console.log('DIV 2');
   }); // 已注册为冒泡
 
@@ -131,12 +131,10 @@ document.querySelector("button").addEventListener("click", () => {
 因此，我为 `table` 创建了一个单独的事件监听器，它将被用来改变单元格的样式。
 
 ```js
-document.querySelector("table").addEventListener("click", (event) =>
-  {       
-     if (event.target.nodeName == 'TD')
-         event.target.style.background = "rgb(230, 226, 40)";
-  }
-);
+document.querySelector("table").addEventListener("click", (event) => {
+  if (event.target.nodeName == "TD")
+    event.target.style.background = "rgb(230, 226, 40)";
+});
 ```
 
 在事件监听器中，我使用 `nodeName` 来匹配被点击的单元格，如果匹配，单元格的颜色就会改变。
@@ -155,12 +153,12 @@ document.querySelector("table").addEventListener("click", (event) =>
 
 ```js
 document.querySelector(".card").addEventListener("click", () => {
-    $("#detailsModal").modal();
+  $("#detailsModal").modal();
 });
 
-document.querySelector("button").addEventListener("click",(event)=>{
-    event.stopPropagation(); // 停止冒泡
-    $("#deleteModal").modal();
+document.querySelector("button").addEventListener("click", (event) => {
+  event.stopPropagation(); // 停止冒泡
+  $("#deleteModal").modal();
 });
 ```
 
@@ -177,9 +175,10 @@ JavaScript 事件捕获和冒泡可以用来有效地处理 Web 应用程序中�
 感谢阅读！
 
 ---
- * 原文地址：[Event Bubbling and Capturing in JavaScript](https://blog.bitsrc.io/event-bubbling-and-capturing-in-javascript-6bc908321b22)
- * 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md)
- * 译者：[Z招锦](https://github.com/zenblofe)
- * 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)
+
+- 原文地址：[Event Bubbling and Capturing in JavaScript](https://blog.bitsrc.io/event-bubbling-and-capturing-in-javascript-6bc908321b22)
+- 原文作者：[Dulanka Karunasena](https://medium.com/@dulanka)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md](https://github.com/xitu/gold-miner/blob/master/article/2021/event-bubbling-and-capturing-in-javascript.md)
+- 译者：[Z 招锦](https://github.com/zenblofe)
+- 校对者：[KimYangOfCat](https://github.com/KimYangOfCat)、[jaredliw](https://github.com/jaredliw)

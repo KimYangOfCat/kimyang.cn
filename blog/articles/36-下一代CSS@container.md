@@ -6,12 +6,14 @@ categories: [🌏 翻译校对]
 ---
 
 Chrome 正在试验 CSS `@container` 查询器功能，这是由 [Oddbird](https://css.oddbird.net/rwd/query/) 的 [Miriam Suzanne](https://twitter.com/TerribleMia) 和一群网络平台开发者支持的 CSS 工作组 [Containment Level 3 规范](https://github.com/w3c/csswg-drafts/issues?q=is%3Aissue+label%3Acss-contain-3+)。`@container` 查询器使我们能够**根据父容器的大小来设置元素的样式**。
+
 <!-- more -->
+
 > `@container` API 不稳定，会受到语法变化的影响。如果你想要自己尝试一下，可能会遇到一些错误。请将这些错误报告给相应的浏览器引擎！**报告错误的链接如下：**
 >
-> * [Chrome](https://bugs.chromium.org/p/chromium/issues/list)
-> * [Firefox](https://bugzilla.mozilla.org/home)
-> * [Safari](https://bugs.webkit.org/query.cgi?format=specific&product=WebKit)
+> - [Chrome](https://bugs.chromium.org/p/chromium/issues/list)
+> - [Firefox](https://bugzilla.mozilla.org/home)
+> - [Safari](https://bugs.webkit.org/query.cgi?format=specific&product=WebKit)
 
 你可以把这些想象成一个媒体查询（`@media`），但不是依靠 **viewport** 来调整样式，而是你的目标元素的父容器会调整这些样式。
 
@@ -25,20 +27,20 @@ viewport 和用户代理不再是我们创建响应式布局和 UI 样式的唯�
 
 ```html
 <div class="card-container">
-    <div class="card">
-        <figure> ...</figure>
-        <div>
-            <div class="meta">
-                <h2>...</h2>
-                <span class="time">...</span>
-            </div>
-            <div class="notes">
-                <p class="desc">...</p>
-                <div class="links">...</div>
-            </div>
-            <button>...</button>
-        </div>
+  <div class="card">
+    <figure>...</figure>
+    <div>
+      <div class="meta">
+        <h2>...</h2>
+        <span class="time">...</span>
+      </div>
+      <div class="notes">
+        <p class="desc">...</p>
+        <div class="links">...</div>
+      </div>
+      <button>...</button>
     </div>
+  </div>
 </div>
 ```
 
@@ -134,9 +136,10 @@ viewport 和用户代理不再是我们创建响应式布局和 UI 样式的唯�
 ![](https://picbed.kimyang.cn/202109050840468.png)
 
 ---
- * 原文地址：[Next Gen CSS: @container](https://css-tricks.com/next-gen-css-container/)
- * 原文作者：[Una Kravets](https://css-tricks.com/author/unakravets/)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-containermd](https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-container.md)
- * 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
- * 校对者：[Chorer](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)
+
+- 原文地址：[Next Gen CSS: @container](https://css-tricks.com/next-gen-css-container/)
+- 原文作者：[Una Kravets](https://css-tricks.com/author/unakravets/)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-containermd](https://github.com/xitu/gold-miner/blob/master/article/2021/next-gen-css-container.md)
+- 译者：[霜羽 Hoarfroster](https://github.com/PassionPenguin)
+- 校对者：[Chorer](https://github.com/Chorer)、[Kim Yang](https://github.com/KimYangOfCat)

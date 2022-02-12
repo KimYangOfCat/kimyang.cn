@@ -1,7 +1,7 @@
 ---
 title: "从 React 转换到 Next.js 的五个理由"
 date: 2021-05-03
-tags: [Next,前端]
+tags: [Next, 前端]
 categories: [🌏 翻译校对]
 ---
 
@@ -15,13 +15,13 @@ categories: [🌏 翻译校对]
 
 我构建了一个博客平台，前端部分使用 React，后端部分使用 Node.js 服务器。该平台具有你所期望的一个标准应用程序所具有的所有功能。
 
- 1. 多种账号登录选项（用谷歌、Twitter 账号等登录）。
+1.  多种账号登录选项（用谷歌、Twitter 账号等登录）。
 
- 2. 功能丰富的编辑器，可以写出漂亮的博客。
+2.  功能丰富的编辑器，可以写出漂亮的博客。
 
- 3. 能够创建草稿和编辑已发表的文章。
+3.  能够创建草稿和编辑已发表的文章。
 
- 4. 分析以及管理面板。
+4.  分析以及管理面板。
 
 在这个过程中，我学到了一些关于 Web 开发的很有价值的经验知识。
 
@@ -49,7 +49,7 @@ React 对 SEO 不友好，是因为它不在服务器端渲染。与之相对，
 
 如果你想详细了解 JavaScript 应用程序中的渲染和 SEO，请查看我的博客，在那里我用通俗的语言讲解过这些话题。
 在建立了多个网站之后编写的初级 JavaScript 网络应用程序 SEO 指南：
-[以下是我学到的关于有效流量和 SEO 的内容——javascript.plainenglish.io](https://javascript.plainenglish.io/a-beginners-guide-to-seo-for-javascript-web-applications-c67d55728291)    
+[以下是我学到的关于有效流量和 SEO 的内容——javascript.plainenglish.io](https://javascript.plainenglish.io/a-beginners-guide-to-seo-for-javascript-web-applications-c67d55728291)
 
 ## 2. AdSense 审核问题
 
@@ -115,7 +115,7 @@ Next.js 创建的前端 API 路由是 Next 利用本身的数据完成的。
 
 因此，必须考虑许多因素，如懒加载、压缩、大小和格式。
 
-Next.js 使用图像组件和自动图像优化功能解决了所有这些问题，它取代了HTML 的 `<img>` 标签。
+Next.js 使用图像组件和自动图像优化功能解决了所有这些问题，它取代了 HTML 的 `<img>` 标签。
 
 通过使用它，图像在默认情况下被懒加载，浏览器适配图像的尺寸，在图像加载前留出空白。这就避免了图像的随机跳入，提高了用户体验。
 
@@ -144,9 +144,10 @@ React 是[最流行的框架](https://www.codeinwp.com/blog/angular-vs-vue-vs-re
 感谢你的阅读！
 
 ---
- * 原文地址：[5 Reasons to Switch from React to Next.js](https://javascript.plainenglish.io/5-reasons-to-switch-from-react-to-next-js-f776413693d0)
- * 原文作者：[anuragkanoria](https://medium.com/@anuragkanoria)
- * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
- * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md)
- * 译者：[Zz招锦](https://github.com/zenblo)
- * 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Cyberhan123](https://github.com/Cyberhan123)
+
+- 原文地址：[5 Reasons to Switch from React to Next.js](https://javascript.plainenglish.io/5-reasons-to-switch-from-react-to-next-js-f776413693d0)
+- 原文作者：[anuragkanoria](https://medium.com/@anuragkanoria)
+- 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
+- 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md](https://github.com/xitu/gold-miner/blob/master/article/2021/5-Reasons-to-Switch-from-React-to-Next-js.md)
+- 译者：[Zz 招锦](https://github.com/zenblo)
+- 校对者：[Kim Yang](https://github.com/KimYangOfCat)、[Cyberhan123](https://github.com/Cyberhan123)
