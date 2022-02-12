@@ -67,22 +67,22 @@
  * @return {number[]}
  */
 var twoSum = function (numbers, target) {
-	let l = 0;
-	let r = numbers.length - 1;
-	while (r > 0) {
-		let tem = target - numbers[r];
-		while (l < r) {
-			if (numbers[l] == tem) {
+	let left = 0;
+	let right = numbers.length - 1;
+	while (right > 0) {
+		let tem = target - numbers[right];
+		while (left < right) {
+			if (numbers[left] == tem) {
 				break;
 			}
-			l++;
+			left++;
 		}
-		if (l < r) {
+		if (left < right) {
 			break;
 		}
-		l = 0;
-		r--;
+		left = 0;
+		right--;
 	}
-	return [l + 1, r + 1];
+	return [left + 1, right + 1];
 };
 // @lc code=end

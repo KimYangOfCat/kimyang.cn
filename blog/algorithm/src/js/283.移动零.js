@@ -54,24 +54,24 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var moveZeroes = function (nums) {
-	let l = 0;
-	let r = l;
-	while (l < nums.length) {
-		if (nums[l] != 0) {
-			l++;
+	let left = 0;
+	let right = left;
+	while (left < nums.length) {
+		if (nums[left] != 0) {
+			left++;
 		} else {
-			r = l + 1;
-			while (r < nums.length) {
-				if (nums[r] == 0) {
-					r++;
+			right = left + 1;
+			while (right < nums.length) {
+				if (nums[right] == 0) {
+					right++;
 				} else {
-					let tem = nums[l];
-					nums[l] = nums[r];
-					nums[r] = tem;
+					let tem = nums[left];
+					nums[left] = nums[right];
+					nums[right] = tem;
 					break;
 				}
 			}
-			l++;
+			left++;
 		}
 	}
 };
