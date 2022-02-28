@@ -20,7 +20,11 @@ function getAlgorithmSidebar() {
   ];
 }
 function getAlgorithmSummarySidebar() {
-  return ["/algorithm/summary/", "/algorithm/summary/the-diff-of-loop-iterate",'/algorithm/summary/double-pointer'];
+  return [
+		// "/algorithm/summary/",
+		"/algorithm/summary/the-diff-of-loop-iterate",
+		"/algorithm/summary/double-pointer",
+  ];
 }
 // function getTC39WorkSidebar() {
 //   return [

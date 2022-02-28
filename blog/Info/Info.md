@@ -10,17 +10,6 @@ sticky: 1
 
 <!-- more -->
 
-## 个人爱好
-
-- 读书
-- 摄影
-
-## 近期书单
-
-- [《HTML5 秘籍》](https://book.douban.com/subject/26342322/)
-- [《深入解析 CSS》](https://book.douban.com/subject/35021471/)
-- [《你不知道的 JavaScript》](https://book.douban.com/subject/26351021/)
-- [《我的第一本算法书》](https://book.douban.com/subject/30357170/)
 
 ## 交换友链
 
