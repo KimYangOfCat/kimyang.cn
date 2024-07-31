@@ -33,7 +33,7 @@ jobs:
           CI: true
       # 部署到腾讯云服务器
       - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.2.11
+        uses: easingthemes/ssh-deploy@main
         env:
           # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
           SSH_PRIVATE_KEY: ${{ secrets.SSH }}
