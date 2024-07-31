@@ -4,7 +4,7 @@ const sidebar = require("./config/sidebar");
 const friendLink = require("./config/friends");
 
 module.exports = {
-  title: "Kim's Blog",
+  title: "软件开发学习之路",
   base: process.env.BASE_BLOG,
   description: "做技术与艺术的创新者!",
   port: 2233,
